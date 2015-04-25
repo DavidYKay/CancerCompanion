@@ -6,68 +6,166 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E265895C4071A733A8FE779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AFC2240094BB4E6DAEAAA4 /* Foundation.framework */; };
+		54A285AB7E099403D9E9FD52 /* Pods-CancerNavigator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8334C21E878CF7568D296ED0 /* Pods-CancerNavigator-dummy.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		7A85E6BC0B65DC3732C10010 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		02F23E3C02159A882AB73FDA /* Pods-CancerNavigator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CancerNavigator-resources.sh"; sourceTree = "<group>"; };
+		2610CAFB3BCC65FEBB71428B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E6593B2493448EAC26AD50E /* Pods-CancerNavigator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CancerNavigator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47AFC2240094BB4E6DAEAAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		60FF36E2E2D6C25A7C13113E /* Pods-CancerNavigator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-environment.h"; sourceTree = "<group>"; };
+		7AE0829E7F03D7C114F4E8B1 /* Pods-CancerNavigator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CancerNavigator-acknowledgements.plist"; sourceTree = "<group>"; };
+		8334C21E878CF7568D296ED0 /* Pods-CancerNavigator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CancerNavigator-dummy.m"; sourceTree = "<group>"; };
+		9E71F4355D310103FB31387A /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
+		A050F05ACA02C20CFA2962FD /* libPods-CancerNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CancerNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97F19FEA844BCD708A4DD5C /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		AA35A499F126811503AE14F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E265895C4071A733A8FE779 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		3A2771AB357FE6F1D2FAA16E /* Products */ = {
+		0D4FCD5D3E501C0B4912699E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		458826A6D8975703E286F612 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		794391C0DD10DF185040872C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				B3DB60000F8425C3A8FB445B /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B1A42CA1D9E049C4889C9914 = {
+		25E0883493EFD257A230468B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A85E6BC0B65DC3732C10010 /* Podfile */,
-				794391C0DD10DF185040872C /* Frameworks */,
-				3A2771AB357FE6F1D2FAA16E /* Products */,
-				458826A6D8975703E286F612 /* Targets Support Files */,
+				63E37061B6B34A270C6E49DB /* Firebase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63E37061B6B34A270C6E49DB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7BEBF9245E5114A4BFA51073 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5F4E53A71FB9BDB7923B74E /* Pods-CancerNavigator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA3623920F8DD91BA0CF536F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A050F05ACA02C20CFA2962FD /* libPods-CancerNavigator.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3DB60000F8425C3A8FB445B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				47AFC2240094BB4E6DAEAAA4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C5F4E53A71FB9BDB7923B74E /* Pods-CancerNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				2E6593B2493448EAC26AD50E /* Pods-CancerNavigator-acknowledgements.markdown */,
+				7AE0829E7F03D7C114F4E8B1 /* Pods-CancerNavigator-acknowledgements.plist */,
+				8334C21E878CF7568D296ED0 /* Pods-CancerNavigator-dummy.m */,
+				60FF36E2E2D6C25A7C13113E /* Pods-CancerNavigator-environment.h */,
+				02F23E3C02159A882AB73FDA /* Pods-CancerNavigator-resources.sh */,
+				B97F19FEA844BCD708A4DD5C /* Pods-CancerNavigator.debug.xcconfig */,
+				9E71F4355D310103FB31387A /* Pods-CancerNavigator.release.xcconfig */,
+			);
+			name = "Pods-CancerNavigator";
+			path = "Target Support Files/Pods-CancerNavigator";
+			sourceTree = "<group>";
+		};
+		D6747D2AB9C70E06057D8E2A = {
+			isa = PBXGroup;
+			children = (
+				2610CAFB3BCC65FEBB71428B /* Podfile */,
+				0D4FCD5D3E501C0B4912699E /* Frameworks */,
+				25E0883493EFD257A230468B /* Pods */,
+				AA3623920F8DD91BA0CF536F /* Products */,
+				7BEBF9245E5114A4BFA51073 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		0A73EF17BB11CB071ACECB1B /* Pods-CancerNavigator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F76260D4F47668206EE41E /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator" */;
+			buildPhases = (
+				97ED42C4B350FF65DE0128AC /* Sources */,
+				AA35A499F126811503AE14F9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CancerNavigator";
+			productName = "Pods-CancerNavigator";
+			productReference = A050F05ACA02C20CFA2962FD /* libPods-CancerNavigator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
-		2A1990C0759A4F8830F9CCF6 /* Project object */ = {
+		BE461BEDE077414D38686B04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 9E8D02175A307442326E47B4 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 836A937CAAF3517D237F1DE5 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B1A42CA1D9E049C4889C9914;
-			productRefGroup = 3A2771AB357FE6F1D2FAA16E /* Products */;
+			mainGroup = D6747D2AB9C70E06057D8E2A;
+			productRefGroup = AA3623920F8DD91BA0CF536F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0A73EF17BB11CB071ACECB1B /* Pods-CancerNavigator */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		97ED42C4B350FF65DE0128AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A285AB7E099403D9E9FD52 /* Pods-CancerNavigator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
-		A317B59DD7A331C7A30467C8 /* Release */ = {
+		346AAD8E0BEAFC018ADA31CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -101,7 +199,7 @@
 			};
 			name = Release;
 		};
-		FAD32015D24974B97A98E238 /* Debug */ = {
+		4E1C43916B3D66462F3615F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -140,19 +238,60 @@
 			};
 			name = Debug;
 		};
+		55947BBE5028E2664B308F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97F19FEA844BCD708A4DD5C /* Pods-CancerNavigator.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AEE7605DFE8FB239BC1828D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E71F4355D310103FB31387A /* Pods-CancerNavigator.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E8D02175A307442326E47B4 /* Build configuration list for PBXProject "Pods" */ = {
+		13F76260D4F47668206EE41E /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAD32015D24974B97A98E238 /* Debug */,
-				A317B59DD7A331C7A30467C8 /* Release */,
+				55947BBE5028E2664B308F30 /* Debug */,
+				AEE7605DFE8FB239BC1828D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836A937CAAF3517D237F1DE5 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1C43916B3D66462F3615F7 /* Debug */,
+				346AAD8E0BEAFC018ADA31CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2A1990C0759A4F8830F9CCF6 /* Project object */;
+	rootObject = BE461BEDE077414D38686B04 /* Project object */;
 }

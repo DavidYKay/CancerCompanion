@@ -3,6 +3,8 @@
 
 target 'CancerNavigator' do
 
+pod 'Firebase', '>= 2.2.1'
+
 end
 
 target 'CancerNavigatorTests' do
