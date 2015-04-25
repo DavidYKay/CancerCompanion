@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89571AEC1A53004EB467 /* AppDelegate.swift */; };
+		423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89591AEC1A53004EB467 /* ViewController.swift */; };
+		423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423D895B1AEC1A53004EB467 /* Main.storyboard */; };
+		423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423D895E1AEC1A53004EB467 /* Images.xcassets */; };
+		423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89601AEC1A53004EB467 /* LaunchScreen.xib */; };
+		423D896E1AEC1A53004EB467 /* CancerNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		423D89681AEC1A53004EB467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D894A1AEC1A52004EB467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423D89511AEC1A52004EB467;
+			remoteInfo = CancerNavigator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		423D89521AEC1A52004EB467 /* CancerNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CancerNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		423D89561AEC1A52004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423D89571AEC1A53004EB467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		423D89591AEC1A53004EB467 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		423D895C1AEC1A53004EB467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		423D895E1AEC1A53004EB467 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		423D89611AEC1A53004EB467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		423D89671AEC1A53004EB467 /* CancerNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CancerNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		423D896C1AEC1A53004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerNavigatorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		423D894F1AEC1A52004EB467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423D89641AEC1A53004EB467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		423D89491AEC1A52004EB467 = {
+			isa = PBXGroup;
+			children = (
+				423D89541AEC1A52004EB467 /* CancerNavigator */,
+				423D896A1AEC1A53004EB467 /* CancerNavigatorTests */,
+				423D89531AEC1A52004EB467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		423D89531AEC1A52004EB467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				423D89521AEC1A52004EB467 /* CancerNavigator.app */,
+				423D89671AEC1A53004EB467 /* CancerNavigatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		423D89541AEC1A52004EB467 /* CancerNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				423D89571AEC1A53004EB467 /* AppDelegate.swift */,
+				423D89591AEC1A53004EB467 /* ViewController.swift */,
+				423D895B1AEC1A53004EB467 /* Main.storyboard */,
+				423D895E1AEC1A53004EB467 /* Images.xcassets */,
+				423D89601AEC1A53004EB467 /* LaunchScreen.xib */,
+				423D89551AEC1A52004EB467 /* Supporting Files */,
+			);
+			path = CancerNavigator;
+			sourceTree = "<group>";
+		};
+		423D89551AEC1A52004EB467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				423D89561AEC1A52004EB467 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		423D896A1AEC1A53004EB467 /* CancerNavigatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */,
+				423D896B1AEC1A53004EB467 /* Supporting Files */,
+			);
+			path = CancerNavigatorTests;
+			sourceTree = "<group>";
+		};
+		423D896B1AEC1A53004EB467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				423D896C1AEC1A53004EB467 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		423D89511AEC1A52004EB467 /* CancerNavigator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423D89711AEC1A53004EB467 /* Build configuration list for PBXNativeTarget "CancerNavigator" */;
+			buildPhases = (
+				423D894E1AEC1A52004EB467 /* Sources */,
+				423D894F1AEC1A52004EB467 /* Frameworks */,
+				423D89501AEC1A52004EB467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CancerNavigator;
+			productName = CancerNavigator;
+			productReference = 423D89521AEC1A52004EB467 /* CancerNavigator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		423D89661AEC1A53004EB467 /* CancerNavigatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423D89741AEC1A53004EB467 /* Build configuration list for PBXNativeTarget "CancerNavigatorTests" */;
+			buildPhases = (
+				423D89631AEC1A53004EB467 /* Sources */,
+				423D89641AEC1A53004EB467 /* Frameworks */,
+				423D89651AEC1A53004EB467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423D89691AEC1A53004EB467 /* PBXTargetDependency */,
+			);
+			name = CancerNavigatorTests;
+			productName = CancerNavigatorTests;
+			productReference = 423D89671AEC1A53004EB467 /* CancerNavigatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		423D894A1AEC1A52004EB467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "David Young-chan Kay";
+				TargetAttributes = {
+					423D89511AEC1A52004EB467 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					423D89661AEC1A53004EB467 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 423D89511AEC1A52004EB467;
+					};
+				};
+			};
+			buildConfigurationList = 423D894D1AEC1A52004EB467 /* Build configuration list for PBXProject "CancerNavigator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 423D89491AEC1A52004EB467;
+			productRefGroup = 423D89531AEC1A52004EB467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				423D89511AEC1A52004EB467 /* CancerNavigator */,
+				423D89661AEC1A53004EB467 /* CancerNavigatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423D89501AEC1A52004EB467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */,
+				423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */,
+				423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423D89651AEC1A53004EB467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		423D894E1AEC1A52004EB467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */,
+				423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423D89631AEC1A53004EB467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423D896E1AEC1A53004EB467 /* CancerNavigatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		423D89691AEC1A53004EB467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423D89511AEC1A52004EB467 /* CancerNavigator */;
+			targetProxy = 423D89681AEC1A53004EB467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		423D895B1AEC1A53004EB467 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423D895C1AEC1A53004EB467 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		423D89601AEC1A53004EB467 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423D89611AEC1A53004EB467 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		423D896F1AEC1A53004EB467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		423D89701AEC1A53004EB467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		423D89721AEC1A53004EB467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CancerNavigator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		423D89731AEC1A53004EB467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CancerNavigator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		423D89751AEC1A53004EB467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CancerNavigatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CancerNavigator.app/CancerNavigator";
+			};
+			name = Debug;
+		};
+		423D89761AEC1A53004EB467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CancerNavigatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CancerNavigator.app/CancerNavigator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		423D894D1AEC1A52004EB467 /* Build configuration list for PBXProject "CancerNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423D896F1AEC1A53004EB467 /* Debug */,
+				423D89701AEC1A53004EB467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423D89711AEC1A53004EB467 /* Build configuration list for PBXNativeTarget "CancerNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423D89721AEC1A53004EB467 /* Debug */,
+				423D89731AEC1A53004EB467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		423D89741AEC1A53004EB467 /* Build configuration list for PBXNativeTarget "CancerNavigatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423D89751AEC1A53004EB467 /* Debug */,
+				423D89761AEC1A53004EB467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 423D894A1AEC1A52004EB467 /* Project object */;
+}
