@@ -14,6 +14,13 @@
 		423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423D895E1AEC1A53004EB467 /* Images.xcassets */; };
 		423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89601AEC1A53004EB467 /* LaunchScreen.xib */; };
 		423D896E1AEC1A53004EB467 /* CancerNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */; };
+		423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89771AEC2076004EB467 /* WelcomeViewController.swift */; };
+		423D897A1AEC2084004EB467 /* RoadmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89791AEC2084004EB467 /* RoadmapViewController.swift */; };
+		423D897C1AEC208D004EB467 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D897B1AEC208D004EB467 /* TimelineViewController.swift */; };
+		423D89821AEC20B6004EB467 /* NodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89811AEC20B6004EB467 /* NodeDetailViewController.swift */; };
+		423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B31AEC2969004EB467 /* TimelineViewController.xib */; };
+		423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */; };
+		423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B71AEC297B004EB467 /* RoadmapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,13 @@
 		423D89671AEC1A53004EB467 /* CancerNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CancerNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		423D896C1AEC1A53004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerNavigatorTests.swift; sourceTree = "<group>"; };
+		423D89771AEC2076004EB467 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		423D89791AEC2084004EB467 /* RoadmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadmapViewController.swift; sourceTree = "<group>"; };
+		423D897B1AEC208D004EB467 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		423D89811AEC20B6004EB467 /* NodeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeDetailViewController.swift; sourceTree = "<group>"; };
+		423D89B31AEC2969004EB467 /* TimelineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineViewController.xib; sourceTree = "<group>"; };
+		423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodeDetailViewController.xib; sourceTree = "<group>"; };
+		423D89B71AEC297B004EB467 /* RoadmapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoadmapViewController.xib; sourceTree = "<group>"; };
 		73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
 		A7A4A6696F864F18B6A5330F /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +107,12 @@
 		423D89541AEC1A52004EB467 /* CancerNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				423D89B91AEC2A4E004EB467 /* NIBs */,
+				423D89801AEC20A1004EB467 /* Services */,
+				423D897F1AEC209B004EB467 /* Models */,
+				423D897E1AEC2096004EB467 /* Views */,
+				423D897D1AEC2091004EB467 /* ViewControllers */,
 				423D89571AEC1A53004EB467 /* AppDelegate.swift */,
-				423D89591AEC1A53004EB467 /* ViewController.swift */,
 				423D895B1AEC1A53004EB467 /* Main.storyboard */,
 				423D895E1AEC1A53004EB467 /* Images.xcassets */,
 				423D89601AEC1A53004EB467 /* LaunchScreen.xib */,
@@ -126,6 +144,49 @@
 				423D896C1AEC1A53004EB467 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		423D897D1AEC2091004EB467 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				423D89591AEC1A53004EB467 /* ViewController.swift */,
+				423D89771AEC2076004EB467 /* WelcomeViewController.swift */,
+				423D89791AEC2084004EB467 /* RoadmapViewController.swift */,
+				423D897B1AEC208D004EB467 /* TimelineViewController.swift */,
+				423D89811AEC20B6004EB467 /* NodeDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		423D897E1AEC2096004EB467 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		423D897F1AEC209B004EB467 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		423D89801AEC20A1004EB467 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		423D89B91AEC2A4E004EB467 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				423D89B31AEC2969004EB467 /* TimelineViewController.xib */,
+				423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */,
+				423D89B71AEC297B004EB467 /* RoadmapViewController.xib */,
+			);
+			name = NIBs;
 			sourceTree = "<group>";
 		};
 		92425683E69E948BAEA7D485 /* Frameworks */ = {
@@ -219,8 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */,
+				423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */,
+				423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */,
 				423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */,
 				423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */,
+				423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */,
+				423D89821AEC20B6004EB467 /* NodeDetailViewController.swift in Sources */,
+				423D897A1AEC2084004EB467 /* RoadmapViewController.swift in Sources */,
 				423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */,
 				423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */,
+				423D897C1AEC208D004EB467 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
