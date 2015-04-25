@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Math
 
 class WelcomeViewController: UIViewController {
 
@@ -23,7 +24,9 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func onButtonPressed(sender: AnyObject) {
-        println("hello world!")
+        let math = Math()
+        let result = math.square(3)
+        println("3 * 3 = " + result.description)
     }
     
     override func didReceiveMemoryWarning() {

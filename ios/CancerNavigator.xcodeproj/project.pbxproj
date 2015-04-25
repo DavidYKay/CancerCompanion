@@ -21,6 +21,7 @@
 		423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B31AEC2969004EB467 /* TimelineViewController.xib */; };
 		423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */; };
 		423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B71AEC297B004EB467 /* RoadmapViewController.xib */; };
+		423D89BD1AEC45BD004EB467 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D89BC1AEC45BD004EB467 /* Math.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		423D89B31AEC2969004EB467 /* TimelineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineViewController.xib; sourceTree = "<group>"; };
 		423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodeDetailViewController.xib; sourceTree = "<group>"; };
 		423D89B71AEC297B004EB467 /* RoadmapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoadmapViewController.xib; sourceTree = "<group>"; };
+		423D89BB1AEC45BC004EB467 /* CancerNavigator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CancerNavigator-Bridging-Header.h"; sourceTree = "<group>"; };
+		423D89BC1AEC45BD004EB467 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		423D89BE1AEC45CC004EB467 /* Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
 		73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
 		A7A4A6696F864F18B6A5330F /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,7 @@
 		423D89541AEC1A52004EB467 /* CancerNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				423D89BA1AEC459B004EB467 /* Objective-C */,
 				423D89B91AEC2A4E004EB467 /* NIBs */,
 				423D89801AEC20A1004EB467 /* Services */,
 				423D897F1AEC209B004EB467 /* Models */,
@@ -187,6 +192,16 @@
 				423D89B71AEC297B004EB467 /* RoadmapViewController.xib */,
 			);
 			name = NIBs;
+			sourceTree = "<group>";
+		};
+		423D89BA1AEC459B004EB467 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				423D89BC1AEC45BD004EB467 /* Math.m */,
+				423D89BB1AEC45BC004EB467 /* CancerNavigator-Bridging-Header.h */,
+				423D89BE1AEC45CC004EB467 /* Math.h */,
+			);
+			name = "Objective-C";
 			sourceTree = "<group>";
 		};
 		92425683E69E948BAEA7D485 /* Frameworks */ = {
@@ -337,6 +352,7 @@
 			files = (
 				423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */,
 				423D89821AEC20B6004EB467 /* NodeDetailViewController.swift in Sources */,
+				423D89BD1AEC45BD004EB467 /* Math.m in Sources */,
 				423D897A1AEC2084004EB467 /* RoadmapViewController.swift in Sources */,
 				423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */,
 				423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */,
@@ -464,9 +480,12 @@
 			baseConfigurationReference = A7A4A6696F864F18B6A5330F /* Pods-CancerNavigator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CancerNavigator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CancerNavigator/CancerNavigator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -475,9 +494,11 @@
 			baseConfigurationReference = 73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CancerNavigator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CancerNavigator/CancerNavigator-Bridging-Header.h";
 			};
 			name = Release;
 		};
