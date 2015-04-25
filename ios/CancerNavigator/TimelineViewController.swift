@@ -15,12 +15,14 @@ class TimelineViewController: UIViewController {
 
         self.navigationItem.title = "Timeline"
         
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Chat", style: .Plain, target: self, action: "onDone")
+        
     }
 
     func onDone() {
-
+        let roadmapVc = ChatViewController(nibName: "ChatViewController", bundle: nil)
+        self.navigationController?.pushViewController(roadmapVc, animated: true)
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
