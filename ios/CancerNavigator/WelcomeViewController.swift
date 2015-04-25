@@ -16,6 +16,8 @@ class WelcomeViewController: UIViewController {
         self.navigationItem.title = "Welcome"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Continue", style: .Plain, target: self, action: "onDone")
+        
+        let scrollPageController = TTScrollSlidingPagesController()
     }
 
     func onDone() {
