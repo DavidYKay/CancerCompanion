@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_Firebase 2
 #define COCOAPODS_VERSION_PATCH_Firebase 1
 
+// UIScrollSlidingPages
+#define COCOAPODS_POD_AVAILABLE_UIScrollSlidingPages
+#define COCOAPODS_VERSION_MAJOR_UIScrollSlidingPages 1
+#define COCOAPODS_VERSION_MINOR_UIScrollSlidingPages 4
+#define COCOAPODS_VERSION_PATCH_UIScrollSlidingPages 0
+

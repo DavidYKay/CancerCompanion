@@ -4,6 +4,8 @@
 target 'CancerNavigator' do
 
 pod 'Firebase', '>= 2.2.1'
+pod 'UIScrollSlidingPages', '>= 1.4'
+
 
 end
 
