@@ -26,6 +26,7 @@
 		423D89C21AEC5154004EB467 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89C11AEC5154004EB467 /* ChecklistViewController.swift */; };
 		423D89C41AEC5242004EB467 /* ChecklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89C31AEC5242004EB467 /* ChecklistViewController.xib */; };
 		423D89C61AEC524C004EB467 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89C51AEC524C004EB467 /* ChatViewController.xib */; };
+		423D89C81AEC5EFF004EB467 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89C71AEC5EFF004EB467 /* SocketService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		423D89C11AEC5154004EB467 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		423D89C31AEC5242004EB467 /* ChecklistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistViewController.xib; sourceTree = "<group>"; };
 		423D89C51AEC524C004EB467 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		423D89C71AEC5EFF004EB467 /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
 		A7A4A6696F864F18B6A5330F /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 		423D89801AEC20A1004EB467 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				423D89C71AEC5EFF004EB467 /* SocketService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423D89C81AEC5EFF004EB467 /* SocketService.swift in Sources */,
 				423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */,
 				423D89C21AEC5154004EB467 /* ChecklistViewController.swift in Sources */,
 				423D89821AEC20B6004EB467 /* NodeDetailViewController.swift in Sources */,
