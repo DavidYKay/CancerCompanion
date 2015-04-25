@@ -1,0 +1,11 @@
+Sort by:
+<select ng-model="orderProp">
+  <option value="name">Alphabetical</option>
+  <option value="age">Newest</option>
+</select>
+
+<ul class="patients">
+  <li ng-repeat="patient in patients | filter:query | orderBy:orderProp">
+    <a href="#/detail/{{patient.$id}}">{{patient.name}}</a>
+  </li>
+</ul>
