@@ -28,6 +28,7 @@ class ThermometerView: UIView {
           label.tag = $0
           return label
         }
+        self.numberLabels = reverse(self.numberLabels)
 
         for label in numberLabels {
           self.addSubview(label)
