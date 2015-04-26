@@ -63,7 +63,7 @@ public class MilestoneView : UIView {
             checkmarkButton.hidden = true
           case .Pending:
             checkmarkButton.hidden = false
-            let image = UIImage(named: "CheckGray.png")
+            let image = UIImage(named: "CheckGrey.png")
             checkmarkButton.setImage(image, forState: UIControlState.Normal)
           case .Completed:
             checkmarkButton.hidden = false
