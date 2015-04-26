@@ -57,17 +57,28 @@ class ThermometerView: UIView {
             yOffset += interval
         }
     }
+
+
+    func handleTouchAtLocation(touchLocation: CGPoint) {
+      println("\(touchLocation.x) \(touchLocation.y)")
+    }
+
+    func handleTouches(touches: Set<NSObject>) {
+      let touch: UITouch = touches.first as! UITouch
+      let touchLocation = touch.locationInView(self)
+      handleTouchAtLocation(touchLocation)
+    }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-
+      handleTouches(touches)
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-
+      handleTouches(touches)
     }
     
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        
+      handleTouches(touches)
     }
     
     override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
