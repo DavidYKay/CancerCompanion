@@ -56,7 +56,7 @@ class WelcomeViewController: UIViewController {
 //        {
         self.popUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
         self.popUpViewController.title = "This is a popup view"
-        self.popUpViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: "You just triggered a great popup window", animated: true)
         //}
     }
     
