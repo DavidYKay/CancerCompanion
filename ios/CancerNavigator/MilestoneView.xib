@@ -84,6 +84,7 @@
                 <outlet property="checkmarkButton" destination="Z9i-f7-XNe" id="964-p8-7mu"/>
                 <outlet property="dateDividingLine" destination="Zvd-Il-qAn" id="TOY-Y2-ff7"/>
                 <outlet property="dateLabel" destination="2gj-Vr-1jK" id="Ewz-me-Vjk"/>
+                <outlet property="nameButton" destination="DME-UF-U6W" id="18C-xc-2QB"/>
                 <outlet property="timeLabel" destination="JdL-hx-dQy" id="9ni-Ev-VD3"/>
             </connections>
             <point key="canvasLocation" x="181.5" y="324"/>

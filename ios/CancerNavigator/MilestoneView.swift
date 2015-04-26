@@ -54,7 +54,8 @@ public class MilestoneView : UIView {
    // @IBOutlet weak var timeLabel: UILabel!
    // @IBOutlet weak var dateDividingLine: UIView!
     
-    @IBOutlet var nameLabel: UILabel!
+    //@IBOutlet var nameLabel: UILabel!
+    @IBOutlet var nameButton: UIButton!
     @IBOutlet var checkmarkButton: UIButton!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
