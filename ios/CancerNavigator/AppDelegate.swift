@@ -45,12 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let state = application.applicationState
 
       if (state == UIApplicationState.Active) {
-        let alert = UIAlertView(title:"Reminder",
-            message:notification.alertBody,
-            delegate:self,
-            cancelButtonTitle:"OK",
-            otherButtonTitles:nil)
-        alert.show()
+
+        NotificationService().showNotification()
+
       }
 
       //NSNotificationCenter.defaultCenter.postNotificationName:@"reloadData" object:self];

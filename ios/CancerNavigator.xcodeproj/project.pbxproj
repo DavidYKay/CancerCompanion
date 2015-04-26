@@ -17,6 +17,8 @@
 		421BBD531AECAC91000E066B /* EmotionalCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */; };
 		421BBD551AECAC9D000E066B /* EmotionalCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */; };
 		421BBD571AECAD36000E066B /* thermometer-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 421BBD561AECAD36000E066B /* thermometer-transparent.png */; };
+		421BBD4F1AECA43B000E066B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BBD4E1AECA43B000E066B /* NotificationService.swift */; };
+		421BBD511AECA5D8000E066B /* StringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BBD501AECA5D8000E066B /* StringService.swift */; };
 		422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */; };
 		422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */; };
 		422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B701AEC8D77000E0A90 /* CheckGrey.png */; };
@@ -61,6 +63,8 @@
 		421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalCheckinViewController.swift; sourceTree = "<group>"; };
 		421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionalCheckinViewController.xib; sourceTree = "<group>"; };
 		421BBD561AECAD36000E066B /* thermometer-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thermometer-transparent.png"; sourceTree = "<group>"; };
+		421BBD4E1AECA43B000E066B /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		421BBD501AECA5D8000E066B /* StringService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringService.swift; sourceTree = "<group>"; };
 		422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breastcancermain.png; sourceTree = "<group>"; };
 		422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreen.png; sourceTree = "<group>"; };
 		422B2B701AEC8D77000E0A90 /* CheckGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGrey.png; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				423D89C71AEC5EFF004EB467 /* SocketService.swift */,
+				421BBD4E1AECA43B000E066B /* NotificationService.swift */,
+				421BBD501AECA5D8000E066B /* StringService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -450,8 +456,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421BBD511AECA5D8000E066B /* StringService.swift in Sources */,
 				423D89C81AEC5EFF004EB467 /* SocketService.swift in Sources */,
 				423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */,
+				421BBD4F1AECA43B000E066B /* NotificationService.swift in Sources */,
 				423D89C21AEC5154004EB467 /* ChecklistViewController.swift in Sources */,
 				423D89BD1AEC45BD004EB467 /* Math.m in Sources */,
 				20BB4F531AEC61D20013DDC9 /* PopUpViewControllerSwift.swift in Sources */,
