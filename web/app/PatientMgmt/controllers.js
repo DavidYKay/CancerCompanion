@@ -10,12 +10,14 @@ function($scope, Patient) {
   $scope.orderProp = 'name';
 }])
 
-.controller('PatientDetailCtrl', ['$scope', '$routeParams', 'Patient', 'Notification', 'formatFilter',
+.controller('PatientDetailCtrl', ['$scope', '$routeParams', 'Patient',
+  'Notification', 'Checkpoint',
 
-function($scope, $routeParams, Patient, Notification) {
+function($scope, $routeParams, Patient, Notification, Checkpoint) {
   var patientId = $routeParams.patientId;
 
   Patient.item(patientId).$bindTo($scope, "patient");
+  Checkpoint().$bindTo($scope, "checkpoints");
 
   $scope.acknowledge = function() {
     var message = {
@@ -28,15 +30,16 @@ function($scope, $routeParams, Patient, Notification) {
 
   $scope.reverse = function(field) {
     switch (field) {
-      case "surge" :
-      $scope.patient.surgicalComplete = !$scope.patient.surgicalComplete;
+      case "appt" :
+      $scope.checkpoints.appointmentConfirmed = !$scope.checkpoints.appointmentConfirmed;
       break;
       case "emote" :
-      $scope.patient.emotionalCUCompleted = !$scope.patient.emotionalCUCompleted;
+      $scope.checkpoints.emotionalCheckin = !$scope.checkpoints.emotionalCheckin;
       break;
-      case "attend" :
-      $scope.patient.attendenceConfirmed = !$scope.patient.attendenceConfirmed;
+      case "survey" :
+      $scope.checkpoints.survey = !$scope.checkpoints.survey;
       break;
     }
+
   }
 }]);
