@@ -34,13 +34,14 @@ class TimelineViewController: UIViewController {
       NotificationService().showNotification()
     }
 
-    func showSurvey() {
-        let vc = ChecklistViewController(nibName: "ChecklistViewController", bundle: nil)
+    @IBAction func onShowEmotionPressed(sender: AnyObject) {
+        let vc = EmotionalCheckinViewController(nibName: "EmotionalCheckinViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
     @IBAction func onShowSurveyPressed(sender: AnyObject) {
-        showSurvey()
+        let vc = ChecklistViewController(nibName: "ChecklistViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

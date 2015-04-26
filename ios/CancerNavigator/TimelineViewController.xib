@@ -29,9 +29,20 @@
                         <action selector="onShowSurveyPressed:" destination="-1" eventType="touchUpInside" id="bNL-t2-DK1"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-Mz-Pzd">
+                    <rect key="frame" x="214" y="172" width="172" height="30"/>
+                    <state key="normal" title="Show Emotional Checkin">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onShowEmotionPressed:" destination="-1" eventType="touchUpInside" id="hnE-JO-1ec"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="SJG-Mz-Pzd" firstAttribute="top" secondItem="gFr-UF-fKE" secondAttribute="bottom" constant="8" id="0rX-Qs-WRq"/>
+                <constraint firstItem="gFr-UF-fKE" firstAttribute="centerX" secondItem="SJG-Mz-Pzd" secondAttribute="centerX" id="9hl-Pb-f8b"/>
                 <constraint firstItem="scp-mA-Zct" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="84" id="IFu-bv-iH2"/>
                 <constraint firstItem="gFr-UF-fKE" firstAttribute="centerX" secondItem="scp-mA-Zct" secondAttribute="centerX" id="KYd-FA-GH1"/>
                 <constraint firstAttribute="centerX" secondItem="scp-mA-Zct" secondAttribute="centerX" id="n7d-sq-fat"/>
