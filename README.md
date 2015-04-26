@@ -9,3 +9,5 @@ iOS code goes here.
 4. Confirmation
 5. Checklist / FAQ
 6. Timeline - shifted
+
+Fighting breast cancer at Hacking Medicine Grand Hack 2015.

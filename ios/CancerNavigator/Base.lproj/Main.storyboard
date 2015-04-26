@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IlS-eO-CRT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="PHC-hQ-gQP">
+            <objects>
+                <navigationController id="IlS-eO-CRT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ihr-Xu-7Im">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="aAs-ab-8g0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRU-6h-iF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="320"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="Welcome" id="vXZ-lx-hvc" customClass="WelcomeViewController" customModule="CancerNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="breastcancermain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-24-gCg">
+                                <rect key="frame" x="75" y="180" width="450" height="240"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EY-9B-Wpn">
+                                <rect key="frame" x="330" y="320" width="70" height="70"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oak-hL-1Qq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DT3-24-gCg" secondAttribute="centerX" id="9sM-PS-tae"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="leading" secondItem="DT3-24-gCg" secondAttribute="leading" constant="255" id="Aw9-Mm-o6m"/>
+                            <constraint firstAttribute="centerX" secondItem="DT3-24-gCg" secondAttribute="centerX" id="Gob-YU-A6f"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="trailing" secondItem="DT3-24-gCg" secondAttribute="trailing" constant="-125" id="NQv-Aj-N7g"/>
+                            <constraint firstAttribute="centerY" secondItem="DT3-24-gCg" secondAttribute="centerY" constant="23" id="bDs-Be-Qg9"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="bottom" secondItem="DT3-24-gCg" secondAttribute="bottom" constant="-30" id="oCz-Z3-gEN"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="top" secondItem="DT3-24-gCg" secondAttribute="top" constant="140" id="t2y-dj-UlT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MYi-9Q-Sfk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="breastcancermain.jpg" width="480" height="259"/>
+    </resources>
+</document>
