@@ -15,13 +15,13 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Welcome"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Continue", style: .Plain, target: self, action: "onDone")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Timeline", style: .Plain, target: self, action: "onDone")
         
         let scrollPageController = TTScrollSlidingPagesController()
     }
 
     func onDone() {
-        let roadmapVc = RoadmapViewController(nibName: "RoadmapViewController", bundle: nil)
+        let roadmapVc = TimelineViewController(nibName: "TimelineViewController", bundle: nil)
         self.navigationController?.pushViewController(roadmapVc, animated: true)
     }
     

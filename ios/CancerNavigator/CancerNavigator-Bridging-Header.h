@@ -4,3 +4,6 @@
 
 #import "Math.h"
 #import "TTScrollSlidingPagesController.h"
+
+#import <Firebase/Firebase.h>
+
