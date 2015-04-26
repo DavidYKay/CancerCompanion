@@ -107,11 +107,11 @@ public class MilestoneView : UIView {
     }
     
     @IBAction func nameWasPressed(sender: AnyObject) {
-        println("nameWasPressed: \(self.milestone)")
+        println("nameWasPressed: \(self.milestone?.name)")
     }
     
     @IBAction func checkmarkWasPressed(sender: AnyObject) {
-        println("checkmarkWasPressed: \(self.milestone)")
+        println("checkmarkWasPressed: \(self.milestone?.name)")
         
     }
 
