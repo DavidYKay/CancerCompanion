@@ -15,18 +15,11 @@ class TimelineViewController: UIViewController {
 
         self.navigationItem.title = "Timeline"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Chat", style: .Plain, target: self, action: "onDone")
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onFireNotification")
     }
 
-    func onDone() {
-        let roadmapVc = ChatViewController(nibName: "ChatViewController", bundle: nil)
-        self.navigationController?.pushViewController(roadmapVc, animated: true)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func onFireNotification() {
+
     }
 
 }

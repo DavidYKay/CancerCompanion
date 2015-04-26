@@ -16,6 +16,7 @@
 		21A6C6BED0EA48B1D7AC6136 /* libPods-CancerNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9707933470A15B9A8BD03A /* libPods-CancerNavigator.a */; };
 		421BBD531AECAC91000E066B /* EmotionalCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */; };
 		421BBD551AECAC9D000E066B /* EmotionalCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */; };
+		421BBD571AECAD36000E066B /* thermometer-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 421BBD561AECAD36000E066B /* thermometer-transparent.png */; };
 		422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */; };
 		422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */; };
 		422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B701AEC8D77000E0A90 /* CheckGrey.png */; };
@@ -59,6 +60,7 @@
 		20BB4F441AEC61D20013DDC9 /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
 		421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalCheckinViewController.swift; sourceTree = "<group>"; };
 		421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionalCheckinViewController.xib; sourceTree = "<group>"; };
+		421BBD561AECAD36000E066B /* thermometer-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thermometer-transparent.png"; sourceTree = "<group>"; };
 		422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breastcancermain.png; sourceTree = "<group>"; };
 		422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreen.png; sourceTree = "<group>"; };
 		422B2B701AEC8D77000E0A90 /* CheckGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGrey.png; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		422B2B6D1AEC8D77000E0A90 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				421BBD561AECAD36000E066B /* thermometer-transparent.png */,
 				422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */,
 				422B2B741AEC9323000E0A90 /* CheckGreenTransparent.png */,
 				422B2B751AEC9323000E0A90 /* CheckGreenTransparentOutside.png */,
@@ -385,6 +388,7 @@
 				422B2B801AEC94CF000E0A90 /* Localizable.strings in Resources */,
 				422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */,
 				422B2B7D1AEC9323000E0A90 /* CheckGreyTransparentOutside.png in Resources */,
+				421BBD571AECAD36000E066B /* thermometer-transparent.png in Resources */,
 				422B2B7C1AEC9323000E0A90 /* CheckGreyTransparent.png in Resources */,
 				423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */,
 				423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */,

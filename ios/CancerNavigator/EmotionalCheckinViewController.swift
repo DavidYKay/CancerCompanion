@@ -6,4 +6,19 @@
 //  Copyright (c) 2015 David Young-chan Kay. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class EmotionalCheckinViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.navigationItem.title = "Emotional Checkin"
+    }
+
+    func onDone() {
+
+    }
+
+}
+
