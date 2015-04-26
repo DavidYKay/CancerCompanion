@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203BBF4C1AEC512E00A1DD97 /* breastcancermain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 203BBF4B1AEC512E00A1DD97 /* breastcancermain.jpg */; };
 		20BB4F4E1AEC61D20013DDC9 /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB4F3F1AEC61D20013DDC9 /* PopUpViewController.m */; };
 		20BB4F4F1AEC61D20013DDC9 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20BB4F401AEC61D20013DDC9 /* PopUpViewController.xib */; };
 		20BB4F501AEC61D20013DDC9 /* PopUpViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20BB4F411AEC61D20013DDC9 /* PopUpViewController_iPad.xib */; };
@@ -15,6 +14,9 @@
 		20BB4F521AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20BB4F431AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib */; };
 		20BB4F531AEC61D20013DDC9 /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB4F441AEC61D20013DDC9 /* PopUpViewControllerSwift.swift */; };
 		21A6C6BED0EA48B1D7AC6136 /* libPods-CancerNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9707933470A15B9A8BD03A /* libPods-CancerNavigator.a */; };
+		422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */; };
+		422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */; };
+		422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B701AEC8D77000E0A90 /* CheckGrey.png */; };
 		423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89571AEC1A53004EB467 /* AppDelegate.swift */; };
 		423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89591AEC1A53004EB467 /* ViewController.swift */; };
 		423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423D895B1AEC1A53004EB467 /* Main.storyboard */; };
@@ -48,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		0A9707933470A15B9A8BD03A /* libPods-CancerNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CancerNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		203BBF4B1AEC512E00A1DD97 /* breastcancermain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = breastcancermain.jpg; path = ../../../Downloads/breastcancermain.jpg; sourceTree = "<group>"; };
 		20BB4F3E1AEC61D20013DDC9 /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		20BB4F3F1AEC61D20013DDC9 /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		20BB4F401AEC61D20013DDC9 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		20BB4F421AEC61D20013DDC9 /* PopUpViewController_iPhone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6.xib; sourceTree = "<group>"; };
 		20BB4F431AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6Plus.xib; sourceTree = "<group>"; };
 		20BB4F441AEC61D20013DDC9 /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
+		422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breastcancermain.png; sourceTree = "<group>"; };
+		422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreen.png; sourceTree = "<group>"; };
+		422B2B701AEC8D77000E0A90 /* CheckGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGrey.png; sourceTree = "<group>"; };
 		423D89521AEC1A52004EB467 /* CancerNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CancerNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423D89561AEC1A52004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423D89571AEC1A53004EB467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,22 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		203BBF491AEC511F00A1DD97 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				203BBF4A1AEC512500A1DD97 /* images */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		203BBF4A1AEC512500A1DD97 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				203BBF4B1AEC512E00A1DD97 /* breastcancermain.jpg */,
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
 		20BB4F301AEC61D20013DDC9 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +139,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		422B2B6C1AEC8D77000E0A90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				422B2B6D1AEC8D77000E0A90 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		422B2B6D1AEC8D77000E0A90 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */,
+				422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */,
+				422B2B701AEC8D77000E0A90 /* CheckGrey.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		423D89491AEC1A52004EB467 = {
 			isa = PBXGroup;
 			children = (
@@ -174,8 +180,8 @@
 		423D89541AEC1A52004EB467 /* CancerNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				422B2B6C1AEC8D77000E0A90 /* Resources */,
 				20BB4F301AEC61D20013DDC9 /* Libraries */,
-				203BBF491AEC511F00A1DD97 /* Resources */,
 				423D89BA1AEC459B004EB467 /* Objective-C */,
 				423D89B91AEC2A4E004EB467 /* NIBs */,
 				423D89801AEC20A1004EB467 /* Services */,
@@ -365,15 +371,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				423D89C41AEC5242004EB467 /* ChecklistViewController.xib in Resources */,
+				422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */,
 				423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */,
-				203BBF4C1AEC512E00A1DD97 /* breastcancermain.jpg in Resources */,
 				423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */,
+				422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */,
 				423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */,
 				423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */,
 				423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */,
 				20BB4F501AEC61D20013DDC9 /* PopUpViewController_iPad.xib in Resources */,
 				20BB4F511AEC61D20013DDC9 /* PopUpViewController_iPhone6.xib in Resources */,
 				423D89C61AEC524C004EB467 /* ChatViewController.xib in Resources */,
+				422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */,
 				423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */,
 				20BB4F521AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib in Resources */,
 				20BB4F4F1AEC61D20013DDC9 /* PopUpViewController.xib in Resources */,
