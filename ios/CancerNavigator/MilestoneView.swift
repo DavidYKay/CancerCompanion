@@ -6,23 +6,21 @@
 //  Copyright (c) 2015 David Young-chan Kay. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MilestoneView : UIView {
     
-    var milestone: Milestone
+    var milestone: Milestone?
 
-    var nameLabel: UILabel
-    var dayLabel: UILabel
-    var checkmarkView: UIButton
+    @IBOutlet weak var checkmarkButton: UIButton!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var dateDividingLine: UIView!
     
     func baseInit() {
 	let label = UILabel()
-	label.text = milestone.name
 
-	label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
-	self.addSubview(label)
-	self.milestoneLabels.append(label)
+        label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
     }
         
     required public init(coder aDecoder: NSCoder) {
@@ -35,19 +33,19 @@ class MilestoneView : UIView {
       baseInit()
     }
     
-    public override func layoutSubviews() {
+    //public override func layoutSubviews() {
 
-      let interval: CGFloat = 40
-      var yOffset: CGFloat = 0
-      let xPos: CGFloat = 0
-      let StandardWidth: CGFloat = 120
-      let StandardHeight: CGFloat = 40
-      for label in milestoneLabels {
-          label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
-          yOffset += interval
-      }
+    //  let interval: CGFloat = 40
+    //  var yOffset: CGFloat = 0
+    //  let xPos: CGFloat = 0
+    //  let StandardWidth: CGFloat = 120
+    //  let StandardHeight: CGFloat = 40
+
+    //  label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
+
+    //    //yOffset += interval
 
 
-    }
+    //}
 
 }
