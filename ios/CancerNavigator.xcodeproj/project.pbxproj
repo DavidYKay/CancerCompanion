@@ -40,6 +40,7 @@
 		423D89C81AEC5EFF004EB467 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89C71AEC5EFF004EB467 /* SocketService.swift */; };
 		42898CD81AED0C92008421D8 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42898CD71AED0C92008421D8 /* FinalViewController.swift */; };
 		42898CDA1AED0C9B008421D8 /* FinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42898CD91AED0C9B008421D8 /* FinalViewController.xib */; };
+		42898CDC1AED0D97008421D8 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42898CDB1AED0D97008421D8 /* TimelineView.swift */; };
 		42B420F91AECBD740028C7B9 /* ThermometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B420F81AECBD740028C7B9 /* ThermometerView.swift */; };
 		42B420FB1AECBDF10028C7B9 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B420FA1AECBDF10028C7B9 /* ColorService.swift */; };
 		6C4F83916109E06B40C64C00 /* Pods_CancerNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AEF6C5337D151AD317CF5 /* Pods_CancerNavigator.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -96,6 +97,7 @@
 		423D89C71AEC5EFF004EB467 /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		42898CD71AED0C92008421D8 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		42898CD91AED0C9B008421D8 /* FinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalViewController.xib; sourceTree = "<group>"; };
+		42898CDB1AED0D97008421D8 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		42B420F81AECBD740028C7B9 /* ThermometerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermometerView.swift; sourceTree = "<group>"; };
 		42B420FA1AECBDF10028C7B9 /* ColorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
 		73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				42B420F81AECBD740028C7B9 /* ThermometerView.swift */,
+				42898CDB1AED0D97008421D8 /* TimelineView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				20BB4F4E1AEC61D20013DDC9 /* PopUpViewController.m in Sources */,
 				423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */,
 				423D897C1AEC208D004EB467 /* TimelineViewController.swift in Sources */,
+				42898CDC1AED0D97008421D8 /* TimelineView.swift in Sources */,
 				421BBD531AECAC91000E066B /* EmotionalCheckinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
