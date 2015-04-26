@@ -54,6 +54,7 @@ public class TimelineView : UIView {
         self.milestoneLabels = []
 
         self.milestoneView = MilestoneView()
+        self.addSubview(self.milestoneView)
 
         //for milestone in milestones {
         //  let label = UILabel()
@@ -87,7 +88,9 @@ public class TimelineView : UIView {
           yOffset += interval
       }
 
-      milestoneView.frame = self.bounds
+      let milestoneWidth: CGFloat = 76
+      milestoneView.frame = CGRect(x: 0,y: 0, width: milestoneWidth, height: 200)
+        milestoneView.setNeedsLayout()
     }
 
     func handleTouches(touches: Set<NSObject>) {

@@ -37,6 +37,8 @@ class TimelineViewController: UIViewController {
     @IBAction func onShowEmotionPressed(sender: AnyObject) {
         let vc = EmotionalCheckinViewController(nibName: "EmotionalCheckinViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
+
+
     }
     
     @IBAction func onShowSurveyPressed(sender: AnyObject) {

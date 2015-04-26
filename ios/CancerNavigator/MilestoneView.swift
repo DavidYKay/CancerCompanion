@@ -19,6 +19,7 @@ public class MilestoneView : UIView {
     
     func baseInit() {
 
+        println("milestoneView.baseInit()")
         let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
 //        let options = nil
      	let views = NSBundle.mainBundle().loadNibNamed("MilestoneView", owner: self, options: options)
@@ -43,7 +44,11 @@ public class MilestoneView : UIView {
       baseInit()
     }
     
-    //public override func layoutSubviews() {
+    public override func layoutSubviews() {
+      super.layoutSubviews()
+      println("MilestoneView layoutSubviews()")
+
+    }
 
     //  let interval: CGFloat = 40
     //  var yOffset: CGFloat = 0
