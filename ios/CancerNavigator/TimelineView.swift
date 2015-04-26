@@ -44,11 +44,11 @@ public class TimelineView : UIScrollView {
         Milestone(type: MilestoneType.Minor , name: "Emotional Checkin" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
 
         //// Long term
-        //Milestone(MilestoneType.Major , "Surgery"           , nil     , nil    , Checkmark.None)      , 
-        //Milestone(MilestoneType.Major , "Chemo"             , nil     , nil    , Checkmark.None)      , 
-        //Milestone(MilestoneType.Major , "Radiation"         , nil     , nil    , Checkmark.None)      , 
-        //Milestone(MilestoneType.Major , "Medicines"         , nil     , nil    , Checkmark.None)      , 
-        //Milestone(MilestoneType.Major , "Survivor"          , nil     , nil    , Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Surgery"           , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Chemo"             , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Radiation"         , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Medicines"         , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Survivor"          , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
       ]
 
         self.milestoneLabels = []
@@ -72,6 +72,9 @@ public class TimelineView : UIScrollView {
 
           xOffset += interval
         }
+        
+      let contentWidth: CGFloat = milestoneWidth * CGFloat(milestones.count)
+      self.contentSize = CGSize(width: contentWidth, height: (self.bounds.size.height))
     }
         
     required public init(coder aDecoder: NSCoder) {
