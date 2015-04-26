@@ -36,22 +36,22 @@ public class TimelineView : UIScrollView {
     
     func baseInit() {
       let milestones = [
-        Milestone(type: MilestoneType.Major , name: "Diagnosis"         , day: "D1"    , time: nil    , checkmark: Checkmark.None)      , 
-        Milestone(type: MilestoneType.Major , name: "Appointment"       , day: "May 1" , time: "10AM" , checkmark: Checkmark.Completed) , 
-        Milestone(type: MilestoneType.Minor , name: "Reminder"    , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Diagnosis"   , day: "D1"    , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Appointment" , day: "May 1" , time: "10AM" , checkmark: Checkmark.None) , 
+        Milestone(type: MilestoneType.Minor , name: "Reminder"    , day: nil     , time: nil    , checkmark: Checkmark.Pending)      , 
 
-        Milestone(type: MilestoneType.Major , name: "CT Scan"           , day: "May 7" , time: "9AM"  , checkmark: Checkmark.Pending)   , 
-        Milestone(type: MilestoneType.Minor , name: "Survey"  , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
-        Milestone(type: MilestoneType.Major , name: "Appointment"       , day: nil     , time: nil    , checkmark: Checkmark.Pending)   , 
-        Milestone(type: MilestoneType.Minor , name: "Emo. Check" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "CT Scan"     , day: "May 7" , time: "9AM"  , checkmark: Checkmark.None)   , 
+        Milestone(type: MilestoneType.Minor , name: "Survey"      , day: nil     , time: nil    , checkmark: Checkmark.Pending)      , 
+        Milestone(type: MilestoneType.Major , name: "Appointment" , day: nil     , time: nil    , checkmark: Checkmark.None)   , 
+        Milestone(type: MilestoneType.Minor , name: "Emo. Check"  , day: nil     , time: nil    , checkmark: Checkmark.Pending)      , 
 
         //// Long term
-        Milestone(type: MilestoneType.Major , name: "Surgery"           , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
-        Milestone(type: MilestoneType.Major , name: "Chemo"             , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
-        Milestone(type: MilestoneType.Major , name: "Radiation"         , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
-        Milestone(type: MilestoneType.Major , name: "Medicines"         , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
-        Milestone(type: MilestoneType.Major , name: "Survivor"          , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
-      ]
+        Milestone(type: MilestoneType.Major , name: "Surgery"     , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Chemo"       , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Radiation"   , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Medicines"   , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Survivor"    , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        ]
 
        var xOffset: CGFloat = 10
        let interval: CGFloat = 130

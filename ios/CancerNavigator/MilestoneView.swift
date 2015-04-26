@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 public class MilestoneView : UIView {
     
@@ -106,13 +107,19 @@ public class MilestoneView : UIView {
         
     }
     
+    func handleButtonPress() {
+      let name = milestone?.name
+      SwiftEventBus.post(name!)
+    }
+
     @IBAction func nameWasPressed(sender: AnyObject) {
         println("nameWasPressed: \(self.milestone?.name)")
+        handleButtonPress()
     }
     
     @IBAction func checkmarkWasPressed(sender: AnyObject) {
         println("checkmarkWasPressed: \(self.milestone?.name)")
-        
+        handleButtonPress()
     }
 
 }

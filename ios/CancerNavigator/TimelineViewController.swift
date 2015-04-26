@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 class TimelineViewController: UIViewController {
 
@@ -14,6 +15,10 @@ class TimelineViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = "Timeline"
+
+	SwiftEventBus.onMainThread(self, name: "CT Scan") { result in
+
+        }
         
         //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
     }
@@ -24,7 +29,8 @@ class TimelineViewController: UIViewController {
           let t = NSTimer.scheduledTimerWithTimeInterval(5.0,
             target: self, 
             selector:Selector("onFireNotification"),
-        userInfo: nil, repeats:false)
+        userInfo: nil,
+            repeats:false)
 
     }
 
