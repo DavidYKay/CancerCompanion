@@ -42,6 +42,8 @@
 		42898CDA1AED0C9B008421D8 /* FinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42898CD91AED0C9B008421D8 /* FinalViewController.xib */; };
 		42898CDC1AED0D97008421D8 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42898CDB1AED0D97008421D8 /* TimelineView.swift */; };
 		42898CDE1AED2424008421D8 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42898CDD1AED2424008421D8 /* Math.swift */; };
+		42898CE01AED2541008421D8 /* MilestoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42898CDF1AED2541008421D8 /* MilestoneView.swift */; };
+		42898CE21AED25D3008421D8 /* MilestoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42898CE11AED25D3008421D8 /* MilestoneView.xib */; };
 		42B420F91AECBD740028C7B9 /* ThermometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B420F81AECBD740028C7B9 /* ThermometerView.swift */; };
 		42B420FB1AECBDF10028C7B9 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B420FA1AECBDF10028C7B9 /* ColorService.swift */; };
 		6C4F83916109E06B40C64C00 /* Pods_CancerNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AEF6C5337D151AD317CF5 /* Pods_CancerNavigator.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -100,6 +102,8 @@
 		42898CD91AED0C9B008421D8 /* FinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalViewController.xib; sourceTree = "<group>"; };
 		42898CDB1AED0D97008421D8 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		42898CDD1AED2424008421D8 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		42898CDF1AED2541008421D8 /* MilestoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestoneView.swift; sourceTree = "<group>"; };
+		42898CE11AED25D3008421D8 /* MilestoneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MilestoneView.xib; sourceTree = "<group>"; };
 		42B420F81AECBD740028C7B9 /* ThermometerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermometerView.swift; sourceTree = "<group>"; };
 		42B420FA1AECBDF10028C7B9 /* ColorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
 		73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 			children = (
 				42B420F81AECBD740028C7B9 /* ThermometerView.swift */,
 				42898CDB1AED0D97008421D8 /* TimelineView.swift */,
+				42898CDF1AED2541008421D8 /* MilestoneView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				423D89C31AEC5242004EB467 /* ChecklistViewController.xib */,
 				421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */,
 				42898CD91AED0C9B008421D8 /* FinalViewController.xib */,
+				42898CE11AED25D3008421D8 /* MilestoneView.xib */,
 			);
 			name = NIBs;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 				422B2B801AEC94CF000E0A90 /* Localizable.strings in Resources */,
 				422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */,
 				422B2B7D1AEC9323000E0A90 /* CheckGreyTransparentOutside.png in Resources */,
+				42898CE21AED25D3008421D8 /* MilestoneView.xib in Resources */,
 				421BBD571AECAD36000E066B /* thermometer-transparent.png in Resources */,
 				422B2B7C1AEC9323000E0A90 /* CheckGreyTransparent.png in Resources */,
 				42898CDA1AED0C9B008421D8 /* FinalViewController.xib in Resources */,
@@ -506,6 +513,7 @@
 				423D897C1AEC208D004EB467 /* TimelineViewController.swift in Sources */,
 				42898CDC1AED0D97008421D8 /* TimelineView.swift in Sources */,
 				421BBD531AECAC91000E066B /* EmotionalCheckinViewController.swift in Sources */,
+				42898CE01AED2541008421D8 /* MilestoneView.swift in Sources */,
 				42898CDE1AED2424008421D8 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

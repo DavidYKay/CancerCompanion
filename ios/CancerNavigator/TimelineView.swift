@@ -27,6 +27,7 @@ struct Milestone {
     var checkmark: Checkmark
 }
 
+
 public class TimelineView : UIView {
 
     var milestoneLabels: [UILabel]!
@@ -51,6 +52,7 @@ public class TimelineView : UIView {
       ]
 
         self.milestoneLabels = []
+//        self. = []
         for milestone in milestones {
           let label = UILabel()
           label.text = milestone.name
