@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
 //        self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: onButtonPressed)
         self.navigationItem.title = "Welcome"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Continue", style: .Plain, target: self, action: "onDone")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Timeline", style: .Plain, target: self, action: "onDone")
         
         let scrollPageController = TTScrollSlidingPagesController()
         
@@ -46,7 +46,7 @@ class WelcomeViewController: UIViewController {
     }
 
     func onDone() {
-        let roadmapVc = RoadmapViewController(nibName: "RoadmapViewController", bundle: nil)
+        let roadmapVc = TimelineViewController(nibName: "TimelineViewController", bundle: nil)
         self.navigationController?.pushViewController(roadmapVc, animated: true)
     }
     

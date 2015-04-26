@@ -4,4 +4,4 @@
 
 #import "Math.h"
 #import "TTScrollSlidingPagesController.h"
-//#import "TSMessageView.h"
+#import <Firebase/Firebase.h>
