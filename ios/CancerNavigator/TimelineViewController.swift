@@ -25,12 +25,10 @@ class TimelineViewController: UIViewController {
 	      switch action.style{
 	      case .Default:
 		SocketService().logAppointmentConfirmed()
-
 	      case .Cancel:
-	      println("cancel")
-
+		println("cancel")
 	      case .Destructive:
-	      println("destructive")
+		println("destructive")
 	      }
 	}
 	var alert = UIAlertController(title: "Reminder", message: message, preferredStyle: UIAlertControllerStyle.Alert)

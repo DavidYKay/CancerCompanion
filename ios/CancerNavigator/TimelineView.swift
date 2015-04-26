@@ -90,6 +90,7 @@ public class TimelineView : UIScrollView {
          width:  contentWidth,
          height:  HorizontalLineHeight)
       self.addSubview(horizontalLine)
+
     }
         
     required public init(coder aDecoder: NSCoder) {
