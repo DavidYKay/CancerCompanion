@@ -8,17 +8,31 @@
 
 import UIKit
 
-class EmotionalCheckinViewController: UIViewController {
+class EmotionalCheckinViewController: UIViewController, ThermometerListener {
 
+    @IBOutlet weak var currentValueLabel: UILabel!
+    @IBOutlet weak var thermometerView: ThermometerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "Emotional Checkin"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "onDone")        
+        
+        self.thermometerView.listener = self
+        
+    }
+    
+    func onNewThermometerValue(thermometerValue: Int) {
+        self.currentValueLabel.text = "Current value: \(thermometerValue)" 
     }
 
     func onDone() {
-
+        let vc = FinalViewController(nibName: "FinalViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
+    
 }
 
