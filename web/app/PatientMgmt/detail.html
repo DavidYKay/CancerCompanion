@@ -18,15 +18,15 @@
   <div class="large-12 column">
     <table>
       <thead>
-        <th width="200">Surgical Visit Completed</th>
-        <th width="200">Attendence Confirmed</th>
-        <th width="200">Emotional Checkup Completed</th>
+        <th width="200">Appointment Confirmed</th>
+        <th width="200">Survey Completed</th>
+        <th width="200">Emotional Checkin Completed</th>
       </thead>
       <tbody>
         <tr>
           <td><a ng-click="reverse('appt')"><i class="size-36" ng-class="{'foundicon-checkmark': checkpoints.appointmentConfirmed, 'foundicon-remove': !checkpoints.appointmentConfirmed}"></i></a></td>
           <td><a ng-click="reverse('survey')"><i class="size-36" ng-class="{'foundicon-checkmark': checkpoints.survey, 'foundicon-remove': !checkpoints.survey}"></i></a></td>
-          <td><a ng-click="reverse('emote')"><i class="size-36" ng-class="{'foundicon-checkmark': checkpoints.emotionalCheckin, 'foundicon-remove': !checkpoints.emotionalCheckin}"></i></a></td>
+          <td><i class="size-36" ng-class="{'foundicon-remove': checkpoints.emotionalCheckin==0}"></i>{{checkpoints.emotionalCheckin > 0 ? checkpoints.emotionalCheckin : ""}}</td>
         </tr>
       </tbody>
     </table>
