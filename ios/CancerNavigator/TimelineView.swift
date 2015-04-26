@@ -51,7 +51,6 @@ public class TimelineView : UIScrollView {
       ]
 
 
-
         var xOffset: CGFloat = 40
         let interval: CGFloat = 120
         let yPos: CGFloat = 0

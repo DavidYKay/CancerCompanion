@@ -10,7 +10,43 @@ import UIKit
 
 public class MilestoneView : UIView {
     
-    var milestone: Milestone?
+//    var milestone: Milestone?
+
+  var milestone: Milestone? {
+    didSet {
+      if (milestone != nil) {
+        let unwrapped = milestone!
+
+        switch unwrapped.type {
+          case .Major:
+            println("major")
+          case .Minor:
+              println("minor")
+        }
+
+        if (unwrapped.day != nil) {
+          dateLabel.hidden = false
+        } else {
+          dateLabel.hidden = true
+        }
+
+        if (unwrapped.time != nil) {
+          timeLabel.hidden = false
+        } else {
+          timeLabel.hidden = true
+        }
+
+        switch unwrapped.checkmark {
+          case .None:
+            println("None")
+          case .Pending:
+              println("Pending")
+          case .Completed:
+                println("Completed")
+        }
+      }
+    }
+  }
 
    // @IBOutlet weak var nameLabel: UILabel!
    // @IBOutlet weak var checkmarkButton: UIButton!
