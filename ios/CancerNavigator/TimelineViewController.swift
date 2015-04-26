@@ -16,20 +16,15 @@ class TimelineViewController: UIViewController {
 
       self.navigationItem.title = "Timeline"
       
-      SwiftEventBus.onMainThread(self, name: "ReminderConfirmed") { result in
-	println("received: ReminderConfirmed")
-	SocketService().logAppointmentConfirmed()
-      }
-      
      SwiftEventBus.onMainThread(self, name: "ShowReminder") { result in
 	println("received: ShowReminder")
 
-	  let message = StringService().getString("AppointmentReminder")
+	let message = StringService().getString("AppointmentReminder")
 
 	let handler: (UIAlertAction!) -> Void = { action in
 	      switch action.style{
 	      case .Default:
-	      println("default")
+		SocketService().logAppointmentConfirmed()
 
 	      case .Cancel:
 	      println("cancel")
