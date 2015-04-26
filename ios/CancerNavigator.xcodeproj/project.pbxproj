@@ -17,6 +17,11 @@
 		422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */; };
 		422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */; };
 		422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B701AEC8D77000E0A90 /* CheckGrey.png */; };
+		422B2B791AEC9323000E0A90 /* CheckGreenTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B741AEC9323000E0A90 /* CheckGreenTransparent.png */; };
+		422B2B7A1AEC9323000E0A90 /* CheckGreenTransparentOutside.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B751AEC9323000E0A90 /* CheckGreenTransparentOutside.png */; };
+		422B2B7C1AEC9323000E0A90 /* CheckGreyTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B771AEC9323000E0A90 /* CheckGreyTransparent.png */; };
+		422B2B7D1AEC9323000E0A90 /* CheckGreyTransparentOutside.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B781AEC9323000E0A90 /* CheckGreyTransparentOutside.png */; };
+		422B2B801AEC94CF000E0A90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B7F1AEC94CF000E0A90 /* Localizable.strings */; };
 		423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89571AEC1A53004EB467 /* AppDelegate.swift */; };
 		423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89591AEC1A53004EB467 /* ViewController.swift */; };
 		423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423D895B1AEC1A53004EB467 /* Main.storyboard */; };
@@ -60,6 +65,11 @@
 		422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breastcancermain.png; sourceTree = "<group>"; };
 		422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreen.png; sourceTree = "<group>"; };
 		422B2B701AEC8D77000E0A90 /* CheckGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGrey.png; sourceTree = "<group>"; };
+		422B2B741AEC9323000E0A90 /* CheckGreenTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreenTransparent.png; sourceTree = "<group>"; };
+		422B2B751AEC9323000E0A90 /* CheckGreenTransparentOutside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreenTransparentOutside.png; sourceTree = "<group>"; };
+		422B2B771AEC9323000E0A90 /* CheckGreyTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreyTransparent.png; sourceTree = "<group>"; };
+		422B2B781AEC9323000E0A90 /* CheckGreyTransparentOutside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreyTransparentOutside.png; sourceTree = "<group>"; };
+		422B2B7F1AEC94CF000E0A90 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		423D89521AEC1A52004EB467 /* CancerNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CancerNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423D89561AEC1A52004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423D89571AEC1A53004EB467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 		422B2B6C1AEC8D77000E0A90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				422B2B7E1AEC94B7000E0A90 /* Strings */,
 				422B2B6D1AEC8D77000E0A90 /* Images */,
 			);
 			path = Resources;
@@ -151,10 +162,22 @@
 			isa = PBXGroup;
 			children = (
 				422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */,
+				422B2B741AEC9323000E0A90 /* CheckGreenTransparent.png */,
+				422B2B751AEC9323000E0A90 /* CheckGreenTransparentOutside.png */,
+				422B2B771AEC9323000E0A90 /* CheckGreyTransparent.png */,
+				422B2B781AEC9323000E0A90 /* CheckGreyTransparentOutside.png */,
 				422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */,
 				422B2B701AEC8D77000E0A90 /* CheckGrey.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		422B2B7E1AEC94B7000E0A90 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				422B2B7F1AEC94CF000E0A90 /* Localizable.strings */,
+			);
+			name = Strings;
 			sourceTree = "<group>";
 		};
 		423D89491AEC1A52004EB467 = {
@@ -373,8 +396,12 @@
 				423D89C41AEC5242004EB467 /* ChecklistViewController.xib in Resources */,
 				422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */,
 				423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */,
+				422B2B7A1AEC9323000E0A90 /* CheckGreenTransparentOutside.png in Resources */,
 				423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */,
+				422B2B801AEC94CF000E0A90 /* Localizable.strings in Resources */,
 				422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */,
+				422B2B7D1AEC9323000E0A90 /* CheckGreyTransparentOutside.png in Resources */,
+				422B2B7C1AEC9323000E0A90 /* CheckGreyTransparent.png in Resources */,
 				423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */,
 				423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */,
 				423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */,
@@ -383,6 +410,7 @@
 				423D89C61AEC524C004EB467 /* ChatViewController.xib in Resources */,
 				422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */,
 				423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */,
+				422B2B791AEC9323000E0A90 /* CheckGreenTransparent.png in Resources */,
 				20BB4F521AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib in Resources */,
 				20BB4F4F1AEC61D20013DDC9 /* PopUpViewController.xib in Resources */,
 			);
