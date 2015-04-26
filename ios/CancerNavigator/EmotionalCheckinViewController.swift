@@ -17,7 +17,11 @@ class EmotionalCheckinViewController: UIViewController {
 
         let blueLayer = ColorService().blueGradient()
         blueLayer.frame = self.view.bounds;
-        self.view.layer.insertSublayer(blueLayer, atIndex:0)
+
+        let rgLayer = ColorService().thermometerGradient()
+        rgLayer.frame = self.view.bounds;
+
+        self.view.layer.insertSublayer(rgLayer, atIndex:0)
     }
 
     func onDone() {

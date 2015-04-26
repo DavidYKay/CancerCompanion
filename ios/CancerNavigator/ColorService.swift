@@ -51,6 +51,25 @@ class ColorService {
       return headerLayer;
     
     }
+    
+    func thermometerGradient() -> CAGradientLayer {
+    
+      let colorOne = UIColor(red:1.0, green:0, blue:0, alpha:1.0)
+      let colorTwo = UIColor(red:0 , green:1 , blue:0 , alpha:1.0)
+      
+      let colors = [colorOne.CGColor, colorTwo.CGColor]
+      let stopOne = NSNumber(double:0.0)
+      let stopTwo = NSNumber(double:1.0)
+      
+      let locations = [ stopOne, stopTwo];
+      
+      let headerLayer: CAGradientLayer = CAGradientLayer()
+      headerLayer.colors = colors;
+      headerLayer.locations = locations;
+      
+      return headerLayer;
+    
+    }
 
     
 //  let thermometerGradient = dynamicGradiant(UIColor.greenColor(), UIColor.redColor())
