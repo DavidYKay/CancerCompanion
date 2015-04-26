@@ -69,7 +69,7 @@
 		422B2B751AEC9323000E0A90 /* CheckGreenTransparentOutside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreenTransparentOutside.png; sourceTree = "<group>"; };
 		422B2B771AEC9323000E0A90 /* CheckGreyTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreyTransparent.png; sourceTree = "<group>"; };
 		422B2B781AEC9323000E0A90 /* CheckGreyTransparentOutside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreyTransparentOutside.png; sourceTree = "<group>"; };
-		422B2B7F1AEC94CF000E0A90 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		422B2B7F1AEC94CF000E0A90 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		423D89521AEC1A52004EB467 /* CancerNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CancerNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423D89561AEC1A52004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423D89571AEC1A53004EB467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
