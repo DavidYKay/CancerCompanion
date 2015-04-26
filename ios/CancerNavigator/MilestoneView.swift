@@ -14,6 +14,7 @@ public class MilestoneView : UIView {
   @IBOutlet weak var checkmarkButton: UIButton!
   @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet weak var timeLabel: UILabel!
+  @IBOutlet weak var minorNameLabel: UILabel!
   @IBOutlet weak var dateDividingLine: UIView!
   @IBOutlet weak var verticalLine: UIView!
   @IBOutlet weak var arrow: UIView!
@@ -28,14 +29,17 @@ public class MilestoneView : UIView {
 
         switch unwrapped.type {
           case .Major:
-            self.verticalLine.hidden = false
-//            self.arrow.hidden = true
+            verticalLine.hidden = false
+            arrow.hidden = true
+            minorNameLabel.hidden = true
+            nameButton.setTitle(unwrapped.name, forState: UIControlState.Normal)
           case .Minor:
-            self.verticalLine.hidden = true
-//            self.arrow.hidden = false
+            verticalLine.hidden = true
+            arrow.hidden = false
+            minorNameLabel.hidden = false
+            minorNameLabel.text = unwrapped.name
         }
 
-        nameButton.setTitle(unwrapped.name, forState: UIControlState.Normal)
 
         if (unwrapped.day != nil) {
           dateLabel.hidden = false

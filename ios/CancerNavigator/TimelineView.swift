@@ -55,8 +55,10 @@ public class TimelineView : UIScrollView {
         let interval: CGFloat = 120
         let yPos: CGFloat = 0
         let milestoneWidth: CGFloat = 80
-        let milestoneHeight = self.bounds.size.height
 
+        let myBoundsHeight = self.bounds.size.height - 40
+
+        let milestoneHeight = myBoundsHeight
 
         self.milestoneViews = []
         for milestone in milestones {
@@ -74,7 +76,7 @@ public class TimelineView : UIScrollView {
         }
         
       let contentWidth: CGFloat = interval * CGFloat(milestones.count)
-      let contentHeight: CGFloat = (self.bounds.size.height) - 40
+      let contentHeight: CGFloat = myBoundsHeight
       self.contentSize = CGSize(width: contentWidth, height: contentHeight)
     }
         
