@@ -74,7 +74,8 @@ public class TimelineView : UIScrollView {
         }
         
       let contentWidth: CGFloat = interval * CGFloat(milestones.count)
-      self.contentSize = CGSize(width: contentWidth, height: (self.bounds.size.height))
+      let contentHeight: CGFloat = (self.bounds.size.height) - 40
+      self.contentSize = CGSize(width: contentWidth, height: contentHeight)
     }
         
     required public init(coder aDecoder: NSCoder) {

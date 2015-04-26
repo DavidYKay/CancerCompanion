@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MilestoneView" customModule="CancerNavigator" customModuleProvider="target"/>
@@ -12,7 +13,9 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DME-UF-U6W">
                     <rect key="frame" x="8" y="4" width="99" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Diagnosis">
+                        <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -30,7 +33,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="May 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-Vr-1jK">
                     <rect key="frame" x="27" y="188" width="61" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-Il-qAn" userLabel="Date Dividing Line">
@@ -40,7 +43,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdL-hx-dQy">
                     <rect key="frame" x="27" y="223" width="61" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-f7-XNe">
@@ -54,6 +57,19 @@
                         <action selector="checkmarkWasPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Re-h5-a5a"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="arrow-thick-transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="w4D-Bt-kWO">
+                    <rect key="frame" x="51" y="103" width="56" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="w4D-Bt-kWO" secondAttribute="height" multiplier="56:79" id="G3u-wp-EL1"/>
+                        <constraint firstAttribute="width" constant="56" id="V1M-4t-w5g"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minor" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G2-cX-xKc">
+                    <rect key="frame" x="47" y="86" width="64" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -67,7 +83,9 @@
                 <constraint firstAttribute="bottom" secondItem="Z9i-f7-XNe" secondAttribute="bottom" constant="8" id="RnP-Ri-zqG"/>
                 <constraint firstAttribute="centerX" secondItem="ins-fC-7qK" secondAttribute="centerX" id="VWU-Jw-Zdx"/>
                 <constraint firstAttribute="centerX" secondItem="2gj-Vr-1jK" secondAttribute="centerX" id="aSg-Zs-hz3"/>
+                <constraint firstItem="2gj-Vr-1jK" firstAttribute="top" secondItem="w4D-Bt-kWO" secondAttribute="bottom" constant="6" id="baM-KT-gPB"/>
                 <constraint firstItem="DME-UF-U6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="cTJ-zs-VeF"/>
+                <constraint firstItem="w4D-Bt-kWO" firstAttribute="leading" secondItem="ins-fC-7qK" secondAttribute="trailing" constant="-7" id="fKz-l9-iZ0"/>
                 <constraint firstItem="Z9i-f7-XNe" firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" constant="-0.5" id="qi1-tT-vGe"/>
                 <constraint firstAttribute="centerX" secondItem="DME-UF-U6W" secondAttribute="centerX" id="qng-eQ-Rjc"/>
                 <constraint firstItem="Zvd-Il-qAn" firstAttribute="top" secondItem="2gj-Vr-1jK" secondAttribute="bottom" constant="4" id="wEb-6a-bSa"/>
@@ -93,5 +111,6 @@
     </objects>
     <resources>
         <image name="CheckGreen.png" width="72" height="72"/>
+        <image name="arrow-thick-transparent.png" width="169" height="184"/>
     </resources>
 </document>

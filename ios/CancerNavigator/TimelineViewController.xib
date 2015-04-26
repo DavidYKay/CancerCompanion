@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7531"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimelineViewController" customModule="CancerNavigator" customModuleProvider="target">
@@ -14,37 +14,16 @@
             <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-UF-fKE">
-                    <rect key="frame" x="239" y="14" width="90" height="30"/>
-                    <state key="normal" title="Show Survey">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onShowSurveyPressed:" destination="-1" eventType="touchUpInside" id="bNL-t2-DK1"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-VJ-HyZ" customClass="TimelineView" customModule="CancerNavigator" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="72" width="568" height="248"/>
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-Mz-Pzd">
-                    <rect key="frame" x="198" y="41" width="172" height="30"/>
-                    <state key="normal" title="Show Emotional Checkin">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onShowEmotionPressed:" destination="-1" eventType="touchUpInside" id="hnE-JO-1ec"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="SJG-Mz-Pzd" firstAttribute="top" secondItem="gFr-UF-fKE" secondAttribute="bottom" constant="8" id="0rX-Qs-WRq"/>
-                <constraint firstItem="tUJ-VJ-HyZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0vp-jc-OAh"/>
-                <constraint firstItem="gFr-UF-fKE" firstAttribute="centerX" secondItem="SJG-Mz-Pzd" secondAttribute="centerX" id="9hl-Pb-f8b"/>
+                <constraint firstItem="tUJ-VJ-HyZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0vp-jc-OAh"/>
                 <constraint firstAttribute="bottom" secondItem="tUJ-VJ-HyZ" secondAttribute="bottom" id="bBu-CV-279"/>
-                <constraint firstAttribute="centerX" secondItem="gFr-UF-fKE" secondAttribute="centerX" id="mGd-by-d5b"/>
-                <constraint firstAttribute="trailing" secondItem="tUJ-VJ-HyZ" secondAttribute="trailing" constant="8" id="oo2-3t-h4S"/>
+                <constraint firstAttribute="trailing" secondItem="tUJ-VJ-HyZ" secondAttribute="trailing" id="oo2-3t-h4S"/>
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
