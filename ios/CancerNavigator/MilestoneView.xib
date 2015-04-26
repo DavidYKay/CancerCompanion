@@ -40,8 +40,12 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-f7-XNe">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-f7-XNe">
                     <rect key="frame" x="27" y="252" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="b0V-5d-en1"/>
+                        <constraint firstAttribute="height" constant="60" id="z0a-LZ-Zyb"/>
+                    </constraints>
                     <state key="normal" title="Checkmark" image="CheckGreen.png"/>
                 </button>
             </subviews>
@@ -49,6 +53,7 @@
             <constraints>
                 <constraint firstItem="Z9i-f7-XNe" firstAttribute="top" secondItem="JdL-hx-dQy" secondAttribute="bottom" constant="8" id="1Uj-KV-b6D"/>
                 <constraint firstItem="JdL-hx-dQy" firstAttribute="top" secondItem="Zvd-Il-qAn" secondAttribute="bottom" constant="8" id="1aN-Wj-585"/>
+                <constraint firstAttribute="centerX" secondItem="Z9i-f7-XNe" secondAttribute="centerX" constant="0.5" id="Fel-BA-OPb"/>
                 <constraint firstAttribute="centerX" secondItem="Z9i-f7-XNe" secondAttribute="centerX" constant="0.5" id="Fwj-h5-Lua"/>
                 <constraint firstItem="2gj-Vr-1jK" firstAttribute="top" secondItem="ins-fC-7qK" secondAttribute="bottom" constant="11" id="HSe-ck-Jks"/>
                 <constraint firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" id="MpE-pr-6LM"/>
@@ -58,6 +63,7 @@
                 <constraint firstItem="9AB-7c-qIp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="Wed-BH-tPj"/>
                 <constraint firstAttribute="centerX" secondItem="2gj-Vr-1jK" secondAttribute="centerX" id="aSg-Zs-hz3"/>
                 <constraint firstAttribute="centerX" secondItem="9AB-7c-qIp" secondAttribute="centerX" constant="0.5" id="dOD-GA-oK7"/>
+                <constraint firstItem="Z9i-f7-XNe" firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" constant="-0.5" id="qi1-tT-vGe"/>
                 <constraint firstItem="Zvd-Il-qAn" firstAttribute="top" secondItem="2gj-Vr-1jK" secondAttribute="bottom" constant="4" id="wEb-6a-bSa"/>
                 <constraint firstItem="ins-fC-7qK" firstAttribute="top" secondItem="9AB-7c-qIp" secondAttribute="bottom" constant="8" id="wjN-Ba-JVD"/>
                 <constraint firstAttribute="centerX" secondItem="Zvd-Il-qAn" secondAttribute="centerX" id="xo2-Rv-77j"/>
@@ -66,6 +72,8 @@
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="Wed-BH-tPj"/>
+                    <exclude reference="Fwj-h5-Lua"/>
+                    <exclude reference="qi1-tT-vGe"/>
                 </mask>
             </variation>
             <connections>
