@@ -7,42 +7,33 @@
 //
 
 import UIKit
+import SwiftEventBus
 
-public class NotificationService {
+
+public class NotificationService  {
  
   let stringService: StringService = StringService()
     
-  public func showNotification() {
-    println("showNotification()")
-//"AppointmentReminder" = "Your scan is scheduled for 9:00am on May 7th at 830 Main St. First floor.";
-//"AppointmentReminderOK" = "Confirm";
-//"AppointmentReminderCancel" = "Reschedule";
-//"PopUpBoobText" = "This is where your cancer started.";
-//"PopUpLymphNodeText" = "This is where your cancer spreads first.";
-    
-    let alert = UIAlertView(title: "Appointment Reminder",
-        message: stringService.getString("AppointmentReminder"),
-        delegate:self,
-        cancelButtonTitle:"OK")
-      alert.show()
+    public func showNotification() {
+        println("showNotification()")
+	
+        SwiftEventBus.post("ShowReminder")
+    }
+
+  func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+    println("clicked button: \(buttonIndex)")
+      SocketService().logAppointmentConfirmed()
   }
 
   public func scheduleNotification() {
     println("scheduleNotification()")
-    //let date = NSDate()
     let date = NSDate(timeIntervalSinceNow: 5)
-    // dateWithTimeIntervalSinceNow:60];
 
     let localNotification: UILocalNotification = UILocalNotification()
     localNotification.fireDate = date
     localNotification.alertBody = "Hello world"
     localNotification.alertAction = "Show me the item"
-//    localNotification.timeZone = NSTimeZone.defaultTimeZone()
-    // localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
 
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-
-
   }
-
 }

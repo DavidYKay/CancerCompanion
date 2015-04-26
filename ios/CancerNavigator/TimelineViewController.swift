@@ -15,11 +15,38 @@ class TimelineViewController: UIViewController {
     super.viewDidLoad()
 
       self.navigationItem.title = "Timeline"
+      
+      SwiftEventBus.onMainThread(self, name: "ReminderConfirmed") { result in
+	println("received: ReminderConfirmed")
+	SocketService().logAppointmentConfirmed()
+      }
+      
+     SwiftEventBus.onMainThread(self, name: "ShowReminder") { result in
+	println("received: ShowReminder")
+
+	  let message = StringService().getString("AppointmentReminder")
+
+	let handler: (UIAlertAction!) -> Void = { action in
+	      switch action.style{
+	      case .Default:
+	      println("default")
+
+	      case .Cancel:
+	      println("cancel")
+
+	      case .Destructive:
+	      println("destructive")
+	      }
+	}
+	var alert = UIAlertController(title: "Reminder", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+	alert.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: handler))
+	alert.addAction(UIAlertAction(title: "Postpone", style: .Cancel, handler: handler))
+	self.presentViewController(alert, animated: true, completion: nil)
+      }
 
       SwiftEventBus.onMainThread(self, name: "Reminder") { result in
 	println("received: Reminder")
-
-	  self.onScheduleNotification()
+	self.onScheduleNotification()
       }
 
     SwiftEventBus.onMainThread(self, name: "Survey") { result in
@@ -31,8 +58,6 @@ class TimelineViewController: UIViewController {
       println("received: Emo. Check")
 	self.onShowEmotionPressed(self)
     }
-
-    //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
   }
 
     func onScheduleNotification() {
@@ -43,7 +68,6 @@ class TimelineViewController: UIViewController {
             selector:Selector("onFireNotification"),
         userInfo: nil,
             repeats:false)
-
     }
 
     func onFireNotification() {
@@ -55,8 +79,6 @@ class TimelineViewController: UIViewController {
     @IBAction func onShowEmotionPressed(sender: AnyObject) {
         let vc = EmotionalCheckinViewController(nibName: "EmotionalCheckinViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
-
-
     }
     
     @IBAction func onShowSurveyPressed(sender: AnyObject) {
