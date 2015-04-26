@@ -15,7 +15,7 @@ class TimelineViewController: UIViewController {
 
         self.navigationItem.title = "Timeline"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
+        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
     }
 
     func onScheduleNotification() {

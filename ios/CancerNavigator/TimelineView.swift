@@ -43,7 +43,7 @@ public class TimelineView : UIScrollView {
         Milestone(type: MilestoneType.Major , name: "CT Scan"           , day: "May 7" , time: "9AM"  , checkmark: Checkmark.Pending)   , 
         Milestone(type: MilestoneType.Minor , name: "Survey"  , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
         Milestone(type: MilestoneType.Major , name: "Appointment"       , day: nil     , time: nil    , checkmark: Checkmark.Pending)   , 
-        Milestone(type: MilestoneType.Minor , name: "Emot. Check-in" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Minor , name: "Emo. Check" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
 
         //// Long term
         Milestone(type: MilestoneType.Major , name: "Surgery"           , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
@@ -53,10 +53,10 @@ public class TimelineView : UIScrollView {
         Milestone(type: MilestoneType.Major , name: "Survivor"          , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
       ]
 
-       var xOffset: CGFloat = 40
-       let interval: CGFloat = 120
+       var xOffset: CGFloat = 10
+       let interval: CGFloat = 130
        let yPos: CGFloat = 0
-       let milestoneWidth: CGFloat = 80
+       let milestoneWidth: CGFloat = 120
 
        let myBoundsHeight = self.bounds.size.height - 40
 
