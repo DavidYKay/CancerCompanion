@@ -14,6 +14,8 @@
 		20BB4F521AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20BB4F431AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib */; };
 		20BB4F531AEC61D20013DDC9 /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB4F441AEC61D20013DDC9 /* PopUpViewControllerSwift.swift */; };
 		21A6C6BED0EA48B1D7AC6136 /* libPods-CancerNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9707933470A15B9A8BD03A /* libPods-CancerNavigator.a */; };
+		421BBD531AECAC91000E066B /* EmotionalCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */; };
+		421BBD551AECAC9D000E066B /* EmotionalCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */; };
 		422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */; };
 		422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */; };
 		422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B701AEC8D77000E0A90 /* CheckGrey.png */; };
@@ -23,23 +25,16 @@
 		422B2B7D1AEC9323000E0A90 /* CheckGreyTransparentOutside.png in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B781AEC9323000E0A90 /* CheckGreyTransparentOutside.png */; };
 		422B2B801AEC94CF000E0A90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422B2B7F1AEC94CF000E0A90 /* Localizable.strings */; };
 		423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89571AEC1A53004EB467 /* AppDelegate.swift */; };
-		423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89591AEC1A53004EB467 /* ViewController.swift */; };
 		423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423D895B1AEC1A53004EB467 /* Main.storyboard */; };
 		423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423D895E1AEC1A53004EB467 /* Images.xcassets */; };
 		423D89621AEC1A53004EB467 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89601AEC1A53004EB467 /* LaunchScreen.xib */; };
 		423D896E1AEC1A53004EB467 /* CancerNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */; };
 		423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89771AEC2076004EB467 /* WelcomeViewController.swift */; };
-		423D897A1AEC2084004EB467 /* RoadmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89791AEC2084004EB467 /* RoadmapViewController.swift */; };
 		423D897C1AEC208D004EB467 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D897B1AEC208D004EB467 /* TimelineViewController.swift */; };
-		423D89821AEC20B6004EB467 /* NodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89811AEC20B6004EB467 /* NodeDetailViewController.swift */; };
 		423D89B41AEC2969004EB467 /* TimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B31AEC2969004EB467 /* TimelineViewController.xib */; };
-		423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */; };
-		423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89B71AEC297B004EB467 /* RoadmapViewController.xib */; };
 		423D89BD1AEC45BD004EB467 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D89BC1AEC45BD004EB467 /* Math.m */; };
-		423D89C01AEC513E004EB467 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89BF1AEC513E004EB467 /* ChatViewController.swift */; };
 		423D89C21AEC5154004EB467 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89C11AEC5154004EB467 /* ChecklistViewController.swift */; };
 		423D89C41AEC5242004EB467 /* ChecklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89C31AEC5242004EB467 /* ChecklistViewController.xib */; };
-		423D89C61AEC524C004EB467 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423D89C51AEC524C004EB467 /* ChatViewController.xib */; };
 		423D89C81AEC5EFF004EB467 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D89C71AEC5EFF004EB467 /* SocketService.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +57,8 @@
 		20BB4F421AEC61D20013DDC9 /* PopUpViewController_iPhone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6.xib; sourceTree = "<group>"; };
 		20BB4F431AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6Plus.xib; sourceTree = "<group>"; };
 		20BB4F441AEC61D20013DDC9 /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
+		421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalCheckinViewController.swift; sourceTree = "<group>"; };
+		421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionalCheckinViewController.xib; sourceTree = "<group>"; };
 		422B2B6E1AEC8D77000E0A90 /* breastcancermain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breastcancermain.png; sourceTree = "<group>"; };
 		422B2B6F1AEC8D77000E0A90 /* CheckGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGreen.png; sourceTree = "<group>"; };
 		422B2B701AEC8D77000E0A90 /* CheckGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckGrey.png; sourceTree = "<group>"; };
@@ -73,7 +70,6 @@
 		423D89521AEC1A52004EB467 /* CancerNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CancerNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423D89561AEC1A52004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423D89571AEC1A53004EB467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		423D89591AEC1A53004EB467 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		423D895C1AEC1A53004EB467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		423D895E1AEC1A53004EB467 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		423D89611AEC1A53004EB467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,19 +77,13 @@
 		423D896C1AEC1A53004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423D896D1AEC1A53004EB467 /* CancerNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerNavigatorTests.swift; sourceTree = "<group>"; };
 		423D89771AEC2076004EB467 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		423D89791AEC2084004EB467 /* RoadmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadmapViewController.swift; sourceTree = "<group>"; };
 		423D897B1AEC208D004EB467 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
-		423D89811AEC20B6004EB467 /* NodeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeDetailViewController.swift; sourceTree = "<group>"; };
 		423D89B31AEC2969004EB467 /* TimelineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineViewController.xib; sourceTree = "<group>"; };
-		423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodeDetailViewController.xib; sourceTree = "<group>"; };
-		423D89B71AEC297B004EB467 /* RoadmapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoadmapViewController.xib; sourceTree = "<group>"; };
 		423D89BB1AEC45BC004EB467 /* CancerNavigator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CancerNavigator-Bridging-Header.h"; sourceTree = "<group>"; };
 		423D89BC1AEC45BD004EB467 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		423D89BE1AEC45CC004EB467 /* Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
-		423D89BF1AEC513E004EB467 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		423D89C11AEC5154004EB467 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		423D89C31AEC5242004EB467 /* ChecklistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistViewController.xib; sourceTree = "<group>"; };
-		423D89C51AEC524C004EB467 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		423D89C71AEC5EFF004EB467 /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		73882DDD796B2237CDD9F3B3 /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
 		A7A4A6696F864F18B6A5330F /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CancerNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -248,13 +238,10 @@
 		423D897D1AEC2091004EB467 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				423D89591AEC1A53004EB467 /* ViewController.swift */,
 				423D89771AEC2076004EB467 /* WelcomeViewController.swift */,
-				423D89791AEC2084004EB467 /* RoadmapViewController.swift */,
 				423D897B1AEC208D004EB467 /* TimelineViewController.swift */,
-				423D89811AEC20B6004EB467 /* NodeDetailViewController.swift */,
-				423D89BF1AEC513E004EB467 /* ChatViewController.swift */,
 				423D89C11AEC5154004EB467 /* ChecklistViewController.swift */,
+				421BBD521AECAC91000E066B /* EmotionalCheckinViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -285,10 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				423D89B31AEC2969004EB467 /* TimelineViewController.xib */,
-				423D89B51AEC2974004EB467 /* NodeDetailViewController.xib */,
-				423D89B71AEC297B004EB467 /* RoadmapViewController.xib */,
 				423D89C31AEC5242004EB467 /* ChecklistViewController.xib */,
-				423D89C51AEC524C004EB467 /* ChatViewController.xib */,
+				421BBD541AECAC9D000E066B /* EmotionalCheckinViewController.xib */,
 			);
 			name = NIBs;
 			sourceTree = "<group>";
@@ -397,7 +382,6 @@
 				422B2B711AEC8D77000E0A90 /* breastcancermain.png in Resources */,
 				423D895D1AEC1A53004EB467 /* Main.storyboard in Resources */,
 				422B2B7A1AEC9323000E0A90 /* CheckGreenTransparentOutside.png in Resources */,
-				423D89B61AEC2974004EB467 /* NodeDetailViewController.xib in Resources */,
 				422B2B801AEC94CF000E0A90 /* Localizable.strings in Resources */,
 				422B2B721AEC8D77000E0A90 /* CheckGreen.png in Resources */,
 				422B2B7D1AEC9323000E0A90 /* CheckGreyTransparentOutside.png in Resources */,
@@ -407,9 +391,8 @@
 				423D895F1AEC1A53004EB467 /* Images.xcassets in Resources */,
 				20BB4F501AEC61D20013DDC9 /* PopUpViewController_iPad.xib in Resources */,
 				20BB4F511AEC61D20013DDC9 /* PopUpViewController_iPhone6.xib in Resources */,
-				423D89C61AEC524C004EB467 /* ChatViewController.xib in Resources */,
+				421BBD551AECAC9D000E066B /* EmotionalCheckinViewController.xib in Resources */,
 				422B2B731AEC8D77000E0A90 /* CheckGrey.png in Resources */,
-				423D89B81AEC297B004EB467 /* RoadmapViewController.xib in Resources */,
 				422B2B791AEC9323000E0A90 /* CheckGreenTransparent.png in Resources */,
 				20BB4F521AEC61D20013DDC9 /* PopUpViewController_iPhone6Plus.xib in Resources */,
 				20BB4F4F1AEC61D20013DDC9 /* PopUpViewController.xib in Resources */,
@@ -466,15 +449,12 @@
 				423D89C81AEC5EFF004EB467 /* SocketService.swift in Sources */,
 				423D89781AEC2076004EB467 /* WelcomeViewController.swift in Sources */,
 				423D89C21AEC5154004EB467 /* ChecklistViewController.swift in Sources */,
-				423D89821AEC20B6004EB467 /* NodeDetailViewController.swift in Sources */,
-				423D89C01AEC513E004EB467 /* ChatViewController.swift in Sources */,
 				423D89BD1AEC45BD004EB467 /* Math.m in Sources */,
 				20BB4F531AEC61D20013DDC9 /* PopUpViewControllerSwift.swift in Sources */,
-				423D897A1AEC2084004EB467 /* RoadmapViewController.swift in Sources */,
-				423D895A1AEC1A53004EB467 /* ViewController.swift in Sources */,
 				20BB4F4E1AEC61D20013DDC9 /* PopUpViewController.m in Sources */,
 				423D89581AEC1A53004EB467 /* AppDelegate.swift in Sources */,
 				423D897C1AEC208D004EB467 /* TimelineViewController.swift in Sources */,
+				421BBD531AECAC91000E066B /* EmotionalCheckinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
