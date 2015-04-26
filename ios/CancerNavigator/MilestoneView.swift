@@ -24,6 +24,8 @@ public class MilestoneView : UIView {
               println("minor")
         }
 
+        nameButton.setTitle(unwrapped.name, forState: UIControlState.Normal)
+
         if (unwrapped.day != nil) {
           dateLabel.hidden = false
           dateLabel.text = unwrapped.day
