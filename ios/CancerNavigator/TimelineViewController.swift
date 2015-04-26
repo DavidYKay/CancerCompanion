@@ -15,26 +15,32 @@ class TimelineViewController: UIViewController {
 
         self.navigationItem.title = "Timeline"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onFireNotification")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
     }
 
-    func onFireNotification() {
-        println("onFireNotification")
+    func onScheduleNotification() {
+        println("onScheduleNotification")
         
           let t = NSTimer.scheduledTimerWithTimeInterval(5.0,
             target: self, 
-            selector:Selector("onTick"),
+            selector:Selector("onFireNotification"),
         userInfo: nil, repeats:false)
 
     }
 
-    func onTick() {
-        println("onTick")
+    func onFireNotification() {
+        println("onFireNotification")
       //NotificationService().scheduleNotification()
       NotificationService().showNotification()
     }
 
+    func showSurvey() {
+        let vc = ChecklistViewController(nibName: "ChecklistViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
-
+    @IBAction func onShowSurveyPressed(sender: AnyObject) {
+        showSurvey()
+    }
 }
 
