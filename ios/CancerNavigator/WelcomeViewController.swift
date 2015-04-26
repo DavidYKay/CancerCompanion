@@ -46,20 +46,18 @@ class WelcomeViewController: UIViewController {
         self.navigationController?.pushViewController(roadmapVc, animated: true)
     }
     
-    @IBAction func onButtonPressed(sender: AnyObject) {
-        
-//    if (UIDevice.currentDevice().userInterfaceIdiom == .Pad)
-//        {
+
+    @IBAction func onLymphImagePressed(sender: AnyObject) {
         self.popUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
-        self.popUpViewController.title = "This is a popup view"
-        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: "You just triggered a great popup window", animated: true)
-        //}
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.popUpViewController.title = "Lymph"
+        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: "Lymph", animated: true)
     }
 
+    @IBAction func onBreastImagePressed(sender: AnyObject) {
+        self.popUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
+        self.popUpViewController.title = "Breast"
+        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: "Breast", animated: true)
+    }
+        
 }
 

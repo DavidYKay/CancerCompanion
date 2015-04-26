@@ -29,33 +29,57 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EY-9B-Wpn">
-                                <rect key="frame" x="330" y="320" width="70" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caG-zX-ilx" userLabel="Lymph 1">
+                                <rect key="frame" x="180" y="65" width="70" height="300"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oak-hL-1Qq"/>
+                                    <action selector="onLymphImagePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2gv-T5-meS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="breastcancermain.png" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-24-gCg">
-                                <rect key="frame" x="0.0" y="180" width="595" height="306"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-lc-Kil" userLabel="Lymph 2">
+                                <rect key="frame" x="240" y="95" width="141" height="70"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLymphImagePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4K6-tf-az9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xr-UV-Aqh" userLabel="Lymph 3">
+                                <rect key="frame" x="240" y="264" width="70" height="90"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLymphImagePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RrO-nG-Tzm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EY-9B-Wpn" userLabel="Breast">
+                                <rect key="frame" x="232" y="165" width="70" height="70"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBreastImagePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fjZ-Fr-mCQ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breastcancermain.png" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-24-gCg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="298"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="DT3-24-gCg" secondAttribute="centerY" constant="-33" id="akO-dn-Vs8"/>
-                            <constraint firstAttribute="centerX" secondItem="DT3-24-gCg" secondAttribute="centerX" constant="2.5" id="nrc-0T-TMo"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MYi-9Q-Sfk"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="320"/>
+            <point key="canvasLocation" x="335" y="319"/>
         </scene>
     </scenes>
     <resources>
