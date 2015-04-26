@@ -12,41 +12,59 @@ public class MilestoneView : UIView {
     
     var milestone: Milestone?
 
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var checkmarkButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var dateDividingLine: UIView!
+
+    var containerView: UIView!
+
+    class func create() -> MilestoneView {
+        let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+     	let views = NSBundle.mainBundle().loadNibNamed("MilestoneView", owner: nil, options: options)
+        let milestoneView = views[0] as! MilestoneView
+
+        return milestoneView
+    }
     
     func baseInit() {
 
         println("milestoneView.baseInit()")
-        let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
-//        let options = nil
-     	let views = NSBundle.mainBundle().loadNibNamed("MilestoneView", owner: self, options: options)
-        let loadedView: UIView = views[0] as! UIView
-        self.addSubview(loadedView)
-//      [self addSubview:
-//         [[[NSBundle mainBundle] loadNibNamed:@"MyCustomTimerView" 
-//                                        owner:self 
-//                                      options:nil] objectAtIndex:0]];
+        //let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+     	//let views = NSBundle.mainBundle().loadNibNamed("MilestoneView", owner: self, options: options)
+        //let loadedView: UIView = views[0] as! UIView
+        //for view in loadedView.subviews {
+        //  self.addSubview(view)
+        //}
 
 	//let label = UILabel()
         //label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
     }
         
     required public init(coder aDecoder: NSCoder) {
+        println("MilestoneView initWithCoder")
       super.init(coder: aDecoder)
       baseInit()
     }
     
     override init(frame: CGRect) {
+        println("MilestoneView initWithFrame")
       super.init(frame: frame)
+
+//        let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+//     	let views = NSBundle.mainBundle().loadNibNamed("MilestoneView", owner: self, options: options)
+//        self.containerView = views[0] as! UIView
+//        self.addSubview(self.containerView)
+
       baseInit()
     }
     
     public override func layoutSubviews() {
       super.layoutSubviews()
       println("MilestoneView layoutSubviews()")
+        
+//        self.containerView.setNeedsLayout()
 
     }
 

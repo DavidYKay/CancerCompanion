@@ -53,7 +53,7 @@ public class TimelineView : UIView {
 
         self.milestoneLabels = []
 
-        self.milestoneView = MilestoneView()
+        self.milestoneView = MilestoneView.create()
         self.addSubview(self.milestoneView)
 
         //for milestone in milestones {
