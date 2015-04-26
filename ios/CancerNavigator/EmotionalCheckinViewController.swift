@@ -8,8 +8,11 @@
 
 import UIKit
 
-class EmotionalCheckinViewController: UIViewController {
+class EmotionalCheckinViewController: UIViewController, ThermometerListener {
 
+    @IBOutlet weak var currentValueLabel: UILabel!
+    @IBOutlet weak var thermometerView: ThermometerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,11 +25,19 @@ class EmotionalCheckinViewController: UIViewController {
         rgLayer.frame = self.view.bounds;
 
         //self.view.layer.insertSublayer(rgLayer, atIndex:0)
+        
+        self.thermometerView.listener = self
+        
+    }
+    
+    func onNewThermometerValue(thermometerValue: Int) {
+        self.currentValueLabel.text = thermometerValue.description
     }
 
     func onDone() {
 
     }
+    
     
 }
 

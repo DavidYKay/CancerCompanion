@@ -8,19 +8,26 @@
 
 import UIKit
 
+protocol ThermometerListener {
+    func onNewThermometerValue(thermometerValue: Int)
+}
 
 class ThermometerView: UIView {
     
+    public var listener: ThermometerListener?
     var numberLabels: [UILabel]!
+    var valueLabel: UILabel!
     let thermometerGradient = ColorService().dynamicGradiant(UIColor.greenColor(), toColor: UIColor.redColor())
     
     let StandardHeight:CGFloat = 20
     let StandardWidth:CGFloat  = 20
     let NumValues = 10
+    let CgZero:CGFloat = 0
+    
+    let ColorInset:CGFloat = 40
 
     func baseInit() {
         let rgLayer = ColorService().thermometerGradient()
-        rgLayer.frame = self.bounds;
 
         let numbers = 1...10
         self.numberLabels = numbers.map { 
@@ -35,6 +42,11 @@ class ThermometerView: UIView {
           self.addSubview(label)
         }
 
+        self.valueLabel = UILabel()
+        self.valueLabel.text = "Current Value: X"
+
+        rgLayer.frame = self.bounds;
+        rgLayer.frame = CGRect(x: ColorInset, y: CgZero, width: self.bounds.size.width - (2 * ColorInset), height: self.bounds.size.height)
         self.layer.insertSublayer(rgLayer, atIndex:0)
     }
         
@@ -61,12 +73,13 @@ class ThermometerView: UIView {
           label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
             yOffset += interval
         }
+
+        self.valueLabel.frame = CGRect(x: -20, y: -20, width: 40, height: StandardHeight)
     }
     
     func yPosToThermometerValue(yPos: CGFloat) -> Int {
         let baseline:CGFloat = 0
         let deltaY = yPos - baseline
-
 
         if (deltaY < 0) {
           return 10
@@ -80,12 +93,11 @@ class ThermometerView: UIView {
 
     func handleTouchAtLocation(touchLocation: CGPoint) {
       let thermValue = yPosToThermometerValue(touchLocation.y)
+      listener?.onNewThermometerValue(thermValue)
 
       println("thermValue: \(thermValue)")
 
-
       //println("\(touchLocation.x) \(touchLocation.y)")
-
     }
 
     func handleTouches(touches: Set<NSObject>) {
