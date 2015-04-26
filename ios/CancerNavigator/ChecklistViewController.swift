@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 David Young-chan Kay. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class ChecklistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
