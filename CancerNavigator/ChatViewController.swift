@@ -15,7 +15,8 @@ public class ChatViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Chat"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Checklist", style: .Plain, target: self, action: "onDone")        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Checklist", style: .Plain, target: self, action: "onDone")
+        
     }
 
     func onDone() {
