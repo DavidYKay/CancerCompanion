@@ -18,6 +18,9 @@ class WelcomeViewController: UIViewController {
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+
+
+	SocketService().resetAll()
     }
     
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {

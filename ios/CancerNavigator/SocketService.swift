@@ -14,6 +14,18 @@ public class SocketService {
     init() {
     }
     
+    public func resetAll() {
+
+      let urls = [ "https://burning-heat-9358.firebaseio.com/checkpoints/survey",
+      "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin",
+      "https://burning-heat-9358.firebaseio.com/checkpoints/appointmentConfirmed"]
+      for url in urls {
+	var myRootRef = Firebase(url: url)
+	myRootRef.setValue(false)
+      }
+
+    }
+    
     public func saveData() {
       var myRootRef = Firebase(url:"https://burning-heat-9358.firebaseio.com/helloworld")
         // Write data to Firebase
