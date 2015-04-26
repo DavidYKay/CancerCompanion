@@ -35,12 +35,12 @@ public class TimelineView : UIScrollView {
       let milestones = [
         Milestone(type: MilestoneType.Major , name: "Diagnosis"         , day: "D1"    , time: nil    , checkmark: Checkmark.None)      , 
         Milestone(type: MilestoneType.Major , name: "Appointment"       , day: "May 1" , time: "10AM" , checkmark: Checkmark.Completed) , 
-        Milestone(type: MilestoneType.Minor , name: "Appt. Reminder"    , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Minor , name: "Reminder"    , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
 
         Milestone(type: MilestoneType.Major , name: "CT Scan"           , day: "May 7" , time: "9AM"  , checkmark: Checkmark.Pending)   , 
-        Milestone(type: MilestoneType.Minor , name: "Survey Questions"  , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Minor , name: "Survey"  , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
         Milestone(type: MilestoneType.Major , name: "Appointment"       , day: nil     , time: nil    , checkmark: Checkmark.Pending)   , 
-        Milestone(type: MilestoneType.Minor , name: "Emotional Checkin" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Minor , name: "Emot. Check-in" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
 
         //// Long term
         Milestone(type: MilestoneType.Major , name: "Surgery"           , day: nil     , time: nil    , checkmark: Checkmark.None)      , 

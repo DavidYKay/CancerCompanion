@@ -57,13 +57,18 @@ public class MilestoneView : UIView {
           timeLabel.hidden = true
         }
 
+        checkmarkButton.hidden = false
         switch unwrapped.checkmark {
           case .None:
-            println("None")
+            checkmarkButton.hidden = true
           case .Pending:
-              println("Pending")
+            checkmarkButton.hidden = false
+            let image = UIImage(named: "CheckGray.png")
+            checkmarkButton.setImage(image, forState: UIControlState.Normal)
           case .Completed:
-                println("Completed")
+            checkmarkButton.hidden = false
+            let image = UIImage(named: "CheckGreen.png")
+            checkmarkButton.setImage(image , forState: UIControlState.Normal)
         }
       }
     }
