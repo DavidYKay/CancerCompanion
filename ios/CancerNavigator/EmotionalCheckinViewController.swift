@@ -14,11 +14,15 @@ class EmotionalCheckinViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = "Emotional Checkin"
+
+        let blueLayer = ColorService().blueGradient()
+        blueLayer.frame = self.view.bounds;
+        self.view.layer.insertSublayer(blueLayer, atIndex:0)
     }
 
     func onDone() {
 
     }
-
+    
 }
 
