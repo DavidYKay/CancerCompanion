@@ -30,6 +30,8 @@ public class ChecklistViewController: UIViewController, UITableViewDelegate, UIT
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "onDone")
         self.tableView.registerClass(UITableViewCell.self,forCellReuseIdentifier: cellIdentifier)
         self.tableView.allowsMultipleSelection = true
+
+	SocketService().logSurvey()
         
 //        self.tableView.rowHeight = UITableViewAutomaticDimension;
 //        self.tableView.estimatedRowHeight = 44.0; // set to whatever your "average" cell height is

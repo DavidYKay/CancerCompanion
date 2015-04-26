@@ -21,6 +21,8 @@ class EmotionalCheckinViewController: UIViewController, ThermometerListener {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "onDone")        
         
         self.thermometerView.listener = self
+	
+	SocketService().logEmotionalCheckin()
         
     }
     

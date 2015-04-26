@@ -1,0 +1,6 @@
+framework module SwiftEventBus {
+  umbrella header "Pods-CancerNavigator-SwiftEventBus-umbrella.h"
+
+  export *
+  module * { export * }
+}
