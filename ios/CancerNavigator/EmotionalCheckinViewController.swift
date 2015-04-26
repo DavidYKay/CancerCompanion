@@ -17,25 +17,20 @@ class EmotionalCheckinViewController: UIViewController, ThermometerListener {
         super.viewDidLoad()
 
         self.navigationItem.title = "Emotional Checkin"
-
-        let blueLayer = ColorService().blueGradient()
-        blueLayer.frame = self.view.bounds;
-
-        let rgLayer = ColorService().thermometerGradient()
-        rgLayer.frame = self.view.bounds;
-
-        //self.view.layer.insertSublayer(rgLayer, atIndex:0)
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "onDone")        
         
         self.thermometerView.listener = self
         
     }
     
     func onNewThermometerValue(thermometerValue: Int) {
-        self.currentValueLabel.text = thermometerValue.description
+        self.currentValueLabel.text = "Current value: \(thermometerValue)" 
     }
 
     func onDone() {
-
+        let vc = FinalViewController(nibName: "FinalViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

@@ -95,8 +95,7 @@ class ThermometerView: UIView {
       let thermValue = yPosToThermometerValue(touchLocation.y)
       listener?.onNewThermometerValue(thermValue)
 
-      println("thermValue: \(thermValue)")
-
+      //println("thermValue: \(thermValue)")
       //println("\(touchLocation.x) \(touchLocation.y)")
     }
 
