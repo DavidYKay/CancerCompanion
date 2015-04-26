@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navigator.patient', ['ngRoute', 'navigator.patient.service'])
+angular.module('navigator.patient', ['ngRoute', 'navigator.patient.service', 'navigator.filters'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/list', {

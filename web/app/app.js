@@ -4,7 +4,9 @@
 angular.module('navigator', [
   'ngRoute',
   'navigator.patient',
-  'firebase'
+  'firebase',
+  'navigator.notifications',
+  'navigator.filters'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/list'});
