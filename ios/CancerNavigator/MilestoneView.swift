@@ -26,12 +26,14 @@ public class MilestoneView : UIView {
 
         if (unwrapped.day != nil) {
           dateLabel.hidden = false
+          dateLabel.text = unwrapped.day
         } else {
           dateLabel.hidden = true
         }
 
         if (unwrapped.time != nil) {
           timeLabel.hidden = false
+          timeLabel.text = unwrapped.time
         } else {
           timeLabel.hidden = true
         }
