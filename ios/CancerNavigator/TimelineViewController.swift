@@ -16,8 +16,16 @@ class TimelineViewController: UIViewController {
 
         self.navigationItem.title = "Timeline"
 
-	SwiftEventBus.onMainThread(self, name: "CT Scan") { result in
+	SwiftEventBus.onMainThread(self, name: "Reminder") { result in
+	  println("received: Reminder")
+        }
 
+	SwiftEventBus.onMainThread(self, name: "Survey") { result in
+	  println("received: Survey")
+        }
+
+	SwiftEventBus.onMainThread(self, name: "Emo. Check") { result in
+	  println("received: Emo. Check")
         }
         
         //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
