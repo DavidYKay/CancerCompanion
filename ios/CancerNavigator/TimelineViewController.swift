@@ -7,16 +7,33 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 class TimelineViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-        self.navigationItem.title = "Timeline"
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
+      self.navigationItem.title = "Timeline"
+
+      SwiftEventBus.onMainThread(self, name: "Reminder") { result in
+	println("received: Reminder")
+
+	  self.onScheduleNotification()
+      }
+
+    SwiftEventBus.onMainThread(self, name: "Survey") { result in
+      println("received: Survey")
+	self.onShowSurveyPressed(self)
     }
+
+    SwiftEventBus.onMainThread(self, name: "Emo. Check") { result in
+      println("received: Emo. Check")
+	self.onShowEmotionPressed(self)
+    }
+
+    //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Notification", style: .Plain, target: self, action: "onScheduleNotification")
+  }
 
     func onScheduleNotification() {
         println("onScheduleNotification")
@@ -24,7 +41,8 @@ class TimelineViewController: UIViewController {
           let t = NSTimer.scheduledTimerWithTimeInterval(5.0,
             target: self, 
             selector:Selector("onFireNotification"),
-        userInfo: nil, repeats:false)
+        userInfo: nil,
+            repeats:false)
 
     }
 
@@ -37,6 +55,8 @@ class TimelineViewController: UIViewController {
     @IBAction func onShowEmotionPressed(sender: AnyObject) {
         let vc = EmotionalCheckinViewController(nibName: "EmotionalCheckinViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
+
+
     }
     
     @IBAction func onShowSurveyPressed(sender: AnyObject) {

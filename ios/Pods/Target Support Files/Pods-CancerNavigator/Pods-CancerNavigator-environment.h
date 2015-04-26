@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_Firebase 2
 #define COCOAPODS_VERSION_PATCH_Firebase 1
 
+// SwiftEventBus
+#define COCOAPODS_POD_AVAILABLE_SwiftEventBus
+#define COCOAPODS_VERSION_MAJOR_SwiftEventBus 1
+#define COCOAPODS_VERSION_MINOR_SwiftEventBus 1
+#define COCOAPODS_VERSION_PATCH_SwiftEventBus 0
+
 // UIScrollSlidingPages
 #define COCOAPODS_POD_AVAILABLE_UIScrollSlidingPages
 #define COCOAPODS_VERSION_MAJOR_UIScrollSlidingPages 1

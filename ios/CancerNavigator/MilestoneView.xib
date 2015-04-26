@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MilestoneView" customModule="CancerNavigator" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MilestoneView" customModule="CancerNavigator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DME-UF-U6W">
+                    <rect key="frame" x="8" y="4" width="99" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Diagnosis">
+                        <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nameWasPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="h3y-Xy-n8t"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ins-fC-7qK" userLabel="Vertical Line">
+                    <rect key="frame" x="56" y="37" width="2" height="140"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="Jn2-xD-vBE"/>
+                        <constraint firstAttribute="width" constant="2" id="sq3-rb-wNn"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="May 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-Vr-1jK">
+                    <rect key="frame" x="27" y="188" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-Il-qAn" userLabel="Date Dividing Line">
+                    <rect key="frame" x="30" y="213" width="55" height="2"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdL-hx-dQy">
+                    <rect key="frame" x="27" y="223" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-f7-XNe">
+                    <rect key="frame" x="27" y="252" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="b0V-5d-en1"/>
+                        <constraint firstAttribute="height" constant="60" id="z0a-LZ-Zyb"/>
+                    </constraints>
+                    <state key="normal" title="Checkmark" image="CheckGreen.png"/>
+                    <connections>
+                        <action selector="checkmarkWasPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Re-h5-a5a"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="arrow-thick-transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="w4D-Bt-kWO">
+                    <rect key="frame" x="51" y="103" width="56" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="w4D-Bt-kWO" secondAttribute="height" multiplier="56:79" id="G3u-wp-EL1"/>
+                        <constraint firstAttribute="width" constant="56" id="V1M-4t-w5g"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Minor" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G2-cX-xKc">
+                    <rect key="frame" x="8" y="86" width="103" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Z9i-f7-XNe" firstAttribute="top" secondItem="JdL-hx-dQy" secondAttribute="bottom" constant="8" id="1Uj-KV-b6D"/>
+                <constraint firstItem="JdL-hx-dQy" firstAttribute="top" secondItem="Zvd-Il-qAn" secondAttribute="bottom" constant="8" id="1aN-Wj-585"/>
+                <constraint firstAttribute="trailing" secondItem="2G2-cX-xKc" secondAttribute="trailing" constant="4" id="5ex-vK-jIA"/>
+                <constraint firstItem="2G2-cX-xKc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="FH1-az-Bdh"/>
+                <constraint firstAttribute="centerX" secondItem="Z9i-f7-XNe" secondAttribute="centerX" constant="0.5" id="Fel-BA-OPb"/>
+                <constraint firstAttribute="centerX" secondItem="Z9i-f7-XNe" secondAttribute="centerX" constant="0.5" id="Fwj-h5-Lua"/>
+                <constraint firstItem="2gj-Vr-1jK" firstAttribute="top" secondItem="ins-fC-7qK" secondAttribute="bottom" constant="11" id="HSe-ck-Jks"/>
+                <constraint firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" id="MpE-pr-6LM"/>
+                <constraint firstItem="ins-fC-7qK" firstAttribute="top" secondItem="DME-UF-U6W" secondAttribute="bottom" constant="3" id="NkW-FC-BFQ"/>
+                <constraint firstAttribute="bottom" secondItem="Z9i-f7-XNe" secondAttribute="bottom" constant="8" id="RnP-Ri-zqG"/>
+                <constraint firstAttribute="centerX" secondItem="ins-fC-7qK" secondAttribute="centerX" id="VWU-Jw-Zdx"/>
+                <constraint firstAttribute="trailing" secondItem="2G2-cX-xKc" secondAttribute="trailing" constant="4" id="Ww0-pk-Unh"/>
+                <constraint firstAttribute="centerX" secondItem="2gj-Vr-1jK" secondAttribute="centerX" id="aSg-Zs-hz3"/>
+                <constraint firstItem="2gj-Vr-1jK" firstAttribute="top" secondItem="w4D-Bt-kWO" secondAttribute="bottom" constant="6" id="baM-KT-gPB"/>
+                <constraint firstItem="DME-UF-U6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="cTJ-zs-VeF"/>
+                <constraint firstItem="w4D-Bt-kWO" firstAttribute="leading" secondItem="ins-fC-7qK" secondAttribute="trailing" constant="-7" id="fKz-l9-iZ0"/>
+                <constraint firstItem="w4D-Bt-kWO" firstAttribute="top" secondItem="2G2-cX-xKc" secondAttribute="bottom" constant="-8" id="nLB-o5-Waz"/>
+                <constraint firstItem="Z9i-f7-XNe" firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" constant="-0.5" id="qi1-tT-vGe"/>
+                <constraint firstAttribute="centerX" secondItem="DME-UF-U6W" secondAttribute="centerX" id="qng-eQ-Rjc"/>
+                <constraint firstItem="Zvd-Il-qAn" firstAttribute="top" secondItem="2gj-Vr-1jK" secondAttribute="bottom" constant="4" id="wEb-6a-bSa"/>
+                <constraint firstAttribute="centerX" secondItem="Zvd-Il-qAn" secondAttribute="centerX" id="xo2-Rv-77j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ww0-pk-Unh"/>
+                    <exclude reference="Fwj-h5-Lua"/>
+                    <exclude reference="qi1-tT-vGe"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="arrow" destination="w4D-Bt-kWO" id="5Qh-w5-lpm"/>
+                <outlet property="checkmarkButton" destination="Z9i-f7-XNe" id="964-p8-7mu"/>
+                <outlet property="dateDividingLine" destination="Zvd-Il-qAn" id="TOY-Y2-ff7"/>
+                <outlet property="dateLabel" destination="2gj-Vr-1jK" id="Ewz-me-Vjk"/>
+                <outlet property="minorNameLabel" destination="2G2-cX-xKc" id="5PF-oZ-XbX"/>
+                <outlet property="nameButton" destination="DME-UF-U6W" id="18C-xc-2QB"/>
+                <outlet property="timeLabel" destination="JdL-hx-dQy" id="9ni-Ev-VD3"/>
+                <outlet property="verticalLine" destination="ins-fC-7qK" id="otw-ov-PfX"/>
+            </connections>
+            <point key="canvasLocation" x="181.5" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CheckGreen.png" width="72" height="72"/>
+        <image name="arrow-thick-transparent.png" width="169" height="184"/>
+    </resources>
+</document>

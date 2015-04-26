@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol ThermometerListener {
+public protocol ThermometerListener {
     func onNewThermometerValue(thermometerValue: Int)
 }
 
-class ThermometerView: UIView {
+public class ThermometerView: UIView {
     
     public var listener: ThermometerListener?
     var numberLabels: [UILabel]!
@@ -50,7 +50,7 @@ class ThermometerView: UIView {
         self.layer.insertSublayer(rgLayer, atIndex:0)
     }
         
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       baseInit()
     }
@@ -64,14 +64,14 @@ class ThermometerView: UIView {
       return self.frame.size.height / 10
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
 
         var yOffset:CGFloat = 0
         let interval:CGFloat = yInterval()
         let xPos:CGFloat = 0
         for label in self.numberLabels {
           label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
-            yOffset += interval
+          yOffset += interval
         }
 
         self.valueLabel.frame = CGRect(x: -20, y: -20, width: 40, height: StandardHeight)
@@ -105,19 +105,19 @@ class ThermometerView: UIView {
       handleTouchAtLocation(touchLocation)
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
         
     }
 
