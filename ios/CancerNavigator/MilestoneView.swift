@@ -10,7 +10,16 @@ import UIKit
 
 public class MilestoneView : UIView {
     
-//    var milestone: Milestone?
+  @IBOutlet weak var nameButton: UIButton!
+  @IBOutlet weak var checkmarkButton: UIButton!
+  @IBOutlet weak var dateLabel: UILabel!
+  @IBOutlet weak var timeLabel: UILabel!
+  @IBOutlet weak var dateDividingLine: UIView!
+  @IBOutlet weak var verticalLine: UIView!
+  @IBOutlet weak var arrow: UIView!
+  
+  var containerView: UIView!
+
 
   var milestone: Milestone? {
     didSet {
@@ -19,9 +28,11 @@ public class MilestoneView : UIView {
 
         switch unwrapped.type {
           case .Major:
-            println("major")
+            self.verticalLine.hidden = false
+//            self.arrow.hidden = true
           case .Minor:
-              println("minor")
+            self.verticalLine.hidden = true
+//            self.arrow.hidden = false
         }
 
         nameButton.setTitle(unwrapped.name, forState: UIControlState.Normal)
@@ -51,21 +62,6 @@ public class MilestoneView : UIView {
       }
     }
   }
-
-   // @IBOutlet weak var nameLabel: UILabel!
-   // @IBOutlet weak var checkmarkButton: UIButton!
-   // @IBOutlet weak var dateLabel: UILabel!
-   // @IBOutlet weak var timeLabel: UILabel!
-   // @IBOutlet weak var dateDividingLine: UIView!
-    
-    //@IBOutlet var nameLabel: UILabel!
-    @IBOutlet var nameButton: UIButton!
-    @IBOutlet var checkmarkButton: UIButton!
-    @IBOutlet var dateLabel: UILabel!
-    @IBOutlet var timeLabel: UILabel!
-    @IBOutlet var dateDividingLine: UIView!
-    
-    var containerView: UIView!
 
     class func create() -> MilestoneView {
         let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]

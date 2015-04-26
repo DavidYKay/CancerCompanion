@@ -86,6 +86,7 @@
                 <outlet property="dateLabel" destination="2gj-Vr-1jK" id="Ewz-me-Vjk"/>
                 <outlet property="nameButton" destination="DME-UF-U6W" id="18C-xc-2QB"/>
                 <outlet property="timeLabel" destination="JdL-hx-dQy" id="9ni-Ev-VD3"/>
+                <outlet property="verticalLine" destination="ins-fC-7qK" id="otw-ov-PfX"/>
             </connections>
             <point key="canvasLocation" x="181.5" y="324"/>
         </view>
