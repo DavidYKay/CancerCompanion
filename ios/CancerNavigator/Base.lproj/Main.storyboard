@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IlS-eO-CRT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IlS-eO-CRT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -32,40 +32,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fBj-cm-sja">
-                                <rect key="frame" x="287" y="563" width="39" height="37"/>
-                            </pageControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qII-F5-4Nb">
-                                <rect key="frame" x="267" y="204" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-vu-Ld6">
-                                <rect key="frame" x="287" y="245" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="breastcancermain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-24-gCg">
+                                <rect key="frame" x="75" y="180" width="450" height="240"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EY-9B-Wpn">
+                                <rect key="frame" x="330" y="320" width="70" height="70"/>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BQf-dP-6b9"/>
+                                    <action selector="onButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oak-hL-1Qq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="qII-F5-4Nb" secondAttribute="centerY" constant="85.5" id="5aR-RV-B7i"/>
-                            <constraint firstAttribute="centerX" secondItem="qII-F5-4Nb" secondAttribute="centerX" constant="-10.5" id="Ccp-18-K8I"/>
-                            <constraint firstItem="fBj-cm-sja" firstAttribute="centerX" secondItem="ejo-vu-Ld6" secondAttribute="centerX" constant="-3.5" id="Ka2-SJ-3CL"/>
-                            <constraint firstAttribute="centerY" secondItem="ejo-vu-Ld6" secondAttribute="centerY" constant="40" id="Nq1-WY-ijP"/>
-                            <constraint firstAttribute="centerX" secondItem="fBj-cm-sja" secondAttribute="centerX" constant="-6.5" id="Sfl-X0-zRl"/>
-                            <constraint firstItem="qII-F5-4Nb" firstAttribute="centerX" secondItem="ejo-vu-Ld6" secondAttribute="centerX" constant="0.5" id="eUA-jC-WuB"/>
+                            <constraint firstAttribute="centerX" secondItem="DT3-24-gCg" secondAttribute="centerX" id="9sM-PS-tae"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="leading" secondItem="DT3-24-gCg" secondAttribute="leading" constant="255" id="Aw9-Mm-o6m"/>
+                            <constraint firstAttribute="centerX" secondItem="DT3-24-gCg" secondAttribute="centerX" id="Gob-YU-A6f"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="trailing" secondItem="DT3-24-gCg" secondAttribute="trailing" constant="-125" id="NQv-Aj-N7g"/>
+                            <constraint firstAttribute="centerY" secondItem="DT3-24-gCg" secondAttribute="centerY" constant="23" id="bDs-Be-Qg9"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="bottom" secondItem="DT3-24-gCg" secondAttribute="bottom" constant="-30" id="oCz-Z3-gEN"/>
+                            <constraint firstItem="9EY-9B-Wpn" firstAttribute="top" secondItem="DT3-24-gCg" secondAttribute="top" constant="140" id="t2y-dj-UlT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MYi-9Q-Sfk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="320"/>
+            <point key="canvasLocation" x="336" y="320"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="breastcancermain.jpg" width="480" height="259"/>
+    </resources>
 </document>
