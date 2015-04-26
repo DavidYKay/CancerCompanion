@@ -11,17 +11,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeline goes here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scp-mA-Zct">
-                    <rect key="frame" x="90" y="84" width="140" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-UF-fKE">
-                    <rect key="frame" x="115" y="134" width="90" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-UF-fKE">
+                    <rect key="frame" x="239" y="14" width="90" height="30"/>
                     <state key="normal" title="Show Survey">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -29,8 +23,12 @@
                         <action selector="onShowSurveyPressed:" destination="-1" eventType="touchUpInside" id="bNL-t2-DK1"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-Mz-Pzd">
-                    <rect key="frame" x="74" y="172" width="172" height="30"/>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-VJ-HyZ" customClass="TimelineView" customModule="CancerNavigator" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="72" width="568" height="248"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-Mz-Pzd">
+                    <rect key="frame" x="198" y="41" width="172" height="30"/>
                     <state key="normal" title="Show Emotional Checkin">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -38,20 +36,17 @@
                         <action selector="onShowEmotionPressed:" destination="-1" eventType="touchUpInside" id="hnE-JO-1ec"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-VJ-HyZ" customClass="TimelineView" customModule="CancerNavigator" customModuleProvider="target">
-                    <rect key="frame" x="8" y="210" width="304" height="350"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="SJG-Mz-Pzd" firstAttribute="top" secondItem="gFr-UF-fKE" secondAttribute="bottom" constant="8" id="0rX-Qs-WRq"/>
+                <constraint firstItem="tUJ-VJ-HyZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0vp-jc-OAh"/>
                 <constraint firstItem="gFr-UF-fKE" firstAttribute="centerX" secondItem="SJG-Mz-Pzd" secondAttribute="centerX" id="9hl-Pb-f8b"/>
-                <constraint firstItem="scp-mA-Zct" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="84" id="IFu-bv-iH2"/>
-                <constraint firstItem="gFr-UF-fKE" firstAttribute="centerX" secondItem="scp-mA-Zct" secondAttribute="centerX" id="KYd-FA-GH1"/>
-                <constraint firstAttribute="centerX" secondItem="scp-mA-Zct" secondAttribute="centerX" id="n7d-sq-fat"/>
-                <constraint firstItem="gFr-UF-fKE" firstAttribute="top" secondItem="scp-mA-Zct" secondAttribute="bottom" constant="29" id="uWI-ii-ueg"/>
+                <constraint firstAttribute="bottom" secondItem="tUJ-VJ-HyZ" secondAttribute="bottom" id="bBu-CV-279"/>
+                <constraint firstAttribute="centerX" secondItem="gFr-UF-fKE" secondAttribute="centerX" id="mGd-by-d5b"/>
+                <constraint firstAttribute="trailing" secondItem="tUJ-VJ-HyZ" secondAttribute="trailing" constant="8" id="oo2-3t-h4S"/>
             </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
