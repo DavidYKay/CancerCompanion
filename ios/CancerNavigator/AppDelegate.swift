@@ -15,8 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+
+      if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:")))
+      {
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+      }
+      else
+      {
+        //do iOS 7 stuff, which is pretty much nothing for local notifications.
+      }
+      return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
