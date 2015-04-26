@@ -1,3 +1,35 @@
-<p>Name: {{patient.name}}</p>
-<p>Morphology: {{patient.morphology}}</p>
-<button ng-click="acknowledge()">Acknowledge</button>
+<div class="row">
+  <div class="large-12 column">
+    <h1>{{patient.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 column">
+  </div>
+  <div class="large-4 column">
+    Morphology: {{patient.morphology}}
+  </div>
+  <div class="large-4 column">
+  </div>
+  <div class="large-4 column">
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 column">
+    <table>
+      <thead>
+        <th width="200">Surgical Visit Completed</th>
+        <th width="200">Attendence Confirmed</th>
+        <th width="200">Emotional Checkup Completed</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a ng-click="reverse('surge')"><i class="size-36" ng-class="{'foundicon-checkmark': patient.surgicalComplete, 'foundicon-remove': !patient.surgicalComplete}"></i></a></td>
+          <td><a ng-click="reverse('attend')"><i class="size-36" ng-class="{'foundicon-checkmark': patient.attendenceConfirmed, 'foundicon-remove': !patient.attendenceConfirmed}"></i></a></td>
+          <td><a ng-click="reverse('emote')"><i class="size-36" ng-class="{'foundicon-checkmark': patient.emotionalCUCompleted, 'foundicon-remove': !patient.emotionalCUCompleted}"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<button ng-click="acknowledge()">Alert</button>

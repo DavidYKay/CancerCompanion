@@ -1,11 +1,30 @@
-Sort by:
-<select ng-model="orderProp">
-  <option value="name">Alphabetical</option>
-  <option value="age">Newest</option>
-</select>
-
-<ul class="patients">
-  <li ng-repeat="patient in patients | filter:query | orderBy:orderProp">
-    <a href="#/detail/{{patient.$id}}">{{patient.name}}</a>
-  </li>
-</ul>
+<div class="row">
+  <div class="large-12 column">
+    <h1>All Patients</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 column">
+    Sort by:
+    <select ng-model="orderProp">
+      <option value="name">Alphabetical</option>
+      <option value="age">Newest</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 column">
+    <table>
+      <thead>
+        <th width="200">Name</th>
+        <th width="200">Cancer Type</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="patient in patients | filter:query | orderBy:orderProp">
+          <td><a href="#/detail/{{patient.$id}}">{{patient.name}}</a></td>
+          <td>{{patient.morphology}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

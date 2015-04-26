@@ -2,8 +2,8 @@
 
 angular.module('navigator.patient.service', ["firebase"])
 
-.factory('Patient', ['$firebaseArray', '$q',
-  function($firebaseArray, $q){
+.factory('Patient', ['$firebaseArray', '$firebaseObject', '$q',
+  function($firebaseArray, $firebaseObject, $q){
 
     var ref = new Firebase("https://burning-heat-9358.firebaseio.com/patients");
 
@@ -13,16 +13,8 @@ angular.module('navigator.patient.service', ["firebase"])
         },
 
         item: function(key) {
-          var deffered = $q.defer();
-          $firebaseArray(ref).$loaded().then(function(list) {
-            var patient = list.$getRecord(key);
-            if (patient) {
-              deffered.resolve(patient);
-            } else {
-              deffered.reject("Patient not found");
-            }
-          });
-          return deffered.promise;
+          var itemRef = ref.child(key);
+          return $firebaseObject(itemRef);
         }
     }
 }]);

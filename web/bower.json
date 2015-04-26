@@ -13,6 +13,8 @@
     "html5-boilerplate": "~4.3.0",
     "foundation-apps": "~1.1.0",
     "angularfire": "~1.0.0",
-    "firebase": "~2.2.4"
+    "firebase": "~2.2.4",
+    "foundation": "~5.5.1",
+    "foundation-icons": "*"
   }
 }

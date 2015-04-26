@@ -15,9 +15,7 @@ function($scope, Patient) {
 function($scope, $routeParams, Patient, Notification) {
   var patientId = $routeParams.patientId;
 
-  Patient.item(patientId).then(function(patient) {
-    $scope.patient = patient;
-  });
+  Patient.item(patientId).$bindTo($scope, "patient");
 
   $scope.acknowledge = function() {
     var message = {
@@ -27,4 +25,18 @@ function($scope, $routeParams, Patient, Notification) {
     };
     Notification.push(message);
   };
+
+  $scope.reverse = function(field) {
+    switch (field) {
+      case "surge" :
+      $scope.patient.surgicalComplete = !$scope.patient.surgicalComplete;
+      break;
+      case "emote" :
+      $scope.patient.emotionalCUCompleted = !$scope.patient.emotionalCUCompleted;
+      break;
+      case "attend" :
+      $scope.patient.attendenceConfirmed = !$scope.patient.attendenceConfirmed;
+      break;
+    }
+  }
 }]);
