@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ThermometerListener {
+public protocol ThermometerListener {
     func onNewThermometerValue(thermometerValue: Int)
 }
 
-class ThermometerView: UIView {
+public class ThermometerView: UIView {
     
-    var listener: ThermometerListener?
+    public var listener: ThermometerListener?
     var numberLabels: [UILabel]!
     var valueLabel: UILabel!
     let thermometerGradient = ColorService().dynamicGradiant(UIColor.greenColor(), toColor: UIColor.redColor())
@@ -50,7 +50,7 @@ class ThermometerView: UIView {
         self.layer.insertSublayer(rgLayer, atIndex:0)
     }
         
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       baseInit()
     }
@@ -64,7 +64,7 @@ class ThermometerView: UIView {
       return self.frame.size.height / 10
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
 
         var yOffset:CGFloat = 0
         let interval:CGFloat = yInterval()
@@ -105,19 +105,19 @@ class ThermometerView: UIView {
       handleTouchAtLocation(touchLocation)
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
         
     }
 
