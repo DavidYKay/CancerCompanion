@@ -11,12 +11,33 @@ import UIKit
 
 class ThermometerView: UIView {
     
-    
+    var numberLabels: [UILabel]!
     let thermometerGradient = ColorService().dynamicGradiant(UIColor.greenColor(), toColor: UIColor.redColor())
+    
+    let StandardHeight = 20
+    let StandardWidth  = 20
 
     func baseInit() {
         let rgLayer = ColorService().thermometerGradient()
         rgLayer.frame = self.bounds;
+
+        ///for i in 0..<3 {
+        //for i in 1...10 {
+        //  println(i)
+        //}
+
+        let numbers = 1...10
+        self.numberLabels = numbers.map { 
+          let label = UILabel()
+          label.text = $0.description
+          label.tag = $0
+          return label
+        }
+
+        for label in numberLabels {
+          self.addSubview(label)
+        }
+
         self.layer.insertSublayer(rgLayer, atIndex:0)
     }
         
@@ -31,7 +52,9 @@ class ThermometerView: UIView {
     }
     
     override func layoutSubviews() {
-        
+        for label in self.numberLabels {
+          label.frame = CGRect(x: 1, y: 1, width: StandardWidth, height: StandardHeight)
+        }
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
