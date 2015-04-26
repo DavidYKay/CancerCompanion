@@ -27,7 +27,7 @@ struct Milestone {
     var checkmark: Checkmark
 }
 
-public class TimelineView : UIView {
+public class TimelineView : UIScrollView {
 
     var milestoneLabels: [UILabel]!
     var milestoneView: MilestoneView!
@@ -53,17 +53,25 @@ public class TimelineView : UIView {
 
         self.milestoneLabels = []
 
-        self.milestoneView = MilestoneView.create()
-        self.addSubview(self.milestoneView)
 
-        //for milestone in milestones {
-        //  let label = UILabel()
-        //  label.text = milestone.name
+        var xOffset: CGFloat = 0
+        let interval: CGFloat = 80
+        let yPos: CGFloat = 0
+        let milestoneWidth: CGFloat = 80
+        let milestoneHeight = self.bounds.size.height
 
-        //  label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
-        //  self.addSubview(label)
-        //  self.milestoneLabels.append(label)
-        //}
+        for milestone in milestones {
+          let milestoneView = MilestoneView.create()
+          milestoneView.milestone = milestone
+
+          // label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
+
+          milestoneView.frame = CGRect(x: xOffset, y: yPos, width: milestoneWidth, height: milestoneHeight )
+
+          self.addSubview(milestoneView)
+
+          xOffset += interval
+        }
     }
         
     required public init(coder aDecoder: NSCoder) {
@@ -88,29 +96,29 @@ public class TimelineView : UIView {
           yOffset += interval
       }
 
-      let milestoneWidth: CGFloat = 76
-      milestoneView.frame = CGRect(x: 0,y: 0, width: milestoneWidth, height: 200)
-        milestoneView.setNeedsLayout()
+//      let milestoneWidth: CGFloat = 76
+//      milestoneView.frame = CGRect(x: 0,y: 0, width: milestoneWidth, height: 200)
+//        milestoneView.setNeedsLayout()
     }
 
-    func handleTouches(touches: Set<NSObject>) {
+    // func handleTouches(touches: Set<NSObject>) {
 
-    }
-    
-    override public func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-      handleTouches(touches)
-    }
-    
-    override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-      handleTouches(touches)
-    }
-    
-    override public func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-      handleTouches(touches)
-    }
-    
-    override public func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
-        
-    }
+    // }
+    // 
+    // override public func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    //   handleTouches(touches)
+    // }
+    // 
+    // override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    //   handleTouches(touches)
+    // }
+    // 
+    // override public func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    //   handleTouches(touches)
+    // }
+    // 
+    // override public func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    //     
+    // }
         
 }
