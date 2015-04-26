@@ -30,10 +30,14 @@ public class ChecklistViewController: UIViewController, UITableViewDelegate, UIT
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "onDone")
         self.tableView.registerClass(UITableViewCell.self,forCellReuseIdentifier: cellIdentifier)
         self.tableView.allowsMultipleSelection = true
+        
+//        self.tableView.rowHeight = UITableViewAutomaticDimension;
+//        self.tableView.estimatedRowHeight = 44.0; // set to whatever your "average" cell height is
     }
 
     func onDone() {
-
+        //let roadmapVc = ChecklistViewController(nibName: "SurveyViewController", bundle: nil)
+        //self.navigationController?.pushViewController(roadmapVc, animated: true)
     }
     
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,22 +86,29 @@ public class ChecklistViewController: UIViewController, UITableViewDelegate, UIT
                 let oldCell = tableView.cellForRowAtIndexPath(lastSelectedIndexPath)
                 oldCell?.accessoryType = .None
             }
-            
-            //var cell:UITableViewCell? = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? UITableViewCell
-            
+
             var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
-            //cell!.textLabel?.text = self.items[indexPath.row]
-            //cell!.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark : .None
-            
+             cell.textLabel?.text = self.items[indexPath.row]
+
+        
             if let selectedPaths = tableView.indexPathsForSelectedRows() as? [NSIndexPath] {
                 let selected = selectedPaths.filter(){ $0 == indexPath }
                 if selected.count > 0 {
-                     cell.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark :.None
+                    //let newCell = tableView.cellForRowAtIndexPath(indexPath)
+                    if(self.lastSelectedIndexPath?.row == indexPath.row){
+                        cell.accessoryType = .Checkmark
+                    }
+                    else{
+                        cell.accessoryType = .None
+                    }
+                    //newCell!.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark :.None
+//                     cell.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark :.None
                 }
             }
 
             lastSelectedIndexPath = indexPath
         }
+        
         //tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
         //tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
