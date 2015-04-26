@@ -8,14 +8,58 @@
 
 import UIKit
 
+enum Checkmark {
+    case None
+    case Pending
+    case Completed
+}
+
+enum MilestoneType {
+    case Major
+    case Minor
+}
+
+struct Milestone {
+    var type: MilestoneType
+    var name: String
+    var day: String?
+    var time: String?
+    var checkmark: Checkmark
+}
+
 public class TimelineView : UIView {
+
+    var milestoneLabels: [UILabel]!
     
-
     func baseInit() {
+      let milestones = [
+        Milestone(type: MilestoneType.Major , name: "Diagnosis"         , day: "D1"    , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Appointment"       , day: "May 1" , time: "10AM" , checkmark: Checkmark.Completed) , 
+        Milestone(type: MilestoneType.Minor , name: "Appt. Reminder"    , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
 
+        Milestone(type: MilestoneType.Major , name: "CT Scan"           , day: "May 7" , time: "9AM"  , checkmark: Checkmark.Pending)   , 
+        Milestone(type: MilestoneType.Minor , name: "Survey Questions"  , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+        Milestone(type: MilestoneType.Major , name: "Appointment"       , day: nil     , time: nil    , checkmark: Checkmark.Pending)   , 
+        Milestone(type: MilestoneType.Minor , name: "Emotional Checkin" , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
+
+        //// Long term
+        //Milestone(MilestoneType.Major , "Surgery"           , nil     , nil    , Checkmark.None)      , 
+        //Milestone(MilestoneType.Major , "Chemo"             , nil     , nil    , Checkmark.None)      , 
+        //Milestone(MilestoneType.Major , "Radiation"         , nil     , nil    , Checkmark.None)      , 
+        //Milestone(MilestoneType.Major , "Medicines"         , nil     , nil    , Checkmark.None)      , 
+        //Milestone(MilestoneType.Major , "Survivor"          , nil     , nil    , Checkmark.None)      , 
+      ]
+
+        self.milestoneLabels = []
+        for milestone in milestones {
+          let label = UILabel()
+          label.text = milestone.name
+          self.addSubview(label)
+          self.milestoneLabels.append(label)
+        }
     }
         
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       baseInit()
     }
@@ -25,23 +69,27 @@ public class TimelineView : UIView {
       baseInit()
     }
   
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
+
+    }
+
+    func handleTouches(touches: Set<NSObject>) {
 
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
       handleTouches(touches)
     }
     
-    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    override public func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
         
     }
         

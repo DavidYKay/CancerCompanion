@@ -14,7 +14,7 @@ protocol ThermometerListener {
 
 class ThermometerView: UIView {
     
-    public var listener: ThermometerListener?
+    var listener: ThermometerListener?
     var numberLabels: [UILabel]!
     var valueLabel: UILabel!
     let thermometerGradient = ColorService().dynamicGradiant(UIColor.greenColor(), toColor: UIColor.redColor())
