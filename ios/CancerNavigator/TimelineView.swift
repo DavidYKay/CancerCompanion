@@ -30,6 +30,9 @@ struct Milestone {
 public class TimelineView : UIScrollView {
 
     var milestoneViews: [MilestoneView]!
+    var horizontalLine: UIView!
+    
+    let HorizontalLineHeight: CGFloat = 4
     
     func baseInit() {
       let milestones = [
@@ -50,34 +53,43 @@ public class TimelineView : UIScrollView {
         Milestone(type: MilestoneType.Major , name: "Survivor"          , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
       ]
 
+       var xOffset: CGFloat = 40
+       let interval: CGFloat = 120
+       let yPos: CGFloat = 0
+       let milestoneWidth: CGFloat = 80
 
-        var xOffset: CGFloat = 40
-        let interval: CGFloat = 120
-        let yPos: CGFloat = 0
-        let milestoneWidth: CGFloat = 80
+       let myBoundsHeight = self.bounds.size.height - 40
 
-        let myBoundsHeight = self.bounds.size.height - 40
+       let milestoneHeight = myBoundsHeight
 
-        let milestoneHeight = myBoundsHeight
+       self.milestoneViews = []
+       for milestone in milestones {
+         let milestoneView = MilestoneView.create()
+         milestoneView.milestone = milestone
 
-        self.milestoneViews = []
-        for milestone in milestones {
-          let milestoneView = MilestoneView.create()
-          milestoneView.milestone = milestone
+         // label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
 
-          // label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
+         milestoneView.frame = CGRect(x: xOffset, y: yPos, width: milestoneWidth, height: milestoneHeight )
 
-          milestoneView.frame = CGRect(x: xOffset, y: yPos, width: milestoneWidth, height: milestoneHeight )
+         self.addSubview(milestoneView)
+         self.milestoneViews.append(milestoneView)
 
-          self.addSubview(milestoneView)
-          self.milestoneViews.append(milestoneView)
+         xOffset += interval
+       }
 
-          xOffset += interval
-        }
         
       let contentWidth: CGFloat = interval * CGFloat(milestones.count)
       let contentHeight: CGFloat = myBoundsHeight
       self.contentSize = CGSize(width: contentWidth, height: contentHeight)
+      
+      horizontalLine = UIView()
+      horizontalLine.backgroundColor = UIColor.blackColor()
+      horizontalLine.frame = CGRect(
+         x:  0,
+         y:  myBoundsHeight / 2,
+         width:  contentWidth,
+         height:  HorizontalLineHeight)
+      self.addSubview(horizontalLine)
     }
         
     required public init(coder aDecoder: NSCoder) {
