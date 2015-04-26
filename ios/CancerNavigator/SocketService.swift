@@ -21,9 +21,8 @@ public class SocketService {
     }
 
     public func observeData() {
-        myRootRef = Firebase(url:"https://burning-heat-9358.firebaseio.com/onPush")
-        myRootRef.observeEventType(.Value, withBlock: 
-            snapshot in
+        var myRootRef = Firebase(url:"https://burning-heat-9358.firebaseio.com/onPush")
+        myRootRef.observeEventType(.Value, withBlock: { snapshot in 
             println("\(snapshot.key) -> \(snapshot.value)")
             },
             withCancelBlock: { error in
