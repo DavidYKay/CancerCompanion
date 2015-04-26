@@ -1,7 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Firebase"
+FRAMEWORK_SEARCH_PATHS = "$PODS_FRAMEWORK_BUILD_PATH" "$(PODS_ROOT)/Firebase"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Firebase" "${PODS_ROOT}/Headers/Public/UIScrollSlidingPages"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Firebase" -isystem "${PODS_ROOT}/Headers/Public/UIScrollSlidingPages"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-CancerNavigator-UIScrollSlidingPages" -l"c++" -l"icucore" -framework "CFNetwork" -framework "Firebase" -framework "Security" -framework "SystemConfiguration"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_FRAMEWORK_BUILD_PATH/Firebase.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/UIScrollSlidingPages.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"icucore" -framework "CFNetwork" -framework "Firebase" -framework "Security" -framework "SystemConfiguration" -framework "UIScrollSlidingPages"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CancerNavigator
 PODS_ROOT = ${SRCROOT}/Pods

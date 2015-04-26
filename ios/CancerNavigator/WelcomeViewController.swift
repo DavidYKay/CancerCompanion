@@ -29,11 +29,7 @@ class WelcomeViewController: UIViewController {
 //        self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: onButtonPressed)
         self.navigationItem.title = "Welcome"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Timeline", style: .Plain, target: self, action: "onDone")
-        
-        let scrollPageController = TTScrollSlidingPagesController()
-        
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Timeline", style: .Plain, target: self, action: "onDone")        
     }
     
     func setRoundedBorder(radius : CGFloat, withBorderWidth borderWidth: CGFloat, withColor color : UIColor, forButton button : UIButton)

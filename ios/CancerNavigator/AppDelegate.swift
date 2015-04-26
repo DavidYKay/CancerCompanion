@@ -51,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidReceiveLocalNotification(application: UIApplication, notification: UILocalNotification) {
       let state = application.applicationState
+        
+      println("didReceivedLocalNotification")
 
       if (state == UIApplicationState.Active) {
 

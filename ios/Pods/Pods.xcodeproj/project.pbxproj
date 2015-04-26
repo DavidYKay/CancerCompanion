@@ -7,202 +7,220 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23EFAE9D97E88E02578584A3 /* TTSlidingPageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9445A915D13D07CD14B6A8 /* TTSlidingPageTitle.m */; };
-		432594FA834AA850B0A190A6 /* TTScrollViewWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2FDA3B9C9A126DBB7F845E /* TTScrollViewWrapper.h */; };
-		4CFF794D55B24A429AA464C3 /* TTBlackTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 272B5DDF34CC013410CD7536 /* TTBlackTriangle.m */; };
-		4E4DFF5D92C16ACA06E3E523 /* TTUIScrollViewSlidingPages.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B374EF1D48F53E01ED20DB /* TTUIScrollViewSlidingPages.h */; };
-		7019CFCD865F88DCFBAB6746 /* TTSlidingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D70FBDF85B28067DBE5E3CB /* TTSlidingPage.m */; };
-		7447A643BBBE9209BD9BAFE2 /* TTSliddingPageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 489622106E90DAB6467FB9D8 /* TTSliddingPageDelegate.h */; };
-		7611BB29C7A610DB281C85FE /* TTBlackTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9317C46408DA556E623659 /* TTBlackTriangle.h */; };
-		776A650758CEFB1618143513 /* TTSlidingPagesDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2639614272938D74653023CD /* TTSlidingPagesDataSource.h */; };
-		825D67C37347437190957212 /* Pods-CancerNavigator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F603DAC6E1EBA2BDF242 /* Pods-CancerNavigator-dummy.m */; };
-		95E850D7F9070B3FC523A3EE /* TTScrollSlidingPagesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A6047D86B0E657A2F1910D /* TTScrollSlidingPagesController.h */; };
-		98B267E4D98017A044D5A8A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EA05388F9EABB93B966BCD /* Foundation.framework */; };
-		9956516006C265939F5CBEB5 /* TTSlidingPageTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A45078F9B56E44120971F4 /* TTSlidingPageTitle.h */; };
-		9E0FF2E6A28AEF60AA8F5622 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 166E6CE2FE78EB05D2FCE4CB /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m */; };
-		B0C235BFC349BDDA20456243 /* TTScrollSlidingPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E19CEE65474BA25B92E6217 /* TTScrollSlidingPagesController.m */; };
-		B19DA54EE29B62D9CC15FE61 /* TTScrollViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9C84CBBB72FBE41DB071E /* TTScrollViewWrapper.m */; };
-		B345CBD6C4E327BA55182C4E /* TTSlidingPage.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A198D10FABFC9F4F45090B /* TTSlidingPage.h */; };
-		DDCD71A3D51A7893C3332B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EA05388F9EABB93B966BCD /* Foundation.framework */; };
+		0015262EC49E658C2E5B2863 /* Pods-CancerNavigator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 168754B3EDDDA04DF01A9609 /* Pods-CancerNavigator-dummy.m */; };
+		016467F543F09239E0DD47EF /* diagmonds_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = E5205130E3ED8DCB16DB53BF /* diagmonds_@2X.png */; };
+		535DD186FA229E937513979F /* TTUIScrollViewSlidingPages.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A8A71A55C1CFA8F365EA7E /* TTUIScrollViewSlidingPages.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85845E39D2BCAF78E9430407 /* TTSlidingPageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1066149B641461395219C761 /* TTSlidingPageTitle.m */; };
+		988C5D817F18B1EA181F7598 /* TTSlidingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DBEFBA02F538862C298617 /* TTSlidingPage.m */; };
+		9BCDE4BDC871476183A39A21 /* TTSlidingPagesDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB54F1DF2B3D3F4656D1334 /* TTSlidingPagesDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC79F69CC9F2B4B3E17E3E2D /* TTScrollSlidingPagesController.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD48D508021AF84C14D33B9 /* TTScrollSlidingPagesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B00EEF464523CDE8762085C6 /* TTScrollViewWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB180AFAA2783403DD2AD7C9 /* TTScrollViewWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B362DD751C998624186CF71C /* Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF554A63FA1A26B4C2926CC /* Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB4BFC9D9A15CA1351922E67 /* TTScrollSlidingPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17DA3C1C2BC1A9D495E883 /* TTScrollSlidingPagesController.m */; };
+		BC4F9E4343B1AE93EB1F1B48 /* TTBlackTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB43FF4FAD8EFBE0B109B19 /* TTBlackTriangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEDC26C6C3306BF3E54AA1C7 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93D1E5AE9C668BB8C7CC37 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m */; };
+		BF8D4114482CC44FD7FC84E5 /* TTSlidingPage.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C8CD59DF57B0361887D565 /* TTSlidingPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA7BF07132AC36501485B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62412F138D0DB2D9CB20E223 /* Foundation.framework */; };
+		C836D2CC8877F0FA5A3386E1 /* TTSlidingPageTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = D148BC1D2FAABF3FE963AB0A /* TTSlidingPageTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D19FB8870D991C639C70D071 /* TTSliddingPageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF2918A383BC2BBDEBEF906 /* TTSliddingPageDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79A8925C2137C9BBD5928F1 /* Pods-CancerNavigator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C2D8A8062D50A8FD0E0A04 /* Pods-CancerNavigator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E932CA56C640F6A48E3999B7 /* TTBlackTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BF23852A5ED44AFAA18E51 /* TTBlackTriangle.m */; };
+		EE5087E60D78661E60E81B1A /* diagmonds.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3E5AB203098D8A06AFE18F /* diagmonds.png */; };
+		F0FE5EDCB051D80BFF1C9322 /* TTScrollViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A484CCCD7E0E778FC89ACB /* TTScrollViewWrapper.m */; };
+		FD32E27E20B4FB647B5DFDBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62412F138D0DB2D9CB20E223 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5B6A49732FFCC6A17155EDD6 /* PBXContainerItemProxy */ = {
+		C86CDF236C5FE43963C0C51E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 55798F1059178885B8534FD8 /* Project object */;
+			containerPortal = F25FAEF80A3C60BDA75C558B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61CA6E0A226970F21A9C003F;
+			remoteGlobalIDString = DFE2F07AA4B33A418146AAAE;
 			remoteInfo = "Pods-CancerNavigator-UIScrollSlidingPages";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05E176C7A3CD21C9E9C8820A /* libPods-CancerNavigator-UIScrollSlidingPages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CancerNavigator-UIScrollSlidingPages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0668DBF4CCCD1DBEFF28FDF3 /* Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch"; sourceTree = "<group>"; };
-		166E6CE2FE78EB05D2FCE4CB /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CancerNavigator-UIScrollSlidingPages-dummy.m"; sourceTree = "<group>"; };
-		240B510F6C15C892F11B5644 /* libPods-CancerNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CancerNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2639614272938D74653023CD /* TTSlidingPagesDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSlidingPagesDataSource.h; path = UIScrollViewSlidingPages/Source/TTSlidingPagesDataSource.h; sourceTree = "<group>"; };
-		272B5DDF34CC013410CD7536 /* TTBlackTriangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBlackTriangle.m; path = UIScrollViewSlidingPages/Source/TTBlackTriangle.m; sourceTree = "<group>"; };
-		2D0330FDA90F407EC3E959E9 /* diagmonds.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diagmonds.png; path = UIScrollViewSlidingPages/Source/Images/diagmonds/diagmonds.png; sourceTree = "<group>"; };
-		2D70FBDF85B28067DBE5E3CB /* TTSlidingPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTSlidingPage.m; path = UIScrollViewSlidingPages/Source/TTSlidingPage.m; sourceTree = "<group>"; };
-		2EC9C84CBBB72FBE41DB071E /* TTScrollViewWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTScrollViewWrapper.m; path = UIScrollViewSlidingPages/Source/TTScrollViewWrapper.m; sourceTree = "<group>"; };
-		489622106E90DAB6467FB9D8 /* TTSliddingPageDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSliddingPageDelegate.h; path = UIScrollViewSlidingPages/Source/TTSliddingPageDelegate.h; sourceTree = "<group>"; };
-		49F1483171673B3EDE1D8174 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig"; sourceTree = "<group>"; };
-		5AF3F603DAC6E1EBA2BDF242 /* Pods-CancerNavigator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CancerNavigator-dummy.m"; sourceTree = "<group>"; };
-		62B374EF1D48F53E01ED20DB /* TTUIScrollViewSlidingPages.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTUIScrollViewSlidingPages.h; path = UIScrollViewSlidingPages/Source/TTUIScrollViewSlidingPages.h; sourceTree = "<group>"; };
-		73B1750D3136F977BFFC59EF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		770760322781ACAC445C1E09 /* diagmonds_@2X.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "diagmonds_@2X.png"; path = "UIScrollViewSlidingPages/Source/Images/diagmonds/diagmonds_@2X.png"; sourceTree = "<group>"; };
-		86EA05388F9EABB93B966BCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		87503DA5305B7F7D0EB4694B /* Pods-CancerNavigator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-environment.h"; sourceTree = "<group>"; };
-		8B032417091C3FF143BA42BE /* Pods-CancerNavigator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CancerNavigator-resources.sh"; sourceTree = "<group>"; };
-		8F2FDA3B9C9A126DBB7F845E /* TTScrollViewWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTScrollViewWrapper.h; path = UIScrollViewSlidingPages/Source/TTScrollViewWrapper.h; sourceTree = "<group>"; };
-		92A6047D86B0E657A2F1910D /* TTScrollSlidingPagesController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTScrollSlidingPagesController.h; path = UIScrollViewSlidingPages/Source/TTScrollSlidingPagesController.h; sourceTree = "<group>"; };
-		96D7DED5D2D0141B5262891F /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
-		9D9445A915D13D07CD14B6A8 /* TTSlidingPageTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTSlidingPageTitle.m; path = UIScrollViewSlidingPages/Source/TTSlidingPageTitle.m; sourceTree = "<group>"; };
-		9E19CEE65474BA25B92E6217 /* TTScrollSlidingPagesController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTScrollSlidingPagesController.m; path = UIScrollViewSlidingPages/Source/TTScrollSlidingPagesController.m; sourceTree = "<group>"; };
-		A18CE5862DDE0A1374960ABA /* Pods-CancerNavigator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CancerNavigator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A6A45078F9B56E44120971F4 /* TTSlidingPageTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSlidingPageTitle.h; path = UIScrollViewSlidingPages/Source/TTSlidingPageTitle.h; sourceTree = "<group>"; };
-		A83B4A7C8F8E252072AD0AE9 /* Pods-CancerNavigator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CancerNavigator-acknowledgements.plist"; sourceTree = "<group>"; };
-		B1446B18566784B973A107F6 /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
-		E5C3AF79D8AA5B6464E4316C /* Pods-CancerNavigator-UIScrollSlidingPages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator-UIScrollSlidingPages.xcconfig"; sourceTree = "<group>"; };
-		F2A198D10FABFC9F4F45090B /* TTSlidingPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSlidingPage.h; path = UIScrollViewSlidingPages/Source/TTSlidingPage.h; sourceTree = "<group>"; };
-		FB9317C46408DA556E623659 /* TTBlackTriangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBlackTriangle.h; path = UIScrollViewSlidingPages/Source/TTBlackTriangle.h; sourceTree = "<group>"; };
+		09C2D8A8062D50A8FD0E0A04 /* Pods-CancerNavigator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-umbrella.h"; sourceTree = "<group>"; };
+		0EC91B93DC531F29D71CC5CB /* Pods-CancerNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator.release.xcconfig"; sourceTree = "<group>"; };
+		1066149B641461395219C761 /* TTSlidingPageTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTSlidingPageTitle.m; path = UIScrollViewSlidingPages/Source/TTSlidingPageTitle.m; sourceTree = "<group>"; };
+		15EB699AC5B732CCE99897D9 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig"; sourceTree = "<group>"; };
+		168754B3EDDDA04DF01A9609 /* Pods-CancerNavigator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CancerNavigator-dummy.m"; sourceTree = "<group>"; };
+		1B7C67ADF3BA8A7555E8C01D /* Pods-CancerNavigator-UIScrollSlidingPages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator-UIScrollSlidingPages.xcconfig"; sourceTree = "<group>"; };
+		4F93D1E5AE9C668BB8C7CC37 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CancerNavigator-UIScrollSlidingPages-dummy.m"; sourceTree = "<group>"; };
+		5A80945E3F9B556613254BB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A8A71A55C1CFA8F365EA7E /* TTUIScrollViewSlidingPages.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTUIScrollViewSlidingPages.h; path = UIScrollViewSlidingPages/Source/TTUIScrollViewSlidingPages.h; sourceTree = "<group>"; };
+		62412F138D0DB2D9CB20E223 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67A5CB91FB4930A73710F02A /* Pods-CancerNavigator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-environment.h"; sourceTree = "<group>"; };
+		6CAF094AB939348539862DF0 /* Pods-CancerNavigator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CancerNavigator.modulemap"; sourceTree = "<group>"; };
+		6D05A8A12A7BACE747F78AE7 /* Pods_CancerNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CancerNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BF23852A5ED44AFAA18E51 /* TTBlackTriangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBlackTriangle.m; path = UIScrollViewSlidingPages/Source/TTBlackTriangle.m; sourceTree = "<group>"; };
+		8E9C5026A92FB151E85184F1 /* Pods-CancerNavigator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CancerNavigator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8FB54F1DF2B3D3F4656D1334 /* TTSlidingPagesDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSlidingPagesDataSource.h; path = UIScrollViewSlidingPages/Source/TTSlidingPagesDataSource.h; sourceTree = "<group>"; };
+		9550F6B09866E8B408447F9A /* Pods-CancerNavigator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CancerNavigator-acknowledgements.plist"; sourceTree = "<group>"; };
+		97406490DAC502A9B178A639 /* UIScrollSlidingPages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollSlidingPages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A484CCCD7E0E778FC89ACB /* TTScrollViewWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTScrollViewWrapper.m; path = UIScrollViewSlidingPages/Source/TTScrollViewWrapper.m; sourceTree = "<group>"; };
+		9BBBA5AACE545C9D929AA2BE /* Pods-CancerNavigator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CancerNavigator-frameworks.sh"; sourceTree = "<group>"; };
+		A625B2F4B690636880745079 /* Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch"; sourceTree = "<group>"; };
+		B48DFA4EA58FFA67999FC23F /* Pods-CancerNavigator-UIScrollSlidingPages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CancerNavigator-UIScrollSlidingPages.modulemap"; sourceTree = "<group>"; };
+		B949B622E5045F7824674EB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB17DA3C1C2BC1A9D495E883 /* TTScrollSlidingPagesController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTScrollSlidingPagesController.m; path = UIScrollViewSlidingPages/Source/TTScrollSlidingPagesController.m; sourceTree = "<group>"; };
+		BCD48D508021AF84C14D33B9 /* TTScrollSlidingPagesController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTScrollSlidingPagesController.h; path = UIScrollViewSlidingPages/Source/TTScrollSlidingPagesController.h; sourceTree = "<group>"; };
+		BEB43FF4FAD8EFBE0B109B19 /* TTBlackTriangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBlackTriangle.h; path = UIScrollViewSlidingPages/Source/TTBlackTriangle.h; sourceTree = "<group>"; };
+		CCF554A63FA1A26B4C2926CC /* Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h"; sourceTree = "<group>"; };
+		D148BC1D2FAABF3FE963AB0A /* TTSlidingPageTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSlidingPageTitle.h; path = UIScrollViewSlidingPages/Source/TTSlidingPageTitle.h; sourceTree = "<group>"; };
+		DAF2918A383BC2BBDEBEF906 /* TTSliddingPageDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSliddingPageDelegate.h; path = UIScrollViewSlidingPages/Source/TTSliddingPageDelegate.h; sourceTree = "<group>"; };
+		DB180AFAA2783403DD2AD7C9 /* TTScrollViewWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTScrollViewWrapper.h; path = UIScrollViewSlidingPages/Source/TTScrollViewWrapper.h; sourceTree = "<group>"; };
+		DBE32C98F6861ABA647A777C /* Pods-CancerNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CancerNavigator.debug.xcconfig"; sourceTree = "<group>"; };
+		DE962E18D77404B8A5C4B2C1 /* Pods-CancerNavigator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CancerNavigator-resources.sh"; sourceTree = "<group>"; };
+		DF3E5AB203098D8A06AFE18F /* diagmonds.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diagmonds.png; path = UIScrollViewSlidingPages/Source/Images/diagmonds/diagmonds.png; sourceTree = "<group>"; };
+		E3CEA9B4BC35A91B5DE6611F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E5205130E3ED8DCB16DB53BF /* diagmonds_@2X.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "diagmonds_@2X.png"; path = "UIScrollViewSlidingPages/Source/Images/diagmonds/diagmonds_@2X.png"; sourceTree = "<group>"; };
+		E5C8CD59DF57B0361887D565 /* TTSlidingPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSlidingPage.h; path = UIScrollViewSlidingPages/Source/TTSlidingPage.h; sourceTree = "<group>"; };
+		E6DBEFBA02F538862C298617 /* TTSlidingPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTSlidingPage.m; path = UIScrollViewSlidingPages/Source/TTSlidingPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		419E5B5C1FA9A98190979D2F /* Frameworks */ = {
+		4881AB106EB10D5A32F7A822 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCD71A3D51A7893C3332B65 /* Foundation.framework in Frameworks */,
+				FD32E27E20B4FB647B5DFDBC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68BC85D8B5BF930B429AFE50 /* Frameworks */ = {
+		8F1E191AA022D27AD6032389 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B267E4D98017A044D5A8A8 /* Foundation.framework in Frameworks */,
+				BFA7BF07132AC36501485B3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3706EF8D928A0729CF858540 /* Targets Support Files */ = {
+		12136A7AD41CEE086C4845AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF098066A72B44F5AA165797 /* Pods-CancerNavigator */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3CB7E559BB87F833E7B4368B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DE445307BBE811DD4945EC3C /* iOS */,
+				8CF2C3D88520C98FDDE8294B /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4B7A446624C74B7554594A9F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2D0330FDA90F407EC3E959E9 /* diagmonds.png */,
-				770760322781ACAC445C1E09 /* diagmonds_@2X.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		61C6A2D863C9E31374214164 = {
-			isa = PBXGroup;
-			children = (
-				73B1750D3136F977BFFC59EF /* Podfile */,
-				3CB7E559BB87F833E7B4368B /* Frameworks */,
-				FE8B2EFDA2C156C85BE2E5C7 /* Pods */,
-				E9E04E34EBB8D1DA6671A5DA /* Products */,
-				3706EF8D928A0729CF858540 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		A3AA7906EAD9D003F67441FF /* Firebase */ = {
+		27DCBE3CE99C56E61550102F /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		BFF64F83B783A779FCD417A9 /* UIScrollSlidingPages */ = {
+		45D8980EBD63DFC066C32EB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FB9317C46408DA556E623659 /* TTBlackTriangle.h */,
-				272B5DDF34CC013410CD7536 /* TTBlackTriangle.m */,
-				92A6047D86B0E657A2F1910D /* TTScrollSlidingPagesController.h */,
-				9E19CEE65474BA25B92E6217 /* TTScrollSlidingPagesController.m */,
-				8F2FDA3B9C9A126DBB7F845E /* TTScrollViewWrapper.h */,
-				2EC9C84CBBB72FBE41DB071E /* TTScrollViewWrapper.m */,
-				489622106E90DAB6467FB9D8 /* TTSliddingPageDelegate.h */,
-				F2A198D10FABFC9F4F45090B /* TTSlidingPage.h */,
-				2D70FBDF85B28067DBE5E3CB /* TTSlidingPage.m */,
-				A6A45078F9B56E44120971F4 /* TTSlidingPageTitle.h */,
-				9D9445A915D13D07CD14B6A8 /* TTSlidingPageTitle.m */,
-				2639614272938D74653023CD /* TTSlidingPagesDataSource.h */,
-				62B374EF1D48F53E01ED20DB /* TTUIScrollViewSlidingPages.h */,
-				4B7A446624C74B7554594A9F /* Resources */,
-				D4CC2CAA6C8B747BBB35E46B /* Support Files */,
+				DF3E5AB203098D8A06AFE18F /* diagmonds.png */,
+				E5205130E3ED8DCB16DB53BF /* diagmonds_@2X.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4EF4E4042B335E7E7F760311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D05A8A12A7BACE747F78AE7 /* Pods_CancerNavigator.framework */,
+				97406490DAC502A9B178A639 /* UIScrollSlidingPages.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		651F3D972864052AE692507D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE276D949F4FBD2E2B8D4BF2 /* Pods-CancerNavigator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7385C1ECA2F28A7BE1192C74 /* UIScrollSlidingPages */ = {
+			isa = PBXGroup;
+			children = (
+				BEB43FF4FAD8EFBE0B109B19 /* TTBlackTriangle.h */,
+				83BF23852A5ED44AFAA18E51 /* TTBlackTriangle.m */,
+				BCD48D508021AF84C14D33B9 /* TTScrollSlidingPagesController.h */,
+				BB17DA3C1C2BC1A9D495E883 /* TTScrollSlidingPagesController.m */,
+				DB180AFAA2783403DD2AD7C9 /* TTScrollViewWrapper.h */,
+				97A484CCCD7E0E778FC89ACB /* TTScrollViewWrapper.m */,
+				DAF2918A383BC2BBDEBEF906 /* TTSliddingPageDelegate.h */,
+				E5C8CD59DF57B0361887D565 /* TTSlidingPage.h */,
+				E6DBEFBA02F538862C298617 /* TTSlidingPage.m */,
+				D148BC1D2FAABF3FE963AB0A /* TTSlidingPageTitle.h */,
+				1066149B641461395219C761 /* TTSlidingPageTitle.m */,
+				8FB54F1DF2B3D3F4656D1334 /* TTSlidingPagesDataSource.h */,
+				60A8A71A55C1CFA8F365EA7E /* TTUIScrollViewSlidingPages.h */,
+				45D8980EBD63DFC066C32EB7 /* Resources */,
+				D3518DCA4308450C04F28383 /* Support Files */,
 			);
 			path = UIScrollSlidingPages;
 			sourceTree = "<group>";
 		};
-		D4CC2CAA6C8B747BBB35E46B /* Support Files */ = {
+		8CF2C3D88520C98FDDE8294B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E5C3AF79D8AA5B6464E4316C /* Pods-CancerNavigator-UIScrollSlidingPages.xcconfig */,
-				49F1483171673B3EDE1D8174 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */,
-				166E6CE2FE78EB05D2FCE4CB /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m */,
-				0668DBF4CCCD1DBEFF28FDF3 /* Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages";
-			sourceTree = "<group>";
-		};
-		DE445307BBE811DD4945EC3C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				86EA05388F9EABB93B966BCD /* Foundation.framework */,
+				62412F138D0DB2D9CB20E223 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DF098066A72B44F5AA165797 /* Pods-CancerNavigator */ = {
+		AB1791E4EABF26FB7084931D = {
 			isa = PBXGroup;
 			children = (
-				A18CE5862DDE0A1374960ABA /* Pods-CancerNavigator-acknowledgements.markdown */,
-				A83B4A7C8F8E252072AD0AE9 /* Pods-CancerNavigator-acknowledgements.plist */,
-				5AF3F603DAC6E1EBA2BDF242 /* Pods-CancerNavigator-dummy.m */,
-				87503DA5305B7F7D0EB4694B /* Pods-CancerNavigator-environment.h */,
-				8B032417091C3FF143BA42BE /* Pods-CancerNavigator-resources.sh */,
-				B1446B18566784B973A107F6 /* Pods-CancerNavigator.debug.xcconfig */,
-				96D7DED5D2D0141B5262891F /* Pods-CancerNavigator.release.xcconfig */,
+				E3CEA9B4BC35A91B5DE6611F /* Podfile */,
+				12136A7AD41CEE086C4845AB /* Frameworks */,
+				D92104300006D7310DA2E3CF /* Pods */,
+				4EF4E4042B335E7E7F760311 /* Products */,
+				651F3D972864052AE692507D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AE276D949F4FBD2E2B8D4BF2 /* Pods-CancerNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				B949B622E5045F7824674EB1 /* Info.plist */,
+				6CAF094AB939348539862DF0 /* Pods-CancerNavigator.modulemap */,
+				8E9C5026A92FB151E85184F1 /* Pods-CancerNavigator-acknowledgements.markdown */,
+				9550F6B09866E8B408447F9A /* Pods-CancerNavigator-acknowledgements.plist */,
+				168754B3EDDDA04DF01A9609 /* Pods-CancerNavigator-dummy.m */,
+				67A5CB91FB4930A73710F02A /* Pods-CancerNavigator-environment.h */,
+				9BBBA5AACE545C9D929AA2BE /* Pods-CancerNavigator-frameworks.sh */,
+				DE962E18D77404B8A5C4B2C1 /* Pods-CancerNavigator-resources.sh */,
+				09C2D8A8062D50A8FD0E0A04 /* Pods-CancerNavigator-umbrella.h */,
+				DBE32C98F6861ABA647A777C /* Pods-CancerNavigator.debug.xcconfig */,
+				0EC91B93DC531F29D71CC5CB /* Pods-CancerNavigator.release.xcconfig */,
 			);
 			name = "Pods-CancerNavigator";
 			path = "Target Support Files/Pods-CancerNavigator";
 			sourceTree = "<group>";
 		};
-		E9E04E34EBB8D1DA6671A5DA /* Products */ = {
+		D3518DCA4308450C04F28383 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				240B510F6C15C892F11B5644 /* libPods-CancerNavigator.a */,
-				05E176C7A3CD21C9E9C8820A /* libPods-CancerNavigator-UIScrollSlidingPages.a */,
+				5A80945E3F9B556613254BB8 /* Info.plist */,
+				B48DFA4EA58FFA67999FC23F /* Pods-CancerNavigator-UIScrollSlidingPages.modulemap */,
+				1B7C67ADF3BA8A7555E8C01D /* Pods-CancerNavigator-UIScrollSlidingPages.xcconfig */,
+				15EB699AC5B732CCE99897D9 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */,
+				4F93D1E5AE9C668BB8C7CC37 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m */,
+				A625B2F4B690636880745079 /* Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch */,
+				CCF554A63FA1A26B4C2926CC /* Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages";
 			sourceTree = "<group>";
 		};
-		FE8B2EFDA2C156C85BE2E5C7 /* Pods */ = {
+		D92104300006D7310DA2E3CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A3AA7906EAD9D003F67441FF /* Firebase */,
-				BFF64F83B783A779FCD417A9 /* UIScrollSlidingPages */,
+				27DCBE3CE99C56E61550102F /* Firebase */,
+				7385C1ECA2F28A7BE1192C74 /* UIScrollSlidingPages */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -210,31 +228,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3DAB3BCFFB18E423FD6EDE7C /* Headers */ = {
+		4E492FD9FBB890FDE8F22D06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7611BB29C7A610DB281C85FE /* TTBlackTriangle.h in Headers */,
-				95E850D7F9070B3FC523A3EE /* TTScrollSlidingPagesController.h in Headers */,
-				432594FA834AA850B0A190A6 /* TTScrollViewWrapper.h in Headers */,
-				7447A643BBBE9209BD9BAFE2 /* TTSliddingPageDelegate.h in Headers */,
-				B345CBD6C4E327BA55182C4E /* TTSlidingPage.h in Headers */,
-				9956516006C265939F5CBEB5 /* TTSlidingPageTitle.h in Headers */,
-				776A650758CEFB1618143513 /* TTSlidingPagesDataSource.h in Headers */,
-				4E4DFF5D92C16ACA06E3E523 /* TTUIScrollViewSlidingPages.h in Headers */,
+				E79A8925C2137C9BBD5928F1 /* Pods-CancerNavigator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86CC95675F3CA41854A79099 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B362DD751C998624186CF71C /* Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h in Headers */,
+				BC4F9E4343B1AE93EB1F1B48 /* TTBlackTriangle.h in Headers */,
+				AC79F69CC9F2B4B3E17E3E2D /* TTScrollSlidingPagesController.h in Headers */,
+				B00EEF464523CDE8762085C6 /* TTScrollViewWrapper.h in Headers */,
+				D19FB8870D991C639C70D071 /* TTSliddingPageDelegate.h in Headers */,
+				BF8D4114482CC44FD7FC84E5 /* TTSlidingPage.h in Headers */,
+				C836D2CC8877F0FA5A3386E1 /* TTSlidingPageTitle.h in Headers */,
+				9BCDE4BDC871476183A39A21 /* TTSlidingPagesDataSource.h in Headers */,
+				535DD186FA229E937513979F /* TTUIScrollViewSlidingPages.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		61CA6E0A226970F21A9C003F /* Pods-CancerNavigator-UIScrollSlidingPages */ = {
+		73D1C5334D30E551E70D9BDD /* Pods-CancerNavigator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A803A9E3B0C2DB28B0CE8B2D /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator-UIScrollSlidingPages" */;
+			buildConfigurationList = 46F28B6DCE4B6E27574ABE8A /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator" */;
 			buildPhases = (
-				C8755A3430544C16D205D732 /* Sources */,
-				68BC85D8B5BF930B429AFE50 /* Frameworks */,
-				3DAB3BCFFB18E423FD6EDE7C /* Headers */,
+				28FF6A65CA45C2D7592C7476 /* Sources */,
+				8F1E191AA022D27AD6032389 /* Frameworks */,
+				4E492FD9FBB890FDE8F22D06 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9A1C4F0E675B1940D5B2437 /* PBXTargetDependency */,
+			);
+			name = "Pods-CancerNavigator";
+			productName = "Pods-CancerNavigator";
+			productReference = 6D05A8A12A7BACE747F78AE7 /* Pods_CancerNavigator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFE2F07AA4B33A418146AAAE /* Pods-CancerNavigator-UIScrollSlidingPages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD96F2EDC02E15DFB625E24 /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator-UIScrollSlidingPages" */;
+			buildPhases = (
+				C20183874C260B6B4BC596D5 /* Sources */,
+				4881AB106EB10D5A32F7A822 /* Frameworks */,
+				86CC95675F3CA41854A79099 /* Headers */,
+				899C12837C216E0DCEEC23D7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -242,103 +288,111 @@
 			);
 			name = "Pods-CancerNavigator-UIScrollSlidingPages";
 			productName = "Pods-CancerNavigator-UIScrollSlidingPages";
-			productReference = 05E176C7A3CD21C9E9C8820A /* libPods-CancerNavigator-UIScrollSlidingPages.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		85C4FA3CDEA5EEBAE9640068 /* Pods-CancerNavigator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A3A4059F8FF55B9EEC8D3AEE /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator" */;
-			buildPhases = (
-				1D18FF95219CA58105886066 /* Sources */,
-				419E5B5C1FA9A98190979D2F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00D7942D16DA4D5238EFFF07 /* PBXTargetDependency */,
-			);
-			name = "Pods-CancerNavigator";
-			productName = "Pods-CancerNavigator";
-			productReference = 240B510F6C15C892F11B5644 /* libPods-CancerNavigator.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 97406490DAC502A9B178A639 /* UIScrollSlidingPages.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		55798F1059178885B8534FD8 /* Project object */ = {
+		F25FAEF80A3C60BDA75C558B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = BB551FAFF69B9CDCADC7C0D8 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F615F623B13DAC8B2615A403 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 61C6A2D863C9E31374214164;
-			productRefGroup = E9E04E34EBB8D1DA6671A5DA /* Products */;
+			mainGroup = AB1791E4EABF26FB7084931D;
+			productRefGroup = 4EF4E4042B335E7E7F760311 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85C4FA3CDEA5EEBAE9640068 /* Pods-CancerNavigator */,
-				61CA6E0A226970F21A9C003F /* Pods-CancerNavigator-UIScrollSlidingPages */,
+				73D1C5334D30E551E70D9BDD /* Pods-CancerNavigator */,
+				DFE2F07AA4B33A418146AAAE /* Pods-CancerNavigator-UIScrollSlidingPages */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		1D18FF95219CA58105886066 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		899C12837C216E0DCEEC23D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				825D67C37347437190957212 /* Pods-CancerNavigator-dummy.m in Sources */,
+				EE5087E60D78661E60E81B1A /* diagmonds.png in Resources */,
+				016467F543F09239E0DD47EF /* diagmonds_@2X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8755A3430544C16D205D732 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28FF6A65CA45C2D7592C7476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E0FF2E6A28AEF60AA8F5622 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m in Sources */,
-				4CFF794D55B24A429AA464C3 /* TTBlackTriangle.m in Sources */,
-				B0C235BFC349BDDA20456243 /* TTScrollSlidingPagesController.m in Sources */,
-				B19DA54EE29B62D9CC15FE61 /* TTScrollViewWrapper.m in Sources */,
-				7019CFCD865F88DCFBAB6746 /* TTSlidingPage.m in Sources */,
-				23EFAE9D97E88E02578584A3 /* TTSlidingPageTitle.m in Sources */,
+				0015262EC49E658C2E5B2863 /* Pods-CancerNavigator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C20183874C260B6B4BC596D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC26C6C3306BF3E54AA1C7 /* Pods-CancerNavigator-UIScrollSlidingPages-dummy.m in Sources */,
+				E932CA56C640F6A48E3999B7 /* TTBlackTriangle.m in Sources */,
+				BB4BFC9D9A15CA1351922E67 /* TTScrollSlidingPagesController.m in Sources */,
+				F0FE5EDCB051D80BFF1C9322 /* TTScrollViewWrapper.m in Sources */,
+				988C5D817F18B1EA181F7598 /* TTSlidingPage.m in Sources */,
+				85845E39D2BCAF78E9430407 /* TTSlidingPageTitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00D7942D16DA4D5238EFFF07 /* PBXTargetDependency */ = {
+		E9A1C4F0E675B1940D5B2437 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CancerNavigator-UIScrollSlidingPages";
-			target = 61CA6E0A226970F21A9C003F /* Pods-CancerNavigator-UIScrollSlidingPages */;
-			targetProxy = 5B6A49732FFCC6A17155EDD6 /* PBXContainerItemProxy */;
+			target = DFE2F07AA4B33A418146AAAE /* Pods-CancerNavigator-UIScrollSlidingPages */;
+			targetProxy = C86CDF236C5FE43963C0C51E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5F916F8878DB29EAB924A652 /* Release */ = {
+		2B43F7AE3CD1ADB45D67965C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96D7DED5D2D0141B5262891F /* Pods-CancerNavigator.release.xcconfig */;
+			baseConfigurationReference = 0EC91B93DC531F29D71CC5CB /* Pods-CancerNavigator.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CancerNavigator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_CancerNavigator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		7E106261811E9A032B05586A /* Debug */ = {
+		4D0F87DA982070311C156A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +431,34 @@
 			};
 			name = Debug;
 		};
-		85F3CD2F0C3CA1E35A836D3A /* Release */ = {
+		ADC648737670BABF320546A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EB699AC5B732CCE99897D9 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Pods-CancerNavigator-UIScrollSlidingPages.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIScrollSlidingPages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4BA245A34805814CCADF36E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -411,85 +492,93 @@
 			};
 			name = Release;
 		};
-		893EADFD3C3D52A35A66A017 /* Debug */ = {
+		C18421455E39C28F32C9BDFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49F1483171673B3EDE1D8174 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */;
+			baseConfigurationReference = 15EB699AC5B732CCE99897D9 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Pods-CancerNavigator-UIScrollSlidingPages.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIScrollSlidingPages;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		97277F595528B6F15E03CF2D /* Debug */ = {
+		E48EAE194D2ED10009829070 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1446B18566784B973A107F6 /* Pods-CancerNavigator.debug.xcconfig */;
+			baseConfigurationReference = DBE32C98F6861ABA647A777C /* Pods-CancerNavigator.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CancerNavigator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CancerNavigator/Pods-CancerNavigator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_CancerNavigator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		F66D4A12C2DC2D361F89E1D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49F1483171673B3EDE1D8174 /* Pods-CancerNavigator-UIScrollSlidingPages-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CancerNavigator-UIScrollSlidingPages/Pods-CancerNavigator-UIScrollSlidingPages-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3A4059F8FF55B9EEC8D3AEE /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator" */ = {
+		46F28B6DCE4B6E27574ABE8A /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97277F595528B6F15E03CF2D /* Debug */,
-				5F916F8878DB29EAB924A652 /* Release */,
+				E48EAE194D2ED10009829070 /* Debug */,
+				2B43F7AE3CD1ADB45D67965C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A803A9E3B0C2DB28B0CE8B2D /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator-UIScrollSlidingPages" */ = {
+		CFD96F2EDC02E15DFB625E24 /* Build configuration list for PBXNativeTarget "Pods-CancerNavigator-UIScrollSlidingPages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				893EADFD3C3D52A35A66A017 /* Debug */,
-				F66D4A12C2DC2D361F89E1D1 /* Release */,
+				ADC648737670BABF320546A5 /* Debug */,
+				C18421455E39C28F32C9BDFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB551FAFF69B9CDCADC7C0D8 /* Build configuration list for PBXProject "Pods" */ = {
+		F615F623B13DAC8B2615A403 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E106261811E9A032B05586A /* Debug */,
-				85F3CD2F0C3CA1E35A836D3A /* Release */,
+				4D0F87DA982070311C156A66 /* Debug */,
+				B4BA245A34805814CCADF36E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 55798F1059178885B8534FD8 /* Project object */;
+	rootObject = F25FAEF80A3C60BDA75C558B /* Project object */;
 }

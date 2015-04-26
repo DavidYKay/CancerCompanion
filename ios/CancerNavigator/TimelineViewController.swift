@@ -19,8 +19,22 @@ class TimelineViewController: UIViewController {
     }
 
     func onFireNotification() {
+        println("onFireNotification")
+        
+          let t = NSTimer.scheduledTimerWithTimeInterval(5.0,
+            target: self, 
+            selector:Selector("onTick"),
+        userInfo: nil, repeats:false)
 
     }
+
+    func onTick() {
+        println("onTick")
+      //NotificationService().scheduleNotification()
+      NotificationService().showNotification()
+    }
+
+
 
 }
 
