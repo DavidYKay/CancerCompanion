@@ -14,8 +14,8 @@ class ThermometerView: UIView {
     var numberLabels: [UILabel]!
     let thermometerGradient = ColorService().dynamicGradiant(UIColor.greenColor(), toColor: UIColor.redColor())
     
-    let StandardHeight = 20
-    let StandardWidth  = 20
+    let StandardHeight:CGFloat = 20
+    let StandardWidth:CGFloat  = 20
 
     func baseInit() {
         let rgLayer = ColorService().thermometerGradient()
@@ -49,10 +49,12 @@ class ThermometerView: UIView {
     
     override func layoutSubviews() {
 
-        var yOffset = 0
+        var yOffset:CGFloat = 0
+        let interval:CGFloat = self.frame.size.height / 10
+        let xPos:CGFloat = 0
         for label in self.numberLabels {
-          label.frame = CGRect(x: 1, y: yOffset, width: StandardWidth, height: StandardHeight)
-            yOffset += StandardHeight
+          label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
+            yOffset += interval
         }
     }
     
