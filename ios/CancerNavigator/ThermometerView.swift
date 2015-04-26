@@ -21,11 +21,6 @@ class ThermometerView: UIView {
         let rgLayer = ColorService().thermometerGradient()
         rgLayer.frame = self.bounds;
 
-        ///for i in 0..<3 {
-        //for i in 1...10 {
-        //  println(i)
-        //}
-
         let numbers = 1...10
         self.numberLabels = numbers.map { 
           let label = UILabel()
@@ -52,8 +47,11 @@ class ThermometerView: UIView {
     }
     
     override func layoutSubviews() {
+
+        var yOffset = 0
         for label in self.numberLabels {
-          label.frame = CGRect(x: 1, y: 1, width: StandardWidth, height: StandardHeight)
+          label.frame = CGRect(x: 1, y: yOffset, width: StandardWidth, height: StandardHeight)
+            yOffset += StandardHeight
         }
     }
     
