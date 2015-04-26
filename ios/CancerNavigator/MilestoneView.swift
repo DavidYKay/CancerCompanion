@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MilestoneView : UIView {
+public class MilestoneView : UIView {
     
     var milestone: Milestone?
 
@@ -18,9 +18,19 @@ class MilestoneView : UIView {
     @IBOutlet weak var dateDividingLine: UIView!
     
     func baseInit() {
-	let label = UILabel()
 
-        label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
+        let options: [NSObject : AnyObject] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+//        let options = nil
+     	let views = NSBundle.mainBundle().loadNibNamed("MilestoneView", owner: self, options: options)
+        let loadedView: UIView = views[0] as! UIView
+        self.addSubview(loadedView)
+//      [self addSubview:
+//         [[[NSBundle mainBundle] loadNibNamed:@"MyCustomTimerView" 
+//                                        owner:self 
+//                                      options:nil] objectAtIndex:0]];
+
+	//let label = UILabel()
+        //label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
     }
         
     required public init(coder aDecoder: NSCoder) {

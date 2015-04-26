@@ -27,10 +27,10 @@ struct Milestone {
     var checkmark: Checkmark
 }
 
-
 public class TimelineView : UIView {
 
     var milestoneLabels: [UILabel]!
+    var milestoneView: MilestoneView!
     
     func baseInit() {
       let milestones = [
@@ -52,15 +52,17 @@ public class TimelineView : UIView {
       ]
 
         self.milestoneLabels = []
-//        self. = []
-        for milestone in milestones {
-          let label = UILabel()
-          label.text = milestone.name
 
-          label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
-          self.addSubview(label)
-          self.milestoneLabels.append(label)
-        }
+        self.milestoneView = MilestoneView()
+
+        //for milestone in milestones {
+        //  let label = UILabel()
+        //  label.text = milestone.name
+
+        //  label.transform = CGAffineTransformMakeRotation(CGFloat(degreesToRadians(-45)))
+        //  self.addSubview(label)
+        //  self.milestoneLabels.append(label)
+        //}
     }
         
     required public init(coder aDecoder: NSCoder) {
@@ -84,6 +86,8 @@ public class TimelineView : UIView {
           label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
           yOffset += interval
       }
+
+      milestoneView.frame = self.bounds
     }
 
     func handleTouches(touches: Set<NSObject>) {
