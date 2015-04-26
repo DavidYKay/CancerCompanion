@@ -10,18 +10,21 @@
             <rect key="frame" x="0.0" y="0.0" width="115" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diagnosis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-7c-qIp">
-                    <rect key="frame" x="19" y="8" width="76" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DME-UF-U6W">
+                    <rect key="frame" x="8" y="4" width="99" height="30"/>
+                    <state key="normal" title="Diagnosis">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nameWasPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="h3y-Xy-n8t"/>
+                    </connections>
+                </button>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ins-fC-7qK" userLabel="Vertical Line">
                     <rect key="frame" x="56" y="37" width="2" height="140"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="Jn2-xD-vBE"/>
-                        <constraint firstAttribute="width" constant="6" id="sq3-rb-wNn"/>
+                        <constraint firstAttribute="width" constant="2" id="sq3-rb-wNn"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="May 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-Vr-1jK">
@@ -47,6 +50,9 @@
                         <constraint firstAttribute="height" constant="60" id="z0a-LZ-Zyb"/>
                     </constraints>
                     <state key="normal" title="Checkmark" image="CheckGreen.png"/>
+                    <connections>
+                        <action selector="checkmarkWasPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Re-h5-a5a"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -57,21 +63,19 @@
                 <constraint firstAttribute="centerX" secondItem="Z9i-f7-XNe" secondAttribute="centerX" constant="0.5" id="Fwj-h5-Lua"/>
                 <constraint firstItem="2gj-Vr-1jK" firstAttribute="top" secondItem="ins-fC-7qK" secondAttribute="bottom" constant="11" id="HSe-ck-Jks"/>
                 <constraint firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" id="MpE-pr-6LM"/>
+                <constraint firstItem="ins-fC-7qK" firstAttribute="top" secondItem="DME-UF-U6W" secondAttribute="bottom" constant="3" id="NkW-FC-BFQ"/>
                 <constraint firstAttribute="bottom" secondItem="Z9i-f7-XNe" secondAttribute="bottom" constant="8" id="RnP-Ri-zqG"/>
-                <constraint firstItem="9AB-7c-qIp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Ui3-lI-IvS"/>
                 <constraint firstAttribute="centerX" secondItem="ins-fC-7qK" secondAttribute="centerX" id="VWU-Jw-Zdx"/>
-                <constraint firstItem="9AB-7c-qIp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="Wed-BH-tPj"/>
                 <constraint firstAttribute="centerX" secondItem="2gj-Vr-1jK" secondAttribute="centerX" id="aSg-Zs-hz3"/>
-                <constraint firstAttribute="centerX" secondItem="9AB-7c-qIp" secondAttribute="centerX" constant="0.5" id="dOD-GA-oK7"/>
+                <constraint firstItem="DME-UF-U6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="cTJ-zs-VeF"/>
                 <constraint firstItem="Z9i-f7-XNe" firstAttribute="centerX" secondItem="JdL-hx-dQy" secondAttribute="centerX" constant="-0.5" id="qi1-tT-vGe"/>
+                <constraint firstAttribute="centerX" secondItem="DME-UF-U6W" secondAttribute="centerX" id="qng-eQ-Rjc"/>
                 <constraint firstItem="Zvd-Il-qAn" firstAttribute="top" secondItem="2gj-Vr-1jK" secondAttribute="bottom" constant="4" id="wEb-6a-bSa"/>
-                <constraint firstItem="ins-fC-7qK" firstAttribute="top" secondItem="9AB-7c-qIp" secondAttribute="bottom" constant="8" id="wjN-Ba-JVD"/>
                 <constraint firstAttribute="centerX" secondItem="Zvd-Il-qAn" secondAttribute="centerX" id="xo2-Rv-77j"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="Wed-BH-tPj"/>
                     <exclude reference="Fwj-h5-Lua"/>
                     <exclude reference="qi1-tT-vGe"/>
                 </mask>
@@ -82,7 +86,7 @@
                 <outlet property="dateLabel" destination="2gj-Vr-1jK" id="Ewz-me-Vjk"/>
                 <outlet property="timeLabel" destination="JdL-hx-dQy" id="9ni-Ev-VD3"/>
             </connections>
-            <point key="canvasLocation" x="182.5" y="319"/>
+            <point key="canvasLocation" x="181.5" y="324"/>
         </view>
     </objects>
     <resources>

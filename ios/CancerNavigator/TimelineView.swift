@@ -29,8 +29,7 @@ struct Milestone {
 
 public class TimelineView : UIScrollView {
 
-    var milestoneLabels: [UILabel]!
-    var milestoneView: MilestoneView!
+    var milestoneViews: [MilestoneView]!
     
     func baseInit() {
       let milestones = [
@@ -51,7 +50,6 @@ public class TimelineView : UIScrollView {
         Milestone(type: MilestoneType.Major , name: "Survivor"          , day: nil     , time: nil    , checkmark: Checkmark.None)      , 
       ]
 
-        self.milestoneLabels = []
 
 
         var xOffset: CGFloat = 40
@@ -60,6 +58,8 @@ public class TimelineView : UIScrollView {
         let milestoneWidth: CGFloat = 80
         let milestoneHeight = self.bounds.size.height
 
+
+        self.milestoneViews = []
         for milestone in milestones {
           let milestoneView = MilestoneView.create()
           milestoneView.milestone = milestone
@@ -69,6 +69,7 @@ public class TimelineView : UIScrollView {
           milestoneView.frame = CGRect(x: xOffset, y: yPos, width: milestoneWidth, height: milestoneHeight )
 
           self.addSubview(milestoneView)
+          self.milestoneViews.append(milestoneView)
 
           xOffset += interval
         }
@@ -94,10 +95,10 @@ public class TimelineView : UIScrollView {
       let xPos: CGFloat = 0
       let StandardWidth: CGFloat = 120
       let StandardHeight: CGFloat = 40
-      for label in milestoneLabels {
-          label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
-          yOffset += interval
-      }
+//      for label in milestoneLabels {
+//          label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
+//          yOffset += interval
+//      }
 
 //      let milestoneWidth: CGFloat = 76
 //      milestoneView.frame = CGRect(x: 0,y: 0, width: milestoneWidth, height: 200)
