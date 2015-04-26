@@ -32,12 +32,14 @@ public class MilestoneView : UIView {
             verticalLine.hidden = false
             arrow.hidden = true
             minorNameLabel.hidden = true
+            nameButton.hidden = false
             nameButton.setTitle(unwrapped.name, forState: UIControlState.Normal)
           case .Minor:
             verticalLine.hidden = true
             arrow.hidden = false
             minorNameLabel.hidden = false
             minorNameLabel.text = unwrapped.name
+            nameButton.hidden = true
         }
 
 
