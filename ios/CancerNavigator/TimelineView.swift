@@ -71,6 +71,15 @@ public class TimelineView : UIView {
   
     public override func layoutSubviews() {
 
+      let interval: CGFloat = 15
+      var yOffset: CGFloat = 0
+      let xPos: CGFloat = 0
+      let StandardWidth: CGFloat = 80
+      let StandardHeight: CGFloat = 20
+      for label in milestoneLabels {
+          label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
+          yOffset += interval
+      }
     }
 
     func handleTouches(touches: Set<NSObject>) {

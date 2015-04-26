@@ -71,7 +71,7 @@ public class ThermometerView: UIView {
         let xPos:CGFloat = 0
         for label in self.numberLabels {
           label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
-            yOffset += interval
+          yOffset += interval
         }
 
         self.valueLabel.frame = CGRect(x: -20, y: -20, width: 40, height: StandardHeight)

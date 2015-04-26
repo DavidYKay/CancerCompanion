@@ -38,6 +38,10 @@
                         <action selector="onShowEmotionPressed:" destination="-1" eventType="touchUpInside" id="hnE-JO-1ec"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-VJ-HyZ" customClass="TimelineView" customModule="CancerNavigator" customModuleProvider="target">
+                    <rect key="frame" x="8" y="210" width="304" height="350"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
