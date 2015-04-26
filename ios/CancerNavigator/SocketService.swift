@@ -33,8 +33,10 @@ public class SocketService {
       setTrue("survey")
     }
 
-    public func logEmotionalCheckin() {
-      setTrue("emotionalCheckin")
+    public func logEmotionalCheckin(value: Int) {
+      let url = "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin"
+      var myRootRef = Firebase(url: url)
+      myRootRef.setValue(value)
     }
 
     func setTrue(name:String ) {

@@ -22,12 +22,11 @@ class EmotionalCheckinViewController: UIViewController, ThermometerListener {
         
         self.thermometerView.listener = self
 	
-	SocketService().logEmotionalCheckin()
-        
     }
     
     func onNewThermometerValue(thermometerValue: Int) {
         self.currentValueLabel.text = "Current value: \(thermometerValue)" 
+	  SocketService().logEmotionalCheckin(thermometerValue)
     }
 
     func onDone() {
