@@ -16,6 +16,7 @@ class ThermometerView: UIView {
     
     let StandardHeight:CGFloat = 20
     let StandardWidth:CGFloat  = 20
+    let NumValues = 10
 
     func baseInit() {
         let rgLayer = ColorService().thermometerGradient()
@@ -46,21 +47,45 @@ class ThermometerView: UIView {
       super.init(frame: frame)
       baseInit()
     }
+
+    func yInterval() -> CGFloat {
+      return self.frame.size.height / 10
+    }
     
     override func layoutSubviews() {
 
         var yOffset:CGFloat = 0
-        let interval:CGFloat = self.frame.size.height / 10
+        let interval:CGFloat = yInterval()
         let xPos:CGFloat = 0
         for label in self.numberLabels {
           label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
             yOffset += interval
         }
     }
+    
+    func yPosToThermometerValue(yPos: CGFloat) -> Int {
+        let baseline:CGFloat = 0
+        let deltaY = yPos - baseline
 
+
+        if (deltaY < 0) {
+          return 10
+        } else if (deltaY > self.frame.size.height) {
+          return 1
+        } else {
+          let tentative = 11 - (deltaY / yInterval())
+          return Int(tentative)
+        }
+    }
 
     func handleTouchAtLocation(touchLocation: CGPoint) {
-      println("\(touchLocation.x) \(touchLocation.y)")
+      let thermValue = yPosToThermometerValue(touchLocation.y)
+
+      println("thermValue: \(thermValue)")
+
+
+      //println("\(touchLocation.x) \(touchLocation.y)")
+
     }
 
     func handleTouches(touches: Set<NSObject>) {
