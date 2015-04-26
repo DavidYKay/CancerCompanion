@@ -15,7 +15,9 @@ class ThermometerView: UIView {
     let thermometerGradient = ColorService().dynamicGradiant(UIColor.greenColor(), toColor: UIColor.redColor())
 
     func baseInit() {
-        
+        let rgLayer = ColorService().thermometerGradient()
+        rgLayer.frame = self.bounds;
+        self.layer.insertSublayer(rgLayer, atIndex:0)
     }
         
     required init(coder aDecoder: NSCoder) {
