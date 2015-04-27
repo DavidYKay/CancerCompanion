@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="large-12 column">
+    <h1>{{patient.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 column">
+  </div>
+  <div class="large-4 column">
+    Morphology: {{patient.morphology}}
+  </div>
+  <div class="large-4 column">
+  </div>
+  <div class="large-4 column">
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 column">
+    <table>
+      <thead>
+        <th width="200">Appointment Confirmed</th>
+        <th width="200">Survey Completed</th>
+        <th width="200">Emotional Checkin Completed</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a ng-click="reverse('appt')"><i class="size-36" ng-class="{'foundicon-checkmark': checkpoints.appointmentConfirmed, 'foundicon-remove': !checkpoints.appointmentConfirmed}"></i></a></td>
+          <td><a ng-click="reverse('survey')"><i class="size-36" ng-class="{'foundicon-checkmark': checkpoints.survey, 'foundicon-remove': !checkpoints.survey}"></i></a></td>
+          <td><i class="size-36" ng-class="{'foundicon-remove': checkpoints.emotionalCheckin==0}"></i>{{checkpoints.emotionalCheckin > 0 ? checkpoints.emotionalCheckin : ""}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<button ng-click="acknowledge()">Alert</button>
