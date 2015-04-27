@@ -22,9 +22,7 @@ public class MilestoneView : UIView {
   
   var containerView: UIView!
 
-
-  var milestone: Milestone? {
-    didSet {
+  public func updateView() {
       if (milestone != nil) {
         let unwrapped = milestone!
 
@@ -72,6 +70,11 @@ public class MilestoneView : UIView {
             checkmarkButton.setImage(image , forState: UIControlState.Normal)
         }
       }
+  }
+
+  var milestone: Milestone? {
+    didSet {
+      updateView()
     }
   }
 
@@ -86,6 +89,9 @@ public class MilestoneView : UIView {
     func baseInit() {
         println("milestoneView.baseInit()")
 
+        SwiftEventBus.onMainThread(self, name: "UpdateUI") { result in
+            self.updateView()
+       }
     }
         
     required public init(coder aDecoder: NSCoder) {

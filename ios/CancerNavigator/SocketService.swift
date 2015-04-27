@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftEventBus
 
 public class SocketService {
 
@@ -17,9 +18,11 @@ public class SocketService {
       "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin",
       "https://burning-heat-9358.firebaseio.com/checkpoints/appointmentConfirmed"]
       for url in urls {
-	var myRootRef = Firebase(url: url)
-	myRootRef.setValue(false)
+        var myRootRef = Firebase(url: url)
+        myRootRef.setValue(false)
       }
+      
+      SwiftEventBus.post("UpdateUI")
     }
     
     public func logAppointmentConfirmed() {
@@ -30,30 +33,18 @@ public class SocketService {
       setTrue("survey")
     }
 
-    public func logEmotionalCheckin() {
-      setTrue("emotionalCheckin")
+    public func logEmotionalCheckin(value: Int) {
+      let url = "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin"
+      var myRootRef = Firebase(url: url)
+      myRootRef.setValue(value)
     }
-
 
     func setTrue(name:String ) {
       let url = "https://burning-heat-9358.firebaseio.com/checkpoints/\(name)"
       var myRootRef = Firebase(url: url)
       myRootRef.setValue(true)
-    }
-    
-    public func saveData() {
-      var myRootRef = Firebase(url:"https://burning-heat-9358.firebaseio.com/helloworld")
-        // Write data to Firebase
-        myRootRef.setValue("Do you have data? You'll love Firebase.")
+
+      SwiftEventBus.post("UpdateUI")
     }
 
-    public func observeData() {
-        var myRootRef = Firebase(url:"https://burning-heat-9358.firebaseio.com/onPush")
-        myRootRef.observeEventType(.Value, withBlock: { snapshot in 
-            println("\(snapshot.key) -> \(snapshot.value)")
-            },
-            withCancelBlock: { error in
-              println(error.description)
-            })
-    }
 }

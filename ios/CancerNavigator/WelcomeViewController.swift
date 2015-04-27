@@ -11,7 +11,6 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-//    private PopUpViewControllerSwift popUpViewController;
     @IBOutlet weak var onButtonPressed: UIButton!
     
     var popUpViewController : PopUpViewControllerSwift!
@@ -29,7 +28,6 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: onButtonPressed)
         self.navigationItem.title = "Welcome"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Timeline", style: .Plain, target: self, action: "onDone")        
@@ -53,13 +51,16 @@ class WelcomeViewController: UIViewController {
     @IBAction func onLymphImagePressed(sender: AnyObject) {
         self.popUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
         self.popUpViewController.title = "Lymph"
-        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: "Lymph", animated: true)
+	let message = StringService().getString("PopUpLymphNodeText")
+        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: message, animated: true)
     }
 
     @IBAction func onBreastImagePressed(sender: AnyObject) {
         self.popUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
         self.popUpViewController.title = "Breast"
-        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: "Breast", animated: true)
+	
+	let message = StringService().getString("PopUpBoobText")
+        self.popUpViewController.showInView(self.view, withImage: nil, withMessage: message, animated: true)
     }
         
 }
