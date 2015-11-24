@@ -93,7 +93,7 @@ public class TimelineView : UIScrollView {
 
     }
         
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       baseInit()
     }
@@ -105,11 +105,11 @@ public class TimelineView : UIScrollView {
   
     public override func layoutSubviews() {
 
-      let interval: CGFloat = 40
-      var yOffset: CGFloat = 0
-      let xPos: CGFloat = 0
-      let StandardWidth: CGFloat = 120
-      let StandardHeight: CGFloat = 40
+//      let interval: CGFloat = 40
+//      var yOffset: CGFloat = 0
+//      let xPos: CGFloat = 0
+//      let StandardWidth: CGFloat = 120
+//      let StandardHeight: CGFloat = 40
 //      for label in milestoneLabels {
 //          label.frame = CGRect(x: xPos, y: yOffset, width: StandardWidth, height: StandardHeight)
 //          yOffset += interval

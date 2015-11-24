@@ -53,18 +53,16 @@ public class ChecklistViewController: UIViewController, UITableViewDelegate, UIT
         //let cellIdentifier = "StandardCellId"
         
         
-        var cell:UITableViewCell? = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? UITableViewCell
+        var cell:UITableViewCell? = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         cell!.textLabel?.text = self.items[indexPath.row]
         //cell!.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark : .None
         
         if(cell == nil){
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
         }
-        //else{
-            // we already have one from reuse
-        //}
+
         
-        if let selectedPaths = tableView.indexPathsForSelectedRows() as? [NSIndexPath] {
+        if let selectedPaths = tableView.indexPathsForSelectedRows {
             let selected = selectedPaths.filter(){ $0 == indexPath }
             if selected.count > 0 {
                 cell!.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark :.None
@@ -78,7 +76,7 @@ public class ChecklistViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("You selected cell #\(indexPath.row)!")
+        print("You selected cell #\(indexPath.row)!")
         
         //tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
@@ -89,11 +87,11 @@ public class ChecklistViewController: UIViewController, UITableViewDelegate, UIT
                 oldCell?.accessoryType = .None
             }
 
-            var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
-             cell.textLabel?.text = self.items[indexPath.row]
+            let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
+            cell.textLabel?.text = self.items[indexPath.row]
 
         
-            if let selectedPaths = tableView.indexPathsForSelectedRows() as? [NSIndexPath] {
+            if let selectedPaths = tableView.indexPathsForSelectedRows {
                 let selected = selectedPaths.filter(){ $0 == indexPath }
                 if selected.count > 0 {
                     //let newCell = tableView.cellForRowAtIndexPath(indexPath)

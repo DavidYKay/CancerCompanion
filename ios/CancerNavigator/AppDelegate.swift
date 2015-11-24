@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
       if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:")))
       {
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Sound, UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: nil))
       }
       else
       {
@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidReceiveLocalNotification(application: UIApplication, notification: UILocalNotification) {
       let state = application.applicationState
         
-      println("didReceivedLocalNotification")
+      print("didReceivedLocalNotification")
 
       if (state == UIApplicationState.Active) {
 

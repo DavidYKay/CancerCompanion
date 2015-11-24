@@ -15,18 +15,18 @@ public class NotificationService  {
   let stringService: StringService = StringService()
     
     public func showNotification() {
-        println("showNotification()")
+        print("showNotification()")
 	
         SwiftEventBus.post("ShowReminder")
     }
 
   func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-    println("clicked button: \(buttonIndex)")
+    print("clicked button: \(buttonIndex)")
       SocketService().logAppointmentConfirmed()
   }
 
   public func scheduleNotification() {
-    println("scheduleNotification()")
+    print("scheduleNotification()")
     let date = NSDate(timeIntervalSinceNow: 5)
 
     let localNotification: UILocalNotification = UILocalNotification()

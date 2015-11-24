@@ -87,21 +87,21 @@ public class MilestoneView : UIView {
     }
     
     func baseInit() {
-        println("milestoneView.baseInit()")
+        print("milestoneView.baseInit()")
 
         SwiftEventBus.onMainThread(self, name: "UpdateUI") { result in
             self.updateView()
        }
     }
         
-    required public init(coder aDecoder: NSCoder) {
-        println("MilestoneView initWithCoder")
+    required public init?(coder aDecoder: NSCoder) {
+        print("MilestoneView initWithCoder")
       super.init(coder: aDecoder)
       baseInit()
     }
     
     override init(frame: CGRect) {
-        println("MilestoneView initWithFrame")
+        print("MilestoneView initWithFrame")
       super.init(frame: frame)
 
       baseInit()
@@ -109,7 +109,7 @@ public class MilestoneView : UIView {
     
     public override func layoutSubviews() {
       super.layoutSubviews()
-      println("MilestoneView layoutSubviews()")
+      print("MilestoneView layoutSubviews()")
         
     }
     
@@ -119,12 +119,12 @@ public class MilestoneView : UIView {
     }
 
     @IBAction func nameWasPressed(sender: AnyObject) {
-        println("nameWasPressed: \(self.milestone?.name)")
+        print("nameWasPressed: \(self.milestone?.name)")
         handleButtonPress()
     }
     
     @IBAction func checkmarkWasPressed(sender: AnyObject) {
-        println("checkmarkWasPressed: \(self.milestone?.name)")
+        print("checkmarkWasPressed: \(self.milestone?.name)")
         handleButtonPress()
     }
 

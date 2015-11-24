@@ -55,7 +55,7 @@ Expecting parameters
 ```swift
 SwiftEventBus.onMainThread(target, name:"personFetchEvent") { result in
     let person : Person = result.object as Person
-    println(person.name) // will output "john doe"
+    print(person.name) // will output "john doe"
 }
 ```
 

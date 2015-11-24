@@ -17,7 +17,7 @@ class TimelineViewController: UIViewController {
       self.navigationItem.title = "Timeline"
       
      SwiftEventBus.onMainThread(self, name: "ShowReminder") { result in
-	println("received: ShowReminder")
+	print("received: ShowReminder")
 
 	let message = StringService().getString("AppointmentReminder")
 
@@ -26,37 +26,37 @@ class TimelineViewController: UIViewController {
 	      case .Default:
 		SocketService().logAppointmentConfirmed()
 	      case .Cancel:
-		println("cancel")
+		print("cancel")
 	      case .Destructive:
-		println("destructive")
+		print("destructive")
 	      }
 	}
-	var alert = UIAlertController(title: "Reminder", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+	let alert = UIAlertController(title: "Reminder", message: message, preferredStyle: UIAlertControllerStyle.Alert)
 	alert.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: handler))
 	alert.addAction(UIAlertAction(title: "Postpone", style: .Cancel, handler: handler))
 	self.presentViewController(alert, animated: true, completion: nil)
       }
 
       SwiftEventBus.onMainThread(self, name: "Reminder") { result in
-	println("received: Reminder")
+	print("received: Reminder")
 	self.onScheduleNotification()
       }
 
     SwiftEventBus.onMainThread(self, name: "Survey") { result in
-      println("received: Survey")
+      print("received: Survey")
 	self.onShowSurveyPressed(self)
     }
 
     SwiftEventBus.onMainThread(self, name: "Emo. Check") { result in
-      println("received: Emo. Check")
+      print("received: Emo. Check")
 	self.onShowEmotionPressed(self)
     }
   }
 
     func onScheduleNotification() {
-        println("onScheduleNotification")
+        print("onScheduleNotification")
         
-          let t = NSTimer.scheduledTimerWithTimeInterval(5.0,
+          _ = NSTimer.scheduledTimerWithTimeInterval(5.0,
             target: self, 
             selector:Selector("onFireNotification"),
         userInfo: nil,
@@ -64,7 +64,7 @@ class TimelineViewController: UIViewController {
     }
 
     func onFireNotification() {
-        println("onFireNotification")
+        print("onFireNotification")
       //NotificationService().scheduleNotification()
       NotificationService().showNotification()
     }

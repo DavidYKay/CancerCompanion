@@ -36,7 +36,7 @@ public class ThermometerView: UIView {
           label.tag = $0
           return label
         }
-        self.numberLabels = reverse(self.numberLabels)
+        self.numberLabels = Array(self.numberLabels.reverse())
 
         for label in numberLabels {
           self.addSubview(label)
@@ -50,7 +50,7 @@ public class ThermometerView: UIView {
         self.layer.insertSublayer(rgLayer, atIndex:0)
     }
         
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       baseInit()
     }
@@ -95,8 +95,8 @@ public class ThermometerView: UIView {
       let thermValue = yPosToThermometerValue(touchLocation.y)
       listener?.onNewThermometerValue(thermValue)
 
-      //println("thermValue: \(thermValue)")
-      //println("\(touchLocation.x) \(touchLocation.y)")
+      //print("thermValue: \(thermValue)")
+      //print("\(touchLocation.x) \(touchLocation.y)")
     }
 
     func handleTouches(touches: Set<NSObject>) {
@@ -105,19 +105,19 @@ public class ThermometerView: UIView {
       handleTouchAtLocation(touchLocation)
     }
     
-    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
       handleTouches(touches)
     }
     
-    public override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
       handleTouches(touches)
     }
     
-    public override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
       handleTouches(touches)
     }
     
-    public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         
     }
 

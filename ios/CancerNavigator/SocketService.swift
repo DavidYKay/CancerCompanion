@@ -18,7 +18,7 @@ public class SocketService {
       "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin",
       "https://burning-heat-9358.firebaseio.com/checkpoints/appointmentConfirmed"]
       for url in urls {
-        var myRootRef = Firebase(url: url)
+        let myRootRef = Firebase(url: url)
         myRootRef.setValue(false)
       }
       
@@ -35,13 +35,13 @@ public class SocketService {
 
     public func logEmotionalCheckin(value: Int) {
       let url = "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin"
-      var myRootRef = Firebase(url: url)
+      let myRootRef = Firebase(url: url)
       myRootRef.setValue(value)
     }
 
     func setTrue(name:String ) {
       let url = "https://burning-heat-9358.firebaseio.com/checkpoints/\(name)"
-      var myRootRef = Firebase(url: url)
+      let myRootRef = Firebase(url: url)
       myRootRef.setValue(true)
 
       SwiftEventBus.post("UpdateUI")
