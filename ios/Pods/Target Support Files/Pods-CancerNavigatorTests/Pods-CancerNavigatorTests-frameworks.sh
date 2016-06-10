@@ -82,12 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/SwiftEventBus/SwiftEventBus.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UIScrollSlidingPages/UIScrollSlidingPages.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/SwiftEventBus/SwiftEventBus.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UIScrollSlidingPages/UIScrollSlidingPages.framework"
-fi

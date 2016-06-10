@@ -1,5 +1,5 @@
 framework module UIScrollSlidingPages {
-  umbrella header "Pods-CancerNavigator-UIScrollSlidingPages-umbrella.h"
+  umbrella header "UIScrollSlidingPages-umbrella.h"
 
   export *
   module * { export * }

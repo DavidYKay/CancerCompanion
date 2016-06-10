@@ -5,8 +5,8 @@ target 'CancerNavigator' do
 
 use_frameworks!
 
-pod 'Firebase', '>= 2.2.1'
-pod 'UIScrollSlidingPages', '>= 1.4'
+pod 'Firebase', '2.2.1'
+pod 'UIScrollSlidingPages', '1.4'
 pod 'SwiftEventBus', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
 
 end
