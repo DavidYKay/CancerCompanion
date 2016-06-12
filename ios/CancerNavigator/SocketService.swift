@@ -14,13 +14,13 @@ public class SocketService {
 
     public func resetAll() {
 
-      let urls = [ "https://burning-heat-9358.firebaseio.com/checkpoints/survey",
-      "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin",
-      "https://burning-heat-9358.firebaseio.com/checkpoints/appointmentConfirmed"]
-      for url in urls {
-        let myRootRef = Firebase(url: url)
-        myRootRef.setValue(false)
-      }
+     // let urls = [ "https://burning-heat-9358.firebaseio.com/checkpoints/survey",
+     // "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin",
+     // "https://burning-heat-9358.firebaseio.com/checkpoints/appointmentConfirmed"]
+     // for url in urls {
+     //   let myRootRef = Firebase(url: url)
+     //   myRootRef.setValue(false)
+     // }
       
       SwiftEventBus.post("UpdateUI")
     }
@@ -34,15 +34,15 @@ public class SocketService {
     }
 
     public func logEmotionalCheckin(value: Int) {
-      let url = "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin"
-      let myRootRef = Firebase(url: url)
-      myRootRef.setValue(value)
+     //  let url = "https://burning-heat-9358.firebaseio.com/checkpoints/emotionalCheckin"
+     //  let myRootRef = Firebase(url: url)
+     //  myRootRef.setValue(value)
     }
 
     func setTrue(name:String ) {
-      let url = "https://burning-heat-9358.firebaseio.com/checkpoints/\(name)"
-      let myRootRef = Firebase(url: url)
-      myRootRef.setValue(true)
+      // let url = "https://burning-heat-9358.firebaseio.com/checkpoints/\(name)"
+      // let myRootRef = Firebase(url: url)
+      // myRootRef.setValue(true)
 
       SwiftEventBus.post("UpdateUI")
     }
